@@ -1,0 +1,32 @@
+[
+  {
+    "name": "alcohol",
+    "type": "categorical",
+    "range": [
+      "alcohol_1",
+      "alcohol_2",
+      "alcohol_3",
+      "alcohol_4",
+      "alcohol_5",
+      "alcohol_6"
+    ]
+  },
+  {
+    "name": "Cu catalyst",
+    "type": "categorical",
+    "range": [
+      "CuBr2",
+      "CuCl2",
+      "Cu(OTf)2",
+      "Cu(BF4)2"
+    ]
+  },
+  {
+    "name": "Base",
+    "type": "categorical",
+    "range": [
+      "NMI",
+      "DBU"
+    ]
+  }
+]

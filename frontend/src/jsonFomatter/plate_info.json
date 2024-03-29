@@ -1,0 +1,250 @@
+[
+  {
+    "name": "reactor 1",
+    "nrows": 4,
+    "ncolums": 6,
+    "reaction": [
+      [
+        1,
+        3,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        1,
+        3,
+        2,
+        4,
+        7,
+        6
+      ],
+      [
+        null,
+        null,
+        4,
+        null,
+        1,
+        2
+      ],
+      [
+        null,
+        null,
+        null,
+        3,
+        null,
+        4
+      ]
+    ]
+  },
+  {
+    "name": "reactor 1",
+    "nrows": 2,
+    "ncolums": 4,
+    "reaction": [
+      [
+        1,
+        3,
+        null,
+        null
+      ],
+      [
+        1,
+        3,
+        2,
+        4
+      ]
+      
+    ]
+  },
+  {
+    "name": "reactor 3",
+    "nrows": 1,
+    "ncolums": 2,
+    "reaction": [
+      [
+        1,
+        3
+      ]
+    ]
+  },
+  {
+    "name": "reactor 2",
+    "nrows": 5,
+    "ncolums": 7,
+    "reaction": [
+      [
+        2,
+        4,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        2,
+        4,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    ]
+  },
+  {
+    "name": "reactor 2",
+    "nrows": 8,
+    "ncolums": 12,
+    "reaction": [
+      [
+        2,
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        2,
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        2,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    ]
+  },{
+    "name": "reactor 12",
+    "nrows": 1,
+    "ncolums": 2,
+    "reaction": [[1,2]
+
+    ]
+  }
+]

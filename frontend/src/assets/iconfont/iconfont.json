@@ -1,0 +1,107 @@
+{
+  "id": "3806776",
+  "name": "菜单",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1724899",
+      "name": "月亮",
+      "font_class": "yueliang",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "18170254",
+      "name": "夜间模式,月亮,星星,dark",
+      "font_class": "dark-full",
+      "unicode": "e997",
+      "unicode_decimal": 59799
+    },
+    {
+      "icon_id": "7542725",
+      "name": "24gf-bag",
+      "font_class": "24gf-bag",
+      "unicode": "e87f",
+      "unicode_decimal": 59519
+    },
+    {
+      "icon_id": "1070",
+      "name": "礼物",
+      "font_class": "liwu",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "1328",
+      "name": "进入",
+      "font_class": "jinru",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "792344",
+      "name": "moon-b-月亮",
+      "font_class": "moonbyueliang",
+      "unicode": "e6a0",
+      "unicode_decimal": 59040
+    },
+    {
+      "icon_id": "1727582",
+      "name": "401位置",
+      "font_class": "weizhi",
+      "unicode": "e8ff",
+      "unicode_decimal": 59647
+    },
+    {
+      "icon_id": "1727592",
+      "name": "407饼图",
+      "font_class": "bingtu",
+      "unicode": "e902",
+      "unicode_decimal": 59650
+    },
+    {
+      "icon_id": "2076250",
+      "name": "购物2",
+      "font_class": "gouwu",
+      "unicode": "e88c",
+      "unicode_decimal": 59532
+    },
+    {
+      "icon_id": "5543849",
+      "name": "设置",
+      "font_class": "shezhi",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "6345954",
+      "name": "category",
+      "font_class": "category",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "11488288",
+      "name": "order-fill",
+      "font_class": "order-fill",
+      "unicode": "e786",
+      "unicode_decimal": 59270
+    },
+    {
+      "icon_id": "16780735",
+      "name": "登录-用户组",
+      "font_class": "denglu-yonghuzu",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "6978163",
+      "name": "菜单",
+      "font_class": "caidan",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    }
+  ]
+}

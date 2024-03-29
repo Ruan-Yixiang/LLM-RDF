@@ -1,0 +1,346 @@
+{
+  "nodes": [
+    {
+      "label": "Unchained",
+      "type": "ellipse-node",
+      "style": {
+        "nodeState:default": {
+          "opacity": 1
+        },
+        "nodeState:hover": {
+          "opacity": 0.8
+        },
+        "nodeState:selected": {
+          "opacity": 0.9
+        },
+        "radius": 10,
+        "width": 100,
+        "height": 50,
+        "cursor": "move",
+        "fill": "#ecf3ff"
+      },
+      "x": 214,
+      "y": 191,
+      "labelCfg": {
+        "fontSize": 20,
+        "style": {
+          "cursor": "move"
+        },
+        "dataConfigAAA": {
+          "para": "",
+          "cmd": ""
+        },
+        "dataConfigBBB": {
+          "para": "",
+          "cmd": ""
+        },
+        "dataConfigCCC": {
+          "para": "",
+          "cmd": ""
+        },
+        "dataConfigDDD": {
+          "para": "",
+          "cmd": ""
+        },
+        "dataConfigEEE": {
+          "para": "",
+          "cmd": ""
+        },
+        "dataConfigFFF": {
+          "para": "",
+          "cmd": ""
+        },
+        "dataConfigGGG": {
+          "para": "",
+          "cmd": ""
+        },
+        "dataConfigHHH": {
+          "para": "",
+          "cmd": ""
+        },
+        "dataConfigIII": {
+          "para": "",
+          "cmd": ""
+        },
+        "dataConfigJJJ": {
+          "para": "",
+          "cmd": ""
+        },
+        "dataConfigKKK": {
+          "para": "",
+          "cmd": ""
+        },
+        "dataConfigUnchained": {
+          "para": "{\n  \"ProjectName\": \"202303011625\",\n  \"ChooseDesignID\": \"558\",\n  \"LsrFilePath\": \"C://Users//Unchained Labs//Desktop//Optimization_test//sample.lsr\",\n  \"UseLsrFile\": false,\n  \"LastLibraryID\": \"100400\",\n  \"SetPrompts\": \"C://Users//Unchained Labs//Desktop//Optimization_test//prompt//AS.prompts.WithNoDesignCreator_prepare_397.xml\",\n  \"SetChemicalManager\": \"C://Users//Unchained Labs//Desktop//Optimization_test//chemical_manager//prepare_397.xml\",\n  \"SetTipManagement\": \"\",\n  \"UseAI\": false,\n  \"NewDesign\": false,\n  \"ParaChanger\": [\n  ]\n}",
+          "cmd": "START",
+          "operation": ""
+        },
+        "dataConfigDiscover": {
+          "para": "",
+          "cmd": ""
+        },
+        "dataConfigThermo": {
+          "para": "",
+          "cmd": "",
+          "operation": ""
+        },
+        "dataConfigRobot1": {
+          "para": "",
+          "cmd": "",
+          "operation": ""
+        },
+        "dataConfigRobot2": {}
+      },
+      "id": "node-0.16070495600366131693290953516"
+    },
+    {
+      "label": "Robot1",
+      "type": "diamond-node",
+      "style": {
+        "nodeState:default": {
+          "opacity": 1
+        },
+        "nodeState:hover": {
+          "opacity": 0.8
+        },
+        "nodeState:selected": {
+          "opacity": 0.9
+        },
+        "radius": 10,
+        "width": 100,
+        "height": 50,
+        "cursor": "move",
+        "fill": "#ecf3ff"
+      },
+      "x": 423,
+      "y": 191,
+      "labelCfg": {
+        "fontSize": 20,
+        "style": {
+          "cursor": "move"
+        },
+        "dataConfigAAA": {
+          "para": "",
+          "cmd": ""
+        },
+        "dataConfigBBB": {
+          "para": "",
+          "cmd": ""
+        },
+        "dataConfigCCC": {
+          "para": "",
+          "cmd": ""
+        },
+        "dataConfigDDD": {
+          "para": "",
+          "cmd": ""
+        },
+        "dataConfigEEE": {
+          "para": "",
+          "cmd": ""
+        },
+        "dataConfigFFF": {
+          "para": "",
+          "cmd": ""
+        },
+        "dataConfigGGG": {
+          "para": "",
+          "cmd": ""
+        },
+        "dataConfigHHH": {
+          "para": "",
+          "cmd": ""
+        },
+        "dataConfigIII": {
+          "para": "",
+          "cmd": ""
+        },
+        "dataConfigJJJ": {
+          "para": "",
+          "cmd": ""
+        },
+        "dataConfigKKK": {
+          "para": "",
+          "cmd": ""
+        },
+        "dataConfigUnchained": {
+          "para": "",
+          "cmd": "",
+          "operation": ""
+        },
+        "dataConfigDiscover": {
+          "para": "",
+          "cmd": ""
+        },
+        "dataConfigThermo": {
+          "para": "",
+          "cmd": "",
+          "operation": ""
+        },
+        "dataConfigRobot1": {
+          "para": "Unchained/grab_16A, Discover/place_16A",
+          "cmd": "START",
+          "operation": ""
+        },
+        "dataConfigRobot2": {}
+      },
+      "id": "node-0.424628720257861361693290959791"
+    },
+    {
+      "label": "Discover",
+      "type": "ellipse-node",
+      "style": {
+        "nodeState:default": {
+          "opacity": 1
+        },
+        "nodeState:hover": {
+          "opacity": 0.8
+        },
+        "nodeState:selected": {
+          "opacity": 0.9
+        },
+        "radius": 10,
+        "width": 100,
+        "height": 50,
+        "cursor": "move",
+        "fill": "#ecf3ff"
+      },
+      "x": 646,
+      "y": 191,
+      "labelCfg": {
+        "fontSize": 20,
+        "style": {
+          "cursor": "move"
+        },
+        "dataConfigAAA": {
+          "para": "",
+          "cmd": ""
+        },
+        "dataConfigBBB": {
+          "para": "",
+          "cmd": ""
+        },
+        "dataConfigCCC": {
+          "para": "",
+          "cmd": ""
+        },
+        "dataConfigDDD": {
+          "para": "",
+          "cmd": ""
+        },
+        "dataConfigEEE": {
+          "para": "",
+          "cmd": ""
+        },
+        "dataConfigFFF": {
+          "para": "",
+          "cmd": ""
+        },
+        "dataConfigGGG": {
+          "para": "",
+          "cmd": ""
+        },
+        "dataConfigHHH": {
+          "para": "",
+          "cmd": ""
+        },
+        "dataConfigIII": {
+          "para": "",
+          "cmd": ""
+        },
+        "dataConfigJJJ": {
+          "para": "",
+          "cmd": ""
+        },
+        "dataConfigKKK": {
+          "para": "",
+          "cmd": ""
+        },
+        "dataConfigUnchained": {
+          "para": "",
+          "cmd": "",
+          "operation": ""
+        },
+        "dataConfigDiscover": {
+          "para": "{\n\t\"ProjectName\": \"proj1\",\n\t\"Method\": \"Standard\",\n\t\"Power\": 15,\n\t\"Temperature\": 180,\n\t\"Time\": 60,\n\t\"Pressure\": 300,\n\t\"Stirring\": 300,\n\t\"Power Interval\": 40,\n\t\"Cooling Interval\": 20,\n\t\"Maximum Temperature\": 60,\n\t\"Minimum Temperature\": 55,\n\t\"Number of Cycles\": 2\n}",
+          "cmd": "START"
+        },
+        "dataConfigThermo": {
+          "para": "",
+          "cmd": "",
+          "operation": ""
+        },
+        "dataConfigRobot1": {
+          "para": "",
+          "cmd": "",
+          "operation": ""
+        },
+        "dataConfigRobot2": {}
+      },
+      "id": "node-0.134786866025904621693290970916"
+    }
+  ],
+  "edges": [
+    {
+      "id": "16932909637813787",
+      "source": "node-0.16070495600366131693290953516",
+      "target": "node-0.424628720257861361693290959791",
+      "sourceAnchor": 1,
+      "targetAnchor": 3,
+      "type": "polyline-edge",
+      "style": {
+        "shadowColor": "#1890FF",
+        "shadowBlur": 3,
+        "radius": 5,
+        "offset": 15,
+        "stroke": "#1890FF",
+        "lineWidth": 3,
+        "lineAppendWidth": 5,
+        "endArrow": true
+      },
+      "startPoint": {
+        "x": 265.5,
+        "y": 191,
+        "anchorIndex": 1,
+        "id": "265.5|||191"
+      },
+      "endPoint": {
+        "x": 370.5988284109627,
+        "y": 191,
+        "anchorIndex": 3,
+        "id": "370.5988284109627|||191"
+      }
+    },
+    {
+      "id": "16932909758755021",
+      "source": "node-0.424628720257861361693290959791",
+      "target": "node-0.134786866025904621693290970916",
+      "sourceAnchor": 1,
+      "targetAnchor": 3,
+      "type": "polyline-edge",
+      "style": {
+        "shadowColor": "#1890FF",
+        "shadowBlur": 3,
+        "radius": 5,
+        "offset": 15,
+        "stroke": "#1890FF",
+        "lineWidth": 3,
+        "lineAppendWidth": 5,
+        "endArrow": true
+      },
+      "startPoint": {
+        "x": 475.4011715890373,
+        "y": 191,
+        "anchorIndex": 1,
+        "id": "475.4011715890373|||191"
+      },
+      "endPoint": {
+        "x": 594.5,
+        "y": 191,
+        "anchorIndex": 3,
+        "id": "594.5|||191"
+      }
+    }
+  ],
+  "combos": []
+}

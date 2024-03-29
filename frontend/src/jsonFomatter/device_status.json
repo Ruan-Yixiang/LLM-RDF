@@ -1,0 +1,20 @@
+[
+  [
+    "Unchained",
+    "running",
+    [
+      1,
+      2
+    ]
+  ],
+  [
+    "Robot1",
+    "running",
+    [3]
+  ],
+  [
+    "Thermo",
+    "ready",
+    []
+  ]
+]

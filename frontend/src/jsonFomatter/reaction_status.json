@@ -1,0 +1,26 @@
+[
+  {
+    "synthesis": 0,
+    "react": 1,
+    "workup": 2,
+    "transfer": 2,
+    "transport": 2,
+    "upload": 2,
+    "analyze": 2,
+    "download": 2,
+    "back_transport": 2,
+    "back_transfer": 2
+  },
+  {
+    "synthesis": 1,
+    "react": 1,
+    "workup": 2,
+    "transfer": 2,
+    "transport": 2,
+    "upload": 2,
+    "analyze": 2,
+    "download": 2,
+    "back_transport": 2,
+    "back_transfer": 2
+  }
+]

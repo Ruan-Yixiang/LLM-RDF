@@ -1,0 +1,32 @@
+[
+  {
+    "reagent": "alcohol",
+    "parameter": 0.25,
+    "unit": "ml",
+    "checkParameter": true
+  },
+    {
+    "reagent": "Cu catalyst",
+    "parameter": 0.25,
+    "unit": "ml",
+    "checkParameter": true
+  },
+    {
+    "reagent": "bpy",
+    "parameter": 0.25,
+    "unit": "ml",
+    "checkParameter": false
+  },
+    {
+    "reagent": "TEMPO",
+    "parameter": 0.25,
+    "unit": "ml",
+    "checkParameter": false
+  },
+   {
+    "reagent": "Base",
+    "parameter": 0.25,
+    "unit": "ml",
+    "checkParameter": true
+  }
+]

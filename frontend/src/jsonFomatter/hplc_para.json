@@ -1,0 +1,20 @@
+{
+    "ProcessingMethod": "Data/sequence/RYX/RYX-2023-2-16-test",
+    "InstrumentMethod": "Data/sequence/RYX/RYX-2023-2-16-test",
+    "Injection": [
+        [
+            "diol-ox",
+            "0.25",
+            "R:A1"
+        ]
+    ],
+    "SequenceName": "Data/sequence/RYX/202303011734",
+    "Instrument": "ISQ-EC",
+    "TemplateName": "Data/sequence/RYX/test_template",
+    "User": "user1",
+    "ProjectName": "proj2_20220810",
+    "Channels": [
+        "UV_VIS_1",
+        "UV_VIS_2"
+    ]
+}

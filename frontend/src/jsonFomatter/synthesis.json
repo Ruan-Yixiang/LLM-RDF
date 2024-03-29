@@ -1,0 +1,278 @@
+{
+    "ProjectName": "202303011625",
+    "ChooseDesignID": "558",
+    "LsrFilePath": "C://Users//Unchained Labs//Desktop//Optimization_test//sample.lsr",
+    "UseLsrFile": false,
+    "LastLibraryID": "100400",
+    "SetPrompts": "D://Optimization_ryx//prepare_prompts_1.xml",
+    "SetChemicalManager": "D://Optimization_ryx//prepare_manager_1.xml",
+    "SetTipManagement": "",
+    "UseAI": true,
+    "NewDesign":true,
+    "ParaChanger": [
+        {
+            "tags": "SkipMap",
+            "edit": true,
+            "map": {
+                "Index": 1,
+                "LayerIndex": 1,
+                "Description": "Add discrete amounts of 1-Octene in ml to mother (A1) in ml",
+                "Name": "1-Octene",
+                "Library": "mother",
+                "Columns": 4,
+                "Rows": 2,
+                "SourceArea": [
+                    [
+                        1,
+                        1
+                    ]
+                ],
+                "DestinationArea": [
+                    [
+                        1,
+                        1
+                    ]
+                ],
+                "LinkID": null,
+                "Unit": "ml",
+                "Type": "Discrete",
+                "TagList": "SkipMap",
+                "Values": [
+                    {
+                        "Item1": 1,
+                        "Item2": 1,
+                        "Item3": 1.0
+                    }
+                ],
+                "SourceArrayName": null
+            },
+            "recipe": {
+                "Description": "Add discrete amounts of 1-Octene in ml to mother (A1) in ml",
+                "Type": "LSSourceMap",
+                "Index": 1,
+                "LayerIndex": 1,
+                "LibraryName": "mother"
+            }
+        },
+        {
+            "tags": "SkipMap",
+            "edit": true,
+            "map": {
+                "Index": 1,
+                "LayerIndex": 2,
+                "Description": "Add discrete amounts of 1-Octene in ml to solvent (A1) in ml",
+                "Name": "1-Octene",
+                "Library": "solvent",
+                "Columns": 2,
+                "Rows": 1,
+                "SourceArea": [
+                    [
+                        1,
+                        1
+                    ]
+                ],
+                "DestinationArea": [
+                    [
+                        1,
+                        1
+                    ]
+                ],
+                "LinkID": null,
+                "Unit": "ml",
+                "Type": "Discrete",
+                "TagList": "SkipMap",
+                "Values": [
+                    {
+                        "Item1": 1,
+                        "Item2": 1,
+                        "Item3": 1.0
+                    }
+                ],
+                "SourceArrayName": null
+            },
+            "recipe": {
+                "Description": "Add discrete amounts of 1-Octene in ml to solvent (A1) in ml",
+                "Type": "LSSourceMap",
+                "Index": 1,
+                "LayerIndex": 2,
+                "LibraryName": "solvent"
+            }
+        },
+        {
+            "tags": "SyringePump,ExtSingleTip",
+            "edit": true,
+            "map": {
+                "Index": 1,
+                "LayerIndex": 3,
+                "Description": "Add discrete amounts in ml 101069: mother (A1) to reactor (A1) in ml",
+                "Name": "mother",
+                "Library": "reactor",
+                "Columns": 6,
+                "Rows": 4,
+                "SourceArea": [
+                    [
+                        1,
+                        1
+                    ]
+                ],
+                "DestinationArea": [
+                    [
+                        1,
+                        1
+                    ]
+                ],
+                "LinkID": null,
+                "Unit": "ml",
+                "Type": "Discrete",
+                "TagList": "SyringePump,ExtSingleTip",
+                "Values": [
+                    {
+                        "Item1": 1,
+                        "Item2": 1,
+                        "Item3": 0.25
+                    }
+                ],
+                "SourceArrayName": null
+            },
+            "recipe": {
+                "Description": "Add discrete amounts in ml 101069: mother (A1) to reactor (A1) in ml",
+                "Type": "LSArrayMap",
+                "Index": 1,
+                "LayerIndex": 3,
+                "LibraryName": "reactor"
+            }
+        },
+        {
+            "tags": "SyringePump,ExtSingleTip",
+            "edit": true,
+            "map": {
+                "Index": 1,
+                "LayerIndex": 4,
+                "Description": "Add discrete amounts in ml 101069: mother (B1) to reactor (A1) in ml",
+                "Name": "mother",
+                "Library": "reactor",
+                "Columns": 6,
+                "Rows": 4,
+                "SourceArea": [
+                    [
+                        2,
+                        1
+                    ]
+                ],
+                "DestinationArea": [
+                    [
+                        1,
+                        1
+                    ]
+                ],
+                "LinkID": null,
+                "Unit": "ml",
+                "Type": "Discrete",
+                "TagList": "SyringePump,ExtSingleTip",
+                "Values": [
+                    {
+                        "Item1": 1,
+                        "Item2": 1,
+                        "Item3": 0.25
+                    }
+                ],
+                "SourceArrayName": null
+            },
+            "recipe": {
+                "Description": "Add discrete amounts in ml 101069: mother (B1) to reactor (A1) in ml",
+                "Type": "LSArrayMap",
+                "Index": 1,
+                "LayerIndex": 4,
+                "LibraryName": "reactor"
+            }
+        },
+        {
+            "tags": "SyringePump,ExtSingleTip",
+            "edit": true,
+            "map": {
+                "Index": 1,
+                "LayerIndex": 5,
+                "Description": "Add discrete amounts in ml 101069: mother (B3) to reactor (A1) in ml",
+                "Name": "mother",
+                "Library": "reactor",
+                "Columns": 6,
+                "Rows": 4,
+                "SourceArea": [
+                    [
+                        2,
+                        3
+                    ]
+                ],
+                "DestinationArea": [
+                    [
+                        1,
+                        1
+                    ]
+                ],
+                "LinkID": null,
+                "Unit": "ml",
+                "Type": "Discrete",
+                "TagList": "SyringePump,ExtSingleTip",
+                "Values": [
+                    {
+                        "Item1": 1,
+                        "Item2": 1,
+                        "Item3": 0.25
+                    }
+                ],
+                "SourceArrayName": null
+            },
+            "recipe": {
+                "Description": "Add discrete amounts in ml 101069: mother (B3) to reactor (A1) in ml",
+                "Type": "LSArrayMap",
+                "Index": 1,
+                "LayerIndex": 5,
+                "LibraryName": "reactor"
+            }
+        },
+        {
+            "tags": "SyringePump,ExtSingleTip",
+            "edit": true,
+            "map": {
+                "Index": 1,
+                "LayerIndex": 6,
+                "Description": "Add discrete amounts in ml 101071: solvent (A1) to reactor (A1) in ml",
+                "Name": "solvent",
+                "Library": "reactor",
+                "Columns": 6,
+                "Rows": 4,
+                "SourceArea": [
+                    [
+                        1,
+                        1
+                    ]
+                ],
+                "DestinationArea": [
+                    [
+                        1,
+                        1
+                    ]
+                ],
+                "LinkID": null,
+                "Unit": "ml",
+                "Type": "Discrete",
+                "TagList": "SyringePump,ExtSingleTip",
+                "Values": [
+                    {
+                        "Item1": 1,
+                        "Item2": 1,
+                        "Item3": 0.0
+                    }
+                ],
+                "SourceArrayName": null
+            },
+            "recipe": {
+                "Description": "Add discrete amounts in ml 101071: solvent (A1) to reactor (A1) in ml",
+                "Type": "LSArrayMap",
+                "Index": 1,
+                "LayerIndex": 6,
+                "LibraryName": "reactor"
+            }
+        }
+    ]
+}

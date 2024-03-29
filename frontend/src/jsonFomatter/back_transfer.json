@@ -1,0 +1,195 @@
+{
+		"ProjectName": "202211211520",
+		"ChooseDesignID": "861",
+		"LsrFilePath": "C://Users//Unchained Labs//Desktop//Optimization_test//sample.lsr",
+		"UseLsrFile": false,
+		"LastLibraryID": "100400",
+		"SetPrompts": "D://Optimization_ryx//back_transfer_prompts_1.xml",
+		"SetChemicalManager": "D://Optimization_ryx//back_transfer_manager_1.xml",
+		"SetTipManagement": "",
+		"UseAI": true,
+    "NewDesign": false,
+		"ParaChanger": [{
+				"tags": "Processing",
+				"edit": false,
+				"map": {
+					"Index": 1,
+					"LayerIndex": 1,
+					"Description": "Set MovePlate to \"Deck 9-10 Position 2\"; LC (A1:D4)",
+					"Name": "MovePlate",
+          "ParameterType": "Text",
+					"Library": "LC",
+					"Columns": 4,
+					"Rows": 4,
+					"SourceArea": null,
+					"DestinationArea": [
+						[1, 1],
+						[1, 2],
+						[1, 3],
+						[1, 4],
+						[2, 1],
+						[2, 2],
+						[2, 3],
+						[2, 4],
+						[3, 1],
+						[3, 2],
+						[3, 3],
+						[3, 4],
+						[4, 1],
+						[4, 2],
+						[4, 3],
+						[4, 4]
+					],
+					"LinkID": null,
+					"Unit": "undefined",
+					"Type": "Uniform",
+					"TagList": "Processing",
+					"Values": [{
+						"Item1": 1,
+						"Item2": 1,
+						"Item3": "Off Deck 22-24 Position 3"
+					}, {
+						"Item1": 1,
+						"Item2": 2,
+						"Item3": "Off Deck 22-24 Position 3"
+					}, {
+						"Item1": 1,
+						"Item2": 3,
+						"Item3": "Off Deck 22-24 Position 3"
+					}, {
+						"Item1": 1,
+						"Item2": 4,
+						"Item3": "Off Deck 22-24 Position 3"
+					}, {
+						"Item1": 2,
+						"Item2": 1,
+						"Item3": "Off Deck 22-24 Position 3"
+					}, {
+						"Item1": 2,
+						"Item2": 2,
+						"Item3": "Off Deck 22-24 Position 3"
+					}, {
+						"Item1": 2,
+						"Item2": 3,
+						"Item3": "Off Deck 22-24 Position 3"
+					}, {
+						"Item1": 2,
+						"Item2": 4,
+						"Item3": "Off Deck 22-24 Position 3"
+					}, {
+						"Item1": 3,
+						"Item2": 1,
+						"Item3": "Off Deck 22-24 Position 3"
+					}, {
+						"Item1": 3,
+						"Item2": 2,
+						"Item3": "Off Deck 22-24 Position 3"
+					}, {
+						"Item1": 3,
+						"Item2": 3,
+						"Item3": "Off Deck 22-24 Position 3"
+					}, {
+						"Item1": 3,
+						"Item2": 4,
+						"Item3": "Off Deck 22-24 Position 3"
+					}, {
+						"Item1": 4,
+						"Item2": 1,
+						"Item3": "Off Deck 22-24 Position 3"
+					}, {
+						"Item1": 4,
+						"Item2": 2,
+						"Item3": "Off Deck 22-24 Position 3"
+					}, {
+						"Item1": 4,
+						"Item2": 3,
+						"Item3": "Off Deck 22-24 Position 3"
+					}, {
+						"Item1": 4,
+						"Item2": 4,
+						"Item3": "Off Deck 22-24 Position 3"
+					}],
+					"SourceArrayName": null
+				},
+				"recipe": {
+					"Description": "Set MovePlate to \"Deck 9-10 Position 2\"; LC (A1:D4)",
+					"Type": "LSParameterMap",
+					"Index": 1,
+					"LayerIndex": 1,
+					"LibraryName": "LC"
+				}
+			},
+			{
+				"tags": "SkipMap",
+				"edit": true,
+				"map": {
+					"Index": 1,
+					"LayerIndex": 2,
+					"Description": "Add discrete amounts of 1-Octene in ml to LC (A1) in ml",
+					"Name": "1-Octene",
+					"Library": "LC",
+					"Columns": 4,
+					"Rows": 4,
+					"SourceArea": [
+						[1, 1]
+					],
+					"DestinationArea": [
+						[1, 1]
+					],
+					"LinkID": null,
+					"Unit": "ml",
+					"Type": "Discrete",
+					"TagList": "SkipMap",
+					"Values": [{
+						"Item1": 1,
+						"Item2": 1,
+						"Item3": 1.0
+					}],
+					"SourceArrayName": null
+				},
+				"recipe": {
+					"Description": "Add discrete amounts of 1-Octene in ml to LC (A1) in ml",
+					"Type": "LSSourceMap",
+					"Index": 1,
+					"LayerIndex": 2,
+					"LibraryName": "LC"
+				}
+			},
+			{
+				"tags": "MoveVial",
+				"edit": true,
+				"map": {
+					"Index": 1,
+					"LayerIndex": 3,
+					"Description": "Add discrete amounts in ml 101054: LC (A1) to reactor (C5) in ml",
+					"Name": "LC",
+					"Library": "reactor",
+					"Columns": 6,
+					"Rows": 4,
+					"SourceArea": [
+						[1, 1]
+					],
+					"DestinationArea": [
+						[3, 5]
+					],
+					"LinkID": null,
+					"Unit": "ml",
+					"Type": "Discrete",
+					"TagList": "MoveVial",
+					"Values": [{
+						"Item1": 3,
+						"Item2": 5,
+						"Item3": 1.0
+					}],
+					"SourceArrayName": null
+				},
+				"recipe": {
+					"Description": "Add discrete amounts in ml 101054: LC (A1) to reactor (C5) in ml",
+					"Type": "LSArrayMap",
+					"Index": 1,
+					"LayerIndex": 3,
+					"LibraryName": "reactor"
+				}
+			}
+		]
+	}

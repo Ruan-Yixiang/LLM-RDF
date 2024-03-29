@@ -1,0 +1,18 @@
+  /* 全局主题颜色 */
+:root [theme-color="light"] {
+  /* 亮色主题 */
+  --theme-text-color: rgb(131, 128, 155);
+  --theme-info-text-color: rgb(0, 0, 0);
+  --theme-hover-color: rgb(103, 56, 223);
+  --theme-hover-menu-color: rgb(248, 247, 255);
+  --bg-color: rgb(255, 255, 255);
+}
+
+:root [theme-color="dark"] {
+  /* 暗黑主题 */
+  --theme-text-color: rgb(141,139,164);
+  --theme-info-text-color: rgb(255, 255, 255);
+  --theme-hover-color: rgb(255, 255, 255);
+  --theme-hover-menu-color: rgb(36,31,53);
+  --bg-color: rgb(31, 30, 38);
+}

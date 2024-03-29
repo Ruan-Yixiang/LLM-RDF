@@ -1,0 +1,97 @@
+[
+    {
+        "class": "class1",
+        "data": [
+            {
+                "name": "Automatic synthesis of carbon capture MOFs",
+                "note": "note",
+                "flowchart": "./img/libs/Automatic synthesis of carbon capture MOFs.png",
+                "download": "link"
+            }
+        ]
+    },
+    {
+        "class": "class2",
+        "data": [
+            {
+                "name": "FlowChart (33)",
+                "note": "note",
+                "flowchart": "link",
+                "download": "link"
+            },
+            {
+                "name": "bbb",
+                "note": "note",
+                "flowchart": "link",
+                "download": "link"
+            },
+            {
+                "name": "bbb",
+                "note": "note",
+                "flowchart": "link",
+                "download": "link"
+            },
+            {
+                "name": "bbb",
+                "note": "note",
+                "flowchart": "link",
+                "download": "link"
+            }
+        ]
+    },
+    {
+        "class": "class3",
+        "data": [
+            {
+                "name": "ccc",
+                "note": "note",
+                "flowchart": "link",
+                "download": "link"
+            }
+        ]
+    },
+    {
+        "class": "class4",
+        "data": [
+            {
+                "name": "ddd",
+                "note": "note",
+                "flowchart": "link",
+                "download": "link"
+            }
+        ]
+    },
+    {
+        "class": "class5",
+        "data": [
+            {
+                "name": "eee",
+                "note": "note",
+                "flowchart": "link",
+                "download": "link"
+            }
+        ]
+    },
+    {
+        "class": "class6",
+        "data": [
+            {
+                "name": "fff",
+                "note": "note",
+                "flowchart": "link",
+                "download": "link"
+            }
+        ]
+    },
+    {
+        "class": "class7",
+        "data": [
+            {
+                "name": "ggg",
+                "note": "note",
+                "flowchart": "link",
+                "download": "link"
+            }
+        ]
+    }
+]

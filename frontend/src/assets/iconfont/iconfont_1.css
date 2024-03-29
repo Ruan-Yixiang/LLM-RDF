@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('iconfont.ttf?t=1695801779631') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-triangle:before {
+  content: "\e839";
+}
+
+.icon-catalog:before {
+  content: "\e826";
+}
+
+.icon-editor-filling:before {
+  content: "\e82a";
+}
+
+.icon-gallery:before {
+  content: "\e83b";
+}
+
+.icon-zoom-in:before {
+  content: "\e849";
+}
+
+.icon-address-book:before {
+  content: "\e84a";
+}
+
+.icon-camera:before {
+  content: "\e84c";
+}
+
+.icon-code:before {
+  content: "\e84f";
+}
+
+.icon-customization-fill:before {
+  content: "\e852";
+}
+
+.icon-document-conversion:before {
+  content: "\e855";
+}
+
+.icon-double-censorship:before {
+  content: "\e856";
+}
+
+.icon-guide:before {
+  content: "\e857";
+}
+
+.icon-home:before {
+  content: "\e858";
+}
+
+.icon-pcm:before {
+  content: "\e85f";
+}
+
+.icon-table-fill:before {
+  content: "\e86c";
+}
+
+.icon-table:before {
+  content: "\e86d";
+}
+
+.icon-teaching:before {
+  content: "\e86e";
+}
+
+.icon-template-success:before {
+  content: "\e86f";
+}
+
+.icon-training:before {
+  content: "\e870";
+}
+
+.icon-video-fill:before {
+  content: "\e871";
+}
+
+.icon-video:before {
+  content: "\e872";
+}
+
+.icon-a-3Dhuichang:before {
+  content: "\e876";
+}
+
+.icon-sousuopaixu:before {
+  content: "\e87f";
+}
+
+.icon-siyoumojuhuichang:before {
+  content: "\e880";
+}
+

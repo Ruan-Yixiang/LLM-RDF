@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3806776 */
+  src: url('iconfont.woff2?t=1670137590829') format('woff2'),
+       url('iconfont.woff?t=1670137590829') format('woff'),
+       url('iconfont.ttf?t=1670137590829') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-yueliang:before {
+  content: "\e611";
+}
+
+.icon-dark-full:before {
+  content: "\e997";
+}
+
+.icon-24gf-bag:before {
+  content: "\e87f";
+}
+
+.icon-liwu:before {
+  content: "\e600";
+}
+
+.icon-jinru:before {
+  content: "\e601";
+}
+
+.icon-moonbyueliang:before {
+  content: "\e6a0";
+}
+
+.icon-weizhi:before {
+  content: "\e8ff";
+}
+
+.icon-bingtu:before {
+  content: "\e902";
+}
+
+.icon-gouwu:before {
+  content: "\e88c";
+}
+
+.icon-shezhi:before {
+  content: "\e654";
+}
+
+.icon-category:before {
+  content: "\e602";
+}
+
+.icon-order-fill:before {
+  content: "\e786";
+}
+
+.icon-denglu-yonghuzu:before {
+  content: "\e60d";
+}
+
+.icon-caidan:before {
+  content: "\e63d";
+}
+

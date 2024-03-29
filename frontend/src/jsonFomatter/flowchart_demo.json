@@ -1,0 +1,816 @@
+{
+    "nodes": [
+        {
+            "label": "Robot1",
+            "type": "diamond-node",
+            "style": {
+                "nodeState:default": {
+                    "opacity": 1
+                },
+                "nodeState:hover": {
+                    "opacity": 0.8
+                },
+                "nodeState:selected": {
+                    "opacity": 0.9
+                },
+                "radius": 10,
+                "width": 100,
+                "height": 50,
+                "cursor": "move",
+                "fill": "#ecf3ff"
+            },
+            "x": 580,
+            "y": 337,
+            "labelCfg": {
+                "fontSize": 20,
+                "style": {
+                    "cursor": "move"
+                },
+                "dataConfigAAA": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigBBB": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigCCC": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigDDD": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigEEE": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigFFF": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigGGG": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigHHH": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigIII": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigJJJ": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigKKK": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigUnchained": {
+                    "para": "",
+                    "cmd": "",
+                    "operation": ""
+                },
+                "dataConfigThermo": {
+                    "para": "",
+                    "cmd": "",
+                    "operation": ""
+                },
+                "dataConfigRobot1": {
+                    "priority": 2,
+                    "para": "Thermo/grab_16A, Unchained/place_16A",
+                    "cmd": "START",
+                    "operation": "back transport"
+                },
+                "dataConfigRobot2": {}
+            },
+            "id": "node-0.43434744450222131689562632642"
+        },
+        {
+            "label": "Unchained",
+            "type": "ellipse-node",
+            "style": {
+                "nodeState:default": {
+                    "opacity": 1
+                },
+                "nodeState:hover": {
+                    "opacity": 0.8
+                },
+                "nodeState:selected": {
+                    "opacity": 0.9
+                },
+                "radius": 10,
+                "width": 100,
+                "height": 50,
+                "cursor": "move",
+                "fill": "#ecf3ff"
+            },
+            "x": 266,
+            "y": 182,
+            "labelCfg": {
+                "fontSize": 20,
+                "style": {
+                    "cursor": "move"
+                },
+                "dataConfigAAA": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigBBB": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigCCC": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigDDD": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigEEE": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigFFF": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigGGG": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigHHH": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigIII": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigJJJ": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigKKK": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigUnchained": {
+                    "para": "{\n\t\t\"ProjectName\": \"202303011625\",\n\t\t\"ChooseDesignID\": \"558\",\n\t\t\"LsrFilePath\": \"C://Users//Unchained Labs//Desktop//Optimization_test//sample.lsr\",\n\t\t\"UseLsrFile\": false,\n\t\t\"LastLibraryID\": \"100400\",\n\t\t\"SetPrompts\": \"C://Users//Unchained Labs//Desktop//Optimization_test//prompt//AS.prompts.WithNoDesignCreator_prepare_397.xml\",\n\t\t\"SetChemicalManager\": \"C://Users//Unchained Labs//Desktop//Optimization_test//chemical_manager//prepare_397.xml\",\n\t\t\"SetTipManagement\": \"\",\n\t\t\"UseAI\": true,\n\t\t\"ParaChanger\": [{\n\t\t\t\t\"tags\": \"SkipMap\",\n\t\t\t\t\"edit\": true,\n\t\t\t\t\"map\": {\n\t\t\t\t\t\"Index\": 1,\n\t\t\t\t\t\"LayerIndex\": 1,\n\t\t\t\t\t\"Description\": \"Add discrete amounts of 1-Octene in ml to mother (A1) in ml\",\n\t\t\t\t\t\"Name\": \"1-Octene\",\n\t\t\t\t\t\"Library\": \"mother\",\n\t\t\t\t\t\"Columns\": 4,\n\t\t\t\t\t\"Rows\": 2,\n\t\t\t\t\t\"SourceArea\": [\n\t\t\t\t\t\t[1, 1]\n\t\t\t\t\t],\n\t\t\t\t\t\"DestinationArea\": [\n\t\t\t\t\t\t[1, 1]\n\t\t\t\t\t],\n\t\t\t\t\t\"LinkID\": null,\n\t\t\t\t\t\"Unit\": \"ml\",\n\t\t\t\t\t\"Type\": \"Discrete\",\n\t\t\t\t\t\"TagList\": \"SkipMap\",\n\t\t\t\t\t\"Values\": [{\n\t\t\t\t\t\t\"Item1\": 1,\n\t\t\t\t\t\t\"Item2\": 1,\n\t\t\t\t\t\t\"Item3\": 1.0\n\t\t\t\t\t}],\n\t\t\t\t\t\"SourceArrayName\": null\n\t\t\t\t},\n\t\t\t\t\"recipe\": {\n\t\t\t\t\t\"Description\": \"Add discrete amounts of 1-Octene in ml to mother (A1) in ml\",\n\t\t\t\t\t\"Type\": \"LSSourceMap\",\n\t\t\t\t\t\"Index\": 1,\n\t\t\t\t\t\"LayerIndex\": 1,\n\t\t\t\t\t\"LibraryName\": \"mother\"\n\t\t\t\t}\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"tags\": \"SkipMap\",\n\t\t\t\t\"edit\": true,\n\t\t\t\t\"map\": {\n\t\t\t\t\t\"Index\": 1,\n\t\t\t\t\t\"LayerIndex\": 2,\n\t\t\t\t\t\"Description\": \"Add discrete amounts of 1-Octene in ml to solvent (A1) in ml\",\n\t\t\t\t\t\"Name\": \"1-Octene\",\n\t\t\t\t\t\"Library\": \"solvent\",\n\t\t\t\t\t\"Columns\": 2,\n\t\t\t\t\t\"Rows\": 1,\n\t\t\t\t\t\"SourceArea\": [\n\t\t\t\t\t\t[1, 1]\n\t\t\t\t\t],\n\t\t\t\t\t\"DestinationArea\": [\n\t\t\t\t\t\t[1, 1]\n\t\t\t\t\t],\n\t\t\t\t\t\"LinkID\": null,\n\t\t\t\t\t\"Unit\": \"ml\",\n\t\t\t\t\t\"Type\": \"Discrete\",\n\t\t\t\t\t\"TagList\": \"SkipMap\",\n\t\t\t\t\t\"Values\": [{\n\t\t\t\t\t\t\"Item1\": 1,\n\t\t\t\t\t\t\"Item2\": 1,\n\t\t\t\t\t\t\"Item3\": 1.0\n\t\t\t\t\t}],\n\t\t\t\t\t\"SourceArrayName\": null\n\t\t\t\t},\n\t\t\t\t\"recipe\": {\n\t\t\t\t\t\"Description\": \"Add discrete amounts of 1-Octene in ml to solvent (A1) in ml\",\n\t\t\t\t\t\"Type\": \"LSSourceMap\",\n\t\t\t\t\t\"Index\": 1,\n\t\t\t\t\t\"LayerIndex\": 2,\n\t\t\t\t\t\"LibraryName\": \"solvent\"\n\t\t\t\t}\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"tags\": \"SyringePump,ExtSingleTip\",\n\t\t\t\t\"edit\": true,\n\t\t\t\t\"map\": {\n\t\t\t\t\t\"Index\": 1,\n\t\t\t\t\t\"LayerIndex\": 3,\n\t\t\t\t\t\"Description\": \"Add discrete amounts in ml 101069: mother (A1) to reactor (A1) in ml\",\n\t\t\t\t\t\"Name\": \"mother\",\n\t\t\t\t\t\"Library\": \"reactor\",\n\t\t\t\t\t\"Columns\": 6,\n\t\t\t\t\t\"Rows\": 4,\n\t\t\t\t\t\"SourceArea\": [\n\t\t\t\t\t\t[1, 1]\n\t\t\t\t\t],\n\t\t\t\t\t\"DestinationArea\": [\n\t\t\t\t\t\t[1, 1]\n\t\t\t\t\t],\n\t\t\t\t\t\"LinkID\": null,\n\t\t\t\t\t\"Unit\": \"ml\",\n\t\t\t\t\t\"Type\": \"Discrete\",\n\t\t\t\t\t\"TagList\": \"SyringePump,ExtSingleTip\",\n\t\t\t\t\t\"Values\": [{\n\t\t\t\t\t\t\"Item1\": 1,\n\t\t\t\t\t\t\"Item2\": 1,\n\t\t\t\t\t\t\"Item3\": 0.25\n\t\t\t\t\t}],\n\t\t\t\t\t\"SourceArrayName\": null\n\t\t\t\t},\n\t\t\t\t\"recipe\": {\n\t\t\t\t\t\"Description\": \"Add discrete amounts in ml 101069: mother (A1) to reactor (A1) in ml\",\n\t\t\t\t\t\"Type\": \"LSArrayMap\",\n\t\t\t\t\t\"Index\": 1,\n\t\t\t\t\t\"LayerIndex\": 3,\n\t\t\t\t\t\"LibraryName\": \"reactor\"\n\t\t\t\t}\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"tags\": \"SyringePump,ExtSingleTip\",\n\t\t\t\t\"edit\": true,\n\t\t\t\t\"map\": {\n\t\t\t\t\t\"Index\": 1,\n\t\t\t\t\t\"LayerIndex\": 4,\n\t\t\t\t\t\"Description\": \"Add discrete amounts in ml 101069: mother (B1) to reactor (A1) in ml\",\n\t\t\t\t\t\"Name\": \"mother\",\n\t\t\t\t\t\"Library\": \"reactor\",\n\t\t\t\t\t\"Columns\": 6,\n\t\t\t\t\t\"Rows\": 4,\n\t\t\t\t\t\"SourceArea\": [\n\t\t\t\t\t\t[2, 1]\n\t\t\t\t\t],\n\t\t\t\t\t\"DestinationArea\": [\n\t\t\t\t\t\t[1, 1]\n\t\t\t\t\t],\n\t\t\t\t\t\"LinkID\": null,\n\t\t\t\t\t\"Unit\": \"ml\",\n\t\t\t\t\t\"Type\": \"Discrete\",\n\t\t\t\t\t\"TagList\": \"SyringePump,ExtSingleTip\",\n\t\t\t\t\t\"Values\": [{\n\t\t\t\t\t\t\"Item1\": 1,\n\t\t\t\t\t\t\"Item2\": 1,\n\t\t\t\t\t\t\"Item3\": 0.25\n\t\t\t\t\t}],\n\t\t\t\t\t\"SourceArrayName\": null\n\t\t\t\t},\n\t\t\t\t\"recipe\": {\n\t\t\t\t\t\"Description\": \"Add discrete amounts in ml 101069: mother (B1) to reactor (A1) in ml\",\n\t\t\t\t\t\"Type\": \"LSArrayMap\",\n\t\t\t\t\t\"Index\": 1,\n\t\t\t\t\t\"LayerIndex\": 4,\n\t\t\t\t\t\"LibraryName\": \"reactor\"\n\t\t\t\t}\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"tags\": \"SyringePump,ExtSingleTip\",\n\t\t\t\t\"edit\": true,\n\t\t\t\t\"map\": {\n\t\t\t\t\t\"Index\": 1,\n\t\t\t\t\t\"LayerIndex\": 5,\n\t\t\t\t\t\"Description\": \"Add discrete amounts in ml 101069: mother (B3) to reactor (A1) in ml\",\n\t\t\t\t\t\"Name\": \"mother\",\n\t\t\t\t\t\"Library\": \"reactor\",\n\t\t\t\t\t\"Columns\": 6,\n\t\t\t\t\t\"Rows\": 4,\n\t\t\t\t\t\"SourceArea\": [\n\t\t\t\t\t\t[2, 3]\n\t\t\t\t\t],\n\t\t\t\t\t\"DestinationArea\": [\n\t\t\t\t\t\t[1, 1]\n\t\t\t\t\t],\n\t\t\t\t\t\"LinkID\": null,\n\t\t\t\t\t\"Unit\": \"ml\",\n\t\t\t\t\t\"Type\": \"Discrete\",\n\t\t\t\t\t\"TagList\": \"SyringePump,ExtSingleTip\",\n\t\t\t\t\t\"Values\": [{\n\t\t\t\t\t\t\"Item1\": 1,\n\t\t\t\t\t\t\"Item2\": 1,\n\t\t\t\t\t\t\"Item3\": 0.25\n\t\t\t\t\t}],\n\t\t\t\t\t\"SourceArrayName\": null\n\t\t\t\t},\n\t\t\t\t\"recipe\": {\n\t\t\t\t\t\"Description\": \"Add discrete amounts in ml 101069: mother (B3) to reactor (A1) in ml\",\n\t\t\t\t\t\"Type\": \"LSArrayMap\",\n\t\t\t\t\t\"Index\": 1,\n\t\t\t\t\t\"LayerIndex\": 5,\n\t\t\t\t\t\"LibraryName\": \"reactor\"\n\t\t\t\t}\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"tags\": \"SyringePump,ExtSingleTip\",\n\t\t\t\t\"edit\": true,\n\t\t\t\t\"map\": {\n\t\t\t\t\t\"Index\": 1,\n\t\t\t\t\t\"LayerIndex\": 6,\n\t\t\t\t\t\"Description\": \"Add discrete amounts in ml 101071: solvent (A1) to reactor (A1) in ml\",\n\t\t\t\t\t\"Name\": \"solvent\",\n\t\t\t\t\t\"Library\": \"reactor\",\n\t\t\t\t\t\"Columns\": 6,\n\t\t\t\t\t\"Rows\": 4,\n\t\t\t\t\t\"SourceArea\": [\n\t\t\t\t\t\t[1, 1]\n\t\t\t\t\t],\n\t\t\t\t\t\"DestinationArea\": [\n\t\t\t\t\t\t[1, 1]\n\t\t\t\t\t],\n\t\t\t\t\t\"LinkID\": null,\n\t\t\t\t\t\"Unit\": \"ml\",\n\t\t\t\t\t\"Type\": \"Discrete\",\n\t\t\t\t\t\"TagList\": \"SyringePump,ExtSingleTip\",\n\t\t\t\t\t\"Values\": [{\n\t\t\t\t\t\t\"Item1\": 1,\n\t\t\t\t\t\t\"Item2\": 1,\n\t\t\t\t\t\t\"Item3\": 0.0\n\t\t\t\t\t}],\n\t\t\t\t\t\"SourceArrayName\": null\n\t\t\t\t},\n\t\t\t\t\"recipe\": {\n\t\t\t\t\t\"Description\": \"Add discrete amounts in ml 101071: solvent (A1) to reactor (A1) in ml\",\n\t\t\t\t\t\"Type\": \"LSArrayMap\",\n\t\t\t\t\t\"Index\": 1,\n\t\t\t\t\t\"LayerIndex\": 6,\n\t\t\t\t\t\"LibraryName\": \"reactor\"\n\t\t\t\t}\n\t\t\t}\n\t\t]\n\t}",
+                    "cmd": "START",
+                    "operation": "synthesis",
+                    "priority": 5
+                },
+                "dataConfigThermo": {
+                    "para": "",
+                    "cmd": "",
+                    "operation": ""
+                },
+                "dataConfigRobot1": {
+                    "para": "",
+                    "cmd": "",
+                    "operation": ""
+                },
+                "dataConfigRobot2": {}
+            },
+            "id": "node-0.81563041773689631689562816292"
+        },
+        {
+            "label": "Unchained",
+            "type": "ellipse-node",
+            "style": {
+                "nodeState:default": {
+                    "opacity": 1
+                },
+                "nodeState:hover": {
+                    "opacity": 0.8
+                },
+                "nodeState:selected": {
+                    "opacity": 0.9
+                },
+                "radius": 10,
+                "width": 100,
+                "height": 50,
+                "cursor": "move",
+                "fill": "#ecf3ff"
+            },
+            "x": 458,
+            "y": 182,
+            "labelCfg": {
+                "fontSize": 20,
+                "style": {
+                    "cursor": "move"
+                },
+                "dataConfigAAA": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigBBB": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigCCC": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigDDD": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigEEE": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigFFF": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigGGG": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigHHH": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigIII": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigJJJ": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigKKK": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigUnchained": {
+                    "para": "{\n\t\t\"ProjectName\": \"202211211519\",\n\t\t\"ChooseDesignID\": \"557\",\n\t\t\"LsrFilePath\": \"C://Users//Unchained Labs//Desktop//Optimization_test//sample.lsr\",\n\t\t\"UseLsrFile\": false,\n\t\t\"LastLibraryID\": \"100400\",\n\t\t\"SetPrompts\": \"C://Users//Unchained Labs//Desktop//Optimization_test//AS.prompts.WithNoDesignCreator_sampletest.xml\",\n\t\t\"SetChemicalManager\": \"C://Users//Unchained Labs//Desktop//Optimization_test//sample.xml\",\n\t\t\"SetTipManagement\": \"\",\n\t\t\"UseAI\": true,\n\t\t\"ParaChanger\": [{\n\t\t\t\t\"tags\": \"SkipMap\",\n\t\t\t\t\"edit\": true,\n\t\t\t\t\"map\": {\n\t\t\t\t\t\"Index\": 1,\n\t\t\t\t\t\"LayerIndex\": 1,\n\t\t\t\t\t\"Description\": \"Add discrete amounts of 1-Octene in ml to solvent (A2) in ml\",\n\t\t\t\t\t\"Name\": \"1-Octene\",\n\t\t\t\t\t\"Library\": \"solvent\",\n\t\t\t\t\t\"Columns\": 2,\n\t\t\t\t\t\"Rows\": 1,\n\t\t\t\t\t\"SourceArea\": [\n\t\t\t\t\t\t[1, 1]\n\t\t\t\t\t],\n\t\t\t\t\t\"DestinationArea\": [\n\t\t\t\t\t\t[1, 2]\n\t\t\t\t\t],\n\t\t\t\t\t\"LinkID\": null,\n\t\t\t\t\t\"Unit\": \"ml\",\n\t\t\t\t\t\"Type\": \"Discrete\",\n\t\t\t\t\t\"TagList\": \"SkipMap\",\n\t\t\t\t\t\"Values\": [{\n\t\t\t\t\t\t\"Item1\": 1,\n\t\t\t\t\t\t\"Item2\": 2,\n\t\t\t\t\t\t\"Item3\": 1.0\n\t\t\t\t\t}],\n\t\t\t\t\t\"SourceArrayName\": null\n\t\t\t\t},\n\t\t\t\t\"recipe\": {\n\t\t\t\t\t\"Description\": \"Add discrete amounts of 1-Octene in ml to solvent (A2) in ml\",\n\t\t\t\t\t\"Type\": \"LSSourceMap\",\n\t\t\t\t\t\"Index\": 1,\n\t\t\t\t\t\"LayerIndex\": 1,\n\t\t\t\t\t\"LibraryName\": \"solvent\"\n\t\t\t\t}\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"tags\": \"SyringePump,ExtSingleTip\",\n\t\t\t\t\"edit\": true,\n\t\t\t\t\"map\": {\n\t\t\t\t\t\"Index\": 1,\n\t\t\t\t\t\"LayerIndex\": 2,\n\t\t\t\t\t\"Description\": \"Add discrete amounts in ml 101067: solvent (A2) to reactor_1 (A1) in ml\",\n\t\t\t\t\t\"Name\": \"solvent\",\n\t\t\t\t\t\"Library\": \"reactor_1\",\n\t\t\t\t\t\"Columns\": 6,\n\t\t\t\t\t\"Rows\": 4,\n\t\t\t\t\t\"SourceArea\": [\n\t\t\t\t\t\t[1, 2]\n\t\t\t\t\t],\n\t\t\t\t\t\"DestinationArea\": [\n\t\t\t\t\t\t[1, 1]\n\t\t\t\t\t],\n\t\t\t\t\t\"LinkID\": null,\n\t\t\t\t\t\"Unit\": \"ml\",\n\t\t\t\t\t\"Type\": \"Discrete\",\n\t\t\t\t\t\"TagList\": \"SyringePump,ExtSingleTip\",\n\t\t\t\t\t\"Values\": [{\n\t\t\t\t\t\t\"Item1\": 1,\n\t\t\t\t\t\t\"Item2\": 1,\n\t\t\t\t\t\t\"Item3\": 0.5\n\t\t\t\t\t}],\n\t\t\t\t\t\"SourceArrayName\": null\n\t\t\t\t},\n\t\t\t\t\"recipe\": {\n\t\t\t\t\t\"Description\": \"Add discrete amounts in ml 101067: solvent (A2) to reactor_1 (A1) in ml\",\n\t\t\t\t\t\"Type\": \"LSArrayMap\",\n\t\t\t\t\t\"Index\": 1,\n\t\t\t\t\t\"LayerIndex\": 2,\n\t\t\t\t\t\"LibraryName\": \"reactor_1\"\n\t\t\t\t}\n\t\t\t}\n\t\t]\n\t}",
+                    "cmd": "START",
+                    "operation": "workup",
+                    "priority": 1
+                },
+                "dataConfigThermo": {
+                    "para": "",
+                    "cmd": "",
+                    "operation": ""
+                },
+                "dataConfigRobot1": {
+                    "para": "",
+                    "cmd": "",
+                    "operation": ""
+                },
+                "dataConfigRobot2": {}
+            },
+            "id": "node-0.79076050277982721689562820605"
+        },
+        {
+            "label": "Unchained",
+            "type": "ellipse-node",
+            "style": {
+                "nodeState:default": {
+                    "opacity": 1
+                },
+                "nodeState:hover": {
+                    "opacity": 0.8
+                },
+                "nodeState:selected": {
+                    "opacity": 0.9
+                },
+                "radius": 10,
+                "width": 100,
+                "height": 50,
+                "cursor": "move",
+                "fill": "#ecf3ff"
+            },
+            "x": 639,
+            "y": 182,
+            "labelCfg": {
+                "fontSize": 20,
+                "style": {
+                    "cursor": "move"
+                },
+                "dataConfigAAA": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigBBB": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigCCC": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigDDD": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigEEE": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigFFF": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigGGG": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigHHH": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigIII": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigJJJ": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigKKK": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigUnchained": {
+                    "para": "{\n\t\t\"ProjectName\": \"202211211520\",\n\t\t\"ChooseDesignID\": \"542\",\n\t\t\"LsrFilePath\": \"C://Users//Unchained Labs//Desktop//Optimization_test//sample.lsr\",\n\t\t\"UseLsrFile\": false,\n\t\t\"LastLibraryID\": \"100400\",\n\t\t\"SetPrompts\": \"C://Users//Unchained Labs//Desktop//Optimization_test//AS.prompts.WithNoDesignCreator_transfer.xml\",\n\t\t\"SetChemicalManager\": \"C://Users//Unchained Labs//Desktop//Optimization_test//transfer_plate_vial.xml\",\n\t\t\"SetTipManagement\": \"\",\n\t\t\"UseAI\": true,\n\t\t\"ParaChanger\": [{\n\t\t\t\t\"tags\": \"SkipMap\",\n\t\t\t\t\"edit\": true,\n\t\t\t\t\"map\": {\n\t\t\t\t\t\"Index\": 1,\n\t\t\t\t\t\"LayerIndex\": 1,\n\t\t\t\t\t\"Description\": \"Add discrete amounts of 1-Octene in ml to reactor_1 (A1) in ml\",\n\t\t\t\t\t\"Name\": \"1-Octene\",\n\t\t\t\t\t\"Library\": \"reactor_1\",\n\t\t\t\t\t\"Columns\": 6,\n\t\t\t\t\t\"Rows\": 4,\n\t\t\t\t\t\"SourceArea\": [\n\t\t\t\t\t\t[1, 1]\n\t\t\t\t\t],\n\t\t\t\t\t\"DestinationArea\": [\n\t\t\t\t\t\t[1, 1]\n\t\t\t\t\t],\n\t\t\t\t\t\"LinkID\": null,\n\t\t\t\t\t\"Unit\": \"ml\",\n\t\t\t\t\t\"Type\": \"Discrete\",\n\t\t\t\t\t\"TagList\": \"SkipMap\",\n\t\t\t\t\t\"Values\": [{\n\t\t\t\t\t\t\"Item1\": 1,\n\t\t\t\t\t\t\"Item2\": 1,\n\t\t\t\t\t\t\"Item3\": 1.0\n\t\t\t\t\t}],\n\t\t\t\t\t\"SourceArrayName\": null\n\t\t\t\t},\n\t\t\t\t\"recipe\": {\n\t\t\t\t\t\"Description\": \"Add discrete amounts of 1-Octene in ml to reactor_1 (A1) in ml\",\n\t\t\t\t\t\"Type\": \"LSSourceMap\",\n\t\t\t\t\t\"Index\": 1,\n\t\t\t\t\t\"LayerIndex\": 1,\n\t\t\t\t\t\"LibraryName\": \"reactor_1\"\n\t\t\t\t}\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"tags\": \"MoveVial\",\n\t\t\t\t\"edit\": true,\n\t\t\t\t\"map\": {\n\t\t\t\t\t\"Index\": 1,\n\t\t\t\t\t\"LayerIndex\": 2,\n\t\t\t\t\t\"Description\": \"Add discrete amounts in ml 101039: reactor_1 (A1) to LC (A1) in ml\",\n\t\t\t\t\t\"Name\": \"reactor_1\",\n\t\t\t\t\t\"Library\": \"LC\",\n\t\t\t\t\t\"Columns\": 4,\n\t\t\t\t\t\"Rows\": 4,\n\t\t\t\t\t\"SourceArea\": [\n\t\t\t\t\t\t[1, 1]\n\t\t\t\t\t],\n\t\t\t\t\t\"DestinationArea\": [\n\t\t\t\t\t\t[1, 1]\n\t\t\t\t\t],\n\t\t\t\t\t\"LinkID\": null,\n\t\t\t\t\t\"Unit\": \"ml\",\n\t\t\t\t\t\"Type\": \"Discrete\",\n\t\t\t\t\t\"TagList\": \"MoveVial\",\n\t\t\t\t\t\"Values\": [{\n\t\t\t\t\t\t\"Item1\": 1,\n\t\t\t\t\t\t\"Item2\": 1,\n\t\t\t\t\t\t\"Item3\": 1.0\n\t\t\t\t\t}],\n\t\t\t\t\t\"SourceArrayName\": null\n\t\t\t\t},\n\t\t\t\t\"recipe\": {\n\t\t\t\t\t\"Description\": \"Add discrete amounts in ml 101039: reactor_1 (A1) to LC (A1) in ml\",\n\t\t\t\t\t\"Type\": \"LSArrayMap\",\n\t\t\t\t\t\"Index\": 1,\n\t\t\t\t\t\"LayerIndex\": 2,\n\t\t\t\t\t\"LibraryName\": \"LC\"\n\t\t\t\t}\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"tags\": \"Processing\",\n\t\t\t\t\"edit\": false,\n\t\t\t\t\"map\": {\n\t\t\t\t\t\"Index\": 1,\n\t\t\t\t\t\"LayerIndex\": 3,\n\t\t\t\t\t\"Description\": \"Set MovePlate to \\\"Off Deck 22-24 Position 3\\\"; LC (A1:D4)\",\n\t\t\t\t\t\"Name\": \"MovePlate\",\n\t\t\t\t\t\"Library\": \"LC\",\n\t\t\t\t\t\"Columns\": 4,\n\t\t\t\t\t\"Rows\": 4,\n\t\t\t\t\t\"SourceArea\": null,\n\t\t\t\t\t\"DestinationArea\": [\n\t\t\t\t\t\t[1, 1],\n\t\t\t\t\t\t[1, 2],\n\t\t\t\t\t\t[1, 3],\n\t\t\t\t\t\t[1, 4],\n\t\t\t\t\t\t[2, 1],\n\t\t\t\t\t\t[2, 2],\n\t\t\t\t\t\t[2, 3],\n\t\t\t\t\t\t[2, 4],\n\t\t\t\t\t\t[3, 1],\n\t\t\t\t\t\t[3, 2],\n\t\t\t\t\t\t[3, 3],\n\t\t\t\t\t\t[3, 4],\n\t\t\t\t\t\t[4, 1],\n\t\t\t\t\t\t[4, 2],\n\t\t\t\t\t\t[4, 3],\n\t\t\t\t\t\t[4, 4]\n\t\t\t\t\t],\n\t\t\t\t\t\"LinkID\": null,\n\t\t\t\t\t\"Unit\": \"undefined\",\n\t\t\t\t\t\"Type\": \"Uniform\",\n\t\t\t\t\t\"TagList\": \"Processing\",\n\t\t\t\t\t\"Values\": [{\n\t\t\t\t\t\t\"Item1\": 1,\n\t\t\t\t\t\t\"Item2\": 1,\n\t\t\t\t\t\t\"Item3\": 0.0\n\t\t\t\t\t}, {\n\t\t\t\t\t\t\"Item1\": 1,\n\t\t\t\t\t\t\"Item2\": 2,\n\t\t\t\t\t\t\"Item3\": 0.0\n\t\t\t\t\t}, {\n\t\t\t\t\t\t\"Item1\": 1,\n\t\t\t\t\t\t\"Item2\": 3,\n\t\t\t\t\t\t\"Item3\": 0.0\n\t\t\t\t\t}, {\n\t\t\t\t\t\t\"Item1\": 1,\n\t\t\t\t\t\t\"Item2\": 4,\n\t\t\t\t\t\t\"Item3\": 0.0\n\t\t\t\t\t}, {\n\t\t\t\t\t\t\"Item1\": 2,\n\t\t\t\t\t\t\"Item2\": 1,\n\t\t\t\t\t\t\"Item3\": 0.0\n\t\t\t\t\t}, {\n\t\t\t\t\t\t\"Item1\": 2,\n\t\t\t\t\t\t\"Item2\": 2,\n\t\t\t\t\t\t\"Item3\": 0.0\n\t\t\t\t\t}, {\n\t\t\t\t\t\t\"Item1\": 2,\n\t\t\t\t\t\t\"Item2\": 3,\n\t\t\t\t\t\t\"Item3\": 0.0\n\t\t\t\t\t}, {\n\t\t\t\t\t\t\"Item1\": 2,\n\t\t\t\t\t\t\"Item2\": 4,\n\t\t\t\t\t\t\"Item3\": 0.0\n\t\t\t\t\t}, {\n\t\t\t\t\t\t\"Item1\": 3,\n\t\t\t\t\t\t\"Item2\": 1,\n\t\t\t\t\t\t\"Item3\": 0.0\n\t\t\t\t\t}, {\n\t\t\t\t\t\t\"Item1\": 3,\n\t\t\t\t\t\t\"Item2\": 2,\n\t\t\t\t\t\t\"Item3\": 0.0\n\t\t\t\t\t}, {\n\t\t\t\t\t\t\"Item1\": 3,\n\t\t\t\t\t\t\"Item2\": 3,\n\t\t\t\t\t\t\"Item3\": 0.0\n\t\t\t\t\t}, {\n\t\t\t\t\t\t\"Item1\": 3,\n\t\t\t\t\t\t\"Item2\": 4,\n\t\t\t\t\t\t\"Item3\": 0.0\n\t\t\t\t\t}, {\n\t\t\t\t\t\t\"Item1\": 4,\n\t\t\t\t\t\t\"Item2\": 1,\n\t\t\t\t\t\t\"Item3\": 0.0\n\t\t\t\t\t}, {\n\t\t\t\t\t\t\"Item1\": 4,\n\t\t\t\t\t\t\"Item2\": 2,\n\t\t\t\t\t\t\"Item3\": 0.0\n\t\t\t\t\t}, {\n\t\t\t\t\t\t\"Item1\": 4,\n\t\t\t\t\t\t\"Item2\": 3,\n\t\t\t\t\t\t\"Item3\": 0.0\n\t\t\t\t\t}, {\n\t\t\t\t\t\t\"Item1\": 4,\n\t\t\t\t\t\t\"Item2\": 4,\n\t\t\t\t\t\t\"Item3\": 0.0\n\t\t\t\t\t}],\n\t\t\t\t\t\"SourceArrayName\": null\n\t\t\t\t},\n\t\t\t\t\"recipe\": {\n\t\t\t\t\t\"Description\": \"Set MovePlate to \\\"Off Deck 22-24 Position 3\\\"; LC (A1:D4)\",\n\t\t\t\t\t\"Type\": \"LSParameterMap\",\n\t\t\t\t\t\"Index\": 1,\n\t\t\t\t\t\"LayerIndex\": 3,\n\t\t\t\t\t\"LibraryName\": \"LC\"\n\t\t\t\t}\n\t\t\t}\n\t\t]\n\t}",
+                    "cmd": "START",
+                    "operation": "transfer",
+                    "priority": 6
+                },
+                "dataConfigThermo": {
+                    "para": "",
+                    "cmd": "",
+                    "operation": ""
+                },
+                "dataConfigRobot1": {
+                    "para": "",
+                    "cmd": "",
+                    "operation": ""
+                },
+                "dataConfigRobot2": {}
+            },
+            "id": "node-0.67312177594402891689562824134"
+        },
+        {
+            "label": "Robot1",
+            "type": "diamond-node",
+            "style": {
+                "nodeState:default": {
+                    "opacity": 1
+                },
+                "nodeState:hover": {
+                    "opacity": 0.8
+                },
+                "nodeState:selected": {
+                    "opacity": 0.9
+                },
+                "radius": 10,
+                "width": 100,
+                "height": 50,
+                "cursor": "move",
+                "fill": "#ecf3ff"
+            },
+            "x": 823,
+            "y": 182,
+            "labelCfg": {
+                "fontSize": 20,
+                "style": {
+                    "cursor": "move"
+                },
+                "dataConfigAAA": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigBBB": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigCCC": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigDDD": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigEEE": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigFFF": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigGGG": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigHHH": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigIII": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigJJJ": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigKKK": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigUnchained": {
+                    "para": "",
+                    "cmd": "",
+                    "operation": ""
+                },
+                "dataConfigThermo": {
+                    "para": "",
+                    "cmd": "",
+                    "operation": ""
+                },
+                "dataConfigRobot1": {
+                    "para": "Unchained/grab_16A, Thermo/place_16A",
+                    "cmd": "START",
+                    "operation": "transport",
+                    "priority": 3
+                },
+                "dataConfigRobot2": {}
+            },
+            "id": "node-0.12041836647675131689562835054"
+        },
+        {
+            "label": "Thermo",
+            "type": "rect-node",
+            "style": {
+                "nodeState:default": {
+                    "opacity": 1
+                },
+                "nodeState:hover": {
+                    "opacity": 0.8
+                },
+                "nodeState:selected": {
+                    "opacity": 0.9
+                },
+                "radius": 10,
+                "width": 100,
+                "height": 50,
+                "cursor": "move",
+                "fill": "#ecf3ff"
+            },
+            "x": 759,
+            "y": 337,
+            "labelCfg": {
+                "fontSize": 20,
+                "style": {
+                    "cursor": "move"
+                },
+                "dataConfigAAA": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigBBB": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigCCC": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigDDD": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigEEE": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigFFF": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigGGG": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigHHH": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigIII": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigJJJ": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigKKK": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigUnchained": {
+                    "para": "",
+                    "cmd": "",
+                    "operation": ""
+                },
+                "dataConfigThermo": {
+                    "para": "{\n\t\"ProcessingMethod\": \"RYX-2023-2-16-test\",\n\t\"InstrumentMethod\": \"RYX-2023-2-16-test\",\n\t\"Injection\": [\n\t\t[\"diol_ox\", \"0.25\", \"R:A1\"]\n\t],\n\t\"SequenceName\": \"202303011734\",\n\t\"Instrument\": \"ISQ-EC\",\n\t\"TemplateName\": \"test_template\",\n\t\"ProjectName\": \"proj_ryx\",\n \t\"Channels\": [\"UV_VIS_1\"]\n}",
+                    "cmd": "START",
+                    "operation": "analyze"
+                },
+                "dataConfigRobot1": {
+                    "para": "",
+                    "cmd": "",
+                    "operation": ""
+                },
+                "dataConfigRobot2": {}
+            },
+            "id": "node-0.80886012202816551689562840401"
+        },
+        {
+            "label": "Unchained",
+            "type": "ellipse-node",
+            "style": {
+                "nodeState:default": {
+                    "opacity": 1
+                },
+                "nodeState:hover": {
+                    "opacity": 0.8
+                },
+                "nodeState:selected": {
+                    "opacity": 0.9
+                },
+                "radius": 10,
+                "width": 100,
+                "height": 50,
+                "cursor": "move",
+                "fill": "#ecf3ff"
+            },
+            "x": 408,
+            "y": 337,
+            "labelCfg": {
+                "fontSize": 20,
+                "style": {
+                    "cursor": "move"
+                },
+                "dataConfigAAA": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigBBB": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigCCC": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigDDD": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigEEE": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigFFF": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigGGG": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigHHH": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigIII": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigJJJ": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigKKK": {
+                    "para": "",
+                    "cmd": ""
+                },
+                "dataConfigUnchained": {
+                    "priority": 4,
+                    "para": "{\n\t\t\"ProjectName\": \"202211211520\",\n\t\t\"ChooseDesignID\": \"550\",\n\t\t\"LsrFilePath\": \"C://Users//Unchained Labs//Desktop//Optimization_test//sample.lsr\",\n\t\t\"UseLsrFile\": false,\n\t\t\"LastLibraryID\": \"100400\",\n\t\t\"SetPrompts\": \"C://Users//Unchained Labs//Desktop//Optimization_test//AS.prompts.WithNoDesignCreator_transfer.xml\",\n\t\t\"SetChemicalManager\": \"C://Users//Unchained Labs//Desktop//Optimization_test//transfer_plate_vial.xml\",\n\t\t\"SetTipManagement\": \"\",\n\t\t\"UseAI\": true,\n\t\t\"ParaChanger\": [{\n\t\t\t\t\"tags\": \"Processing\",\n\t\t\t\t\"edit\": false,\n\t\t\t\t\"map\": {\n\t\t\t\t\t\"Index\": 1,\n\t\t\t\t\t\"LayerIndex\": 1,\n\t\t\t\t\t\"Description\": \"Set MovePlate to \\\"Deck 9-10 Position 2\\\"; LC (A1:D4)\",\n\t\t\t\t\t\"Name\": \"MovePlate\",\n\t\t\t\t\t\"Library\": \"LC\",\n\t\t\t\t\t\"Columns\": 4,\n\t\t\t\t\t\"Rows\": 4,\n\t\t\t\t\t\"SourceArea\": null,\n\t\t\t\t\t\"DestinationArea\": [\n\t\t\t\t\t\t[1, 1],\n\t\t\t\t\t\t[1, 2],\n\t\t\t\t\t\t[1, 3],\n\t\t\t\t\t\t[1, 4],\n\t\t\t\t\t\t[2, 1],\n\t\t\t\t\t\t[2, 2],\n\t\t\t\t\t\t[2, 3],\n\t\t\t\t\t\t[2, 4],\n\t\t\t\t\t\t[3, 1],\n\t\t\t\t\t\t[3, 2],\n\t\t\t\t\t\t[3, 3],\n\t\t\t\t\t\t[3, 4],\n\t\t\t\t\t\t[4, 1],\n\t\t\t\t\t\t[4, 2],\n\t\t\t\t\t\t[4, 3],\n\t\t\t\t\t\t[4, 4]\n\t\t\t\t\t],\n\t\t\t\t\t\"LinkID\": null,\n\t\t\t\t\t\"Unit\": \"undefined\",\n\t\t\t\t\t\"Type\": \"Uniform\",\n\t\t\t\t\t\"TagList\": \"Processing\",\n\t\t\t\t\t\"Values\": [{\n\t\t\t\t\t\t\"Item1\": 1,\n\t\t\t\t\t\t\"Item2\": 1,\n\t\t\t\t\t\t\"Item3\": 0.0\n\t\t\t\t\t}, {\n\t\t\t\t\t\t\"Item1\": 1,\n\t\t\t\t\t\t\"Item2\": 2,\n\t\t\t\t\t\t\"Item3\": 0.0\n\t\t\t\t\t}, {\n\t\t\t\t\t\t\"Item1\": 1,\n\t\t\t\t\t\t\"Item2\": 3,\n\t\t\t\t\t\t\"Item3\": 0.0\n\t\t\t\t\t}, {\n\t\t\t\t\t\t\"Item1\": 1,\n\t\t\t\t\t\t\"Item2\": 4,\n\t\t\t\t\t\t\"Item3\": 0.0\n\t\t\t\t\t}, {\n\t\t\t\t\t\t\"Item1\": 2,\n\t\t\t\t\t\t\"Item2\": 1,\n\t\t\t\t\t\t\"Item3\": 0.0\n\t\t\t\t\t}, {\n\t\t\t\t\t\t\"Item1\": 2,\n\t\t\t\t\t\t\"Item2\": 2,\n\t\t\t\t\t\t\"Item3\": 0.0\n\t\t\t\t\t}, {\n\t\t\t\t\t\t\"Item1\": 2,\n\t\t\t\t\t\t\"Item2\": 3,\n\t\t\t\t\t\t\"Item3\": 0.0\n\t\t\t\t\t}, {\n\t\t\t\t\t\t\"Item1\": 2,\n\t\t\t\t\t\t\"Item2\": 4,\n\t\t\t\t\t\t\"Item3\": 0.0\n\t\t\t\t\t}, {\n\t\t\t\t\t\t\"Item1\": 3,\n\t\t\t\t\t\t\"Item2\": 1,\n\t\t\t\t\t\t\"Item3\": 0.0\n\t\t\t\t\t}, {\n\t\t\t\t\t\t\"Item1\": 3,\n\t\t\t\t\t\t\"Item2\": 2,\n\t\t\t\t\t\t\"Item3\": 0.0\n\t\t\t\t\t}, {\n\t\t\t\t\t\t\"Item1\": 3,\n\t\t\t\t\t\t\"Item2\": 3,\n\t\t\t\t\t\t\"Item3\": 0.0\n\t\t\t\t\t}, {\n\t\t\t\t\t\t\"Item1\": 3,\n\t\t\t\t\t\t\"Item2\": 4,\n\t\t\t\t\t\t\"Item3\": 0.0\n\t\t\t\t\t}, {\n\t\t\t\t\t\t\"Item1\": 4,\n\t\t\t\t\t\t\"Item2\": 1,\n\t\t\t\t\t\t\"Item3\": 0.0\n\t\t\t\t\t}, {\n\t\t\t\t\t\t\"Item1\": 4,\n\t\t\t\t\t\t\"Item2\": 2,\n\t\t\t\t\t\t\"Item3\": 0.0\n\t\t\t\t\t}, {\n\t\t\t\t\t\t\"Item1\": 4,\n\t\t\t\t\t\t\"Item2\": 3,\n\t\t\t\t\t\t\"Item3\": 0.0\n\t\t\t\t\t}, {\n\t\t\t\t\t\t\"Item1\": 4,\n\t\t\t\t\t\t\"Item2\": 4,\n\t\t\t\t\t\t\"Item3\": 0.0\n\t\t\t\t\t}],\n\t\t\t\t\t\"SourceArrayName\": null\n\t\t\t\t},\n\t\t\t\t\"recipe\": {\n\t\t\t\t\t\"Description\": \"Set MovePlate to \\\"Deck 9-10 Position 2\\\"; LC (A1:D4)\",\n\t\t\t\t\t\"Type\": \"LSParameterMap\",\n\t\t\t\t\t\"Index\": 1,\n\t\t\t\t\t\"LayerIndex\": 1,\n\t\t\t\t\t\"LibraryName\": \"LC\"\n\t\t\t\t}\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"tags\": \"SkipMap\",\n\t\t\t\t\"edit\": true,\n\t\t\t\t\"map\": {\n\t\t\t\t\t\"Index\": 1,\n\t\t\t\t\t\"LayerIndex\": 2,\n\t\t\t\t\t\"Description\": \"Add discrete amounts of 1-Octene in ml to LC (A1) in ml\",\n\t\t\t\t\t\"Name\": \"1-Octene\",\n\t\t\t\t\t\"Library\": \"LC\",\n\t\t\t\t\t\"Columns\": 4,\n\t\t\t\t\t\"Rows\": 4,\n\t\t\t\t\t\"SourceArea\": [\n\t\t\t\t\t\t[1, 1]\n\t\t\t\t\t],\n\t\t\t\t\t\"DestinationArea\": [\n\t\t\t\t\t\t[1, 1]\n\t\t\t\t\t],\n\t\t\t\t\t\"LinkID\": null,\n\t\t\t\t\t\"Unit\": \"ml\",\n\t\t\t\t\t\"Type\": \"Discrete\",\n\t\t\t\t\t\"TagList\": \"SkipMap\",\n\t\t\t\t\t\"Values\": [{\n\t\t\t\t\t\t\"Item1\": 1,\n\t\t\t\t\t\t\"Item2\": 1,\n\t\t\t\t\t\t\"Item3\": 1.0\n\t\t\t\t\t}],\n\t\t\t\t\t\"SourceArrayName\": null\n\t\t\t\t},\n\t\t\t\t\"recipe\": {\n\t\t\t\t\t\"Description\": \"Add discrete amounts of 1-Octene in ml to LC (A1) in ml\",\n\t\t\t\t\t\"Type\": \"LSSourceMap\",\n\t\t\t\t\t\"Index\": 1,\n\t\t\t\t\t\"LayerIndex\": 2,\n\t\t\t\t\t\"LibraryName\": \"LC\"\n\t\t\t\t}\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"tags\": \"MoveVial\",\n\t\t\t\t\"edit\": true,\n\t\t\t\t\"map\": {\n\t\t\t\t\t\"Index\": 1,\n\t\t\t\t\t\"LayerIndex\": 3,\n\t\t\t\t\t\"Description\": \"Add discrete amounts in ml 101054: LC (A1) to reactor_1 (C5) in ml\",\n\t\t\t\t\t\"Name\": \"LC\",\n\t\t\t\t\t\"Library\": \"reactor_1\",\n\t\t\t\t\t\"Columns\": 6,\n\t\t\t\t\t\"Rows\": 4,\n\t\t\t\t\t\"SourceArea\": [\n\t\t\t\t\t\t[1, 1]\n\t\t\t\t\t],\n\t\t\t\t\t\"DestinationArea\": [\n\t\t\t\t\t\t[3, 5]\n\t\t\t\t\t],\n\t\t\t\t\t\"LinkID\": null,\n\t\t\t\t\t\"Unit\": \"ml\",\n\t\t\t\t\t\"Type\": \"Discrete\",\n\t\t\t\t\t\"TagList\": \"MoveVial\",\n\t\t\t\t\t\"Values\": [{\n\t\t\t\t\t\t\"Item1\": 3,\n\t\t\t\t\t\t\"Item2\": 5,\n\t\t\t\t\t\t\"Item3\": 1.0\n\t\t\t\t\t}],\n\t\t\t\t\t\"SourceArrayName\": null\n\t\t\t\t},\n\t\t\t\t\"recipe\": {\n\t\t\t\t\t\"Description\": \"Add discrete amounts in ml 101054: LC (A1) to reactor_1 (C5) in ml\",\n\t\t\t\t\t\"Type\": \"LSArrayMap\",\n\t\t\t\t\t\"Index\": 1,\n\t\t\t\t\t\"LayerIndex\": 3,\n\t\t\t\t\t\"LibraryName\": \"reactor_1\"\n\t\t\t\t}\n\t\t\t}\n\t\t]\n\t}",
+                    "cmd": "START",
+                    "operation": "back transfer"
+                },
+                "dataConfigThermo": {
+                    "para": "",
+                    "cmd": "",
+                    "operation": ""
+                },
+                "dataConfigRobot1": {
+                    "para": "",
+                    "cmd": "",
+                    "operation": ""
+                },
+                "dataConfigRobot2": {}
+            },
+            "id": "node-0.35363585281676381689562901667"
+        }
+    ],
+    "edges": [
+        {
+            "id": "16895629072839030",
+            "source": "node-0.81563041773689631689562816292",
+            "target": "node-0.79076050277982721689562820605",
+            "sourceAnchor": 1,
+            "targetAnchor": 3,
+            "type": "polyline-edge",
+            "style": {
+                "shadowColor": "#1890FF",
+                "shadowBlur": 3,
+                "radius": 5,
+                "offset": 15,
+                "stroke": "#1890FF",
+                "lineWidth": 3,
+                "lineAppendWidth": 5,
+                "endArrow": true
+            },
+            "startPoint": {
+                "x": 317.5,
+                "y": 182,
+                "anchorIndex": 1,
+                "id": "317.5|||182"
+            },
+            "endPoint": {
+                "x": 406.5,
+                "y": 182,
+                "anchorIndex": 3,
+                "id": "406.5|||182"
+            }
+        },
+        {
+            "id": "16895629098371407",
+            "source": "node-0.79076050277982721689562820605",
+            "target": "node-0.67312177594402891689562824134",
+            "sourceAnchor": 1,
+            "targetAnchor": 3,
+            "type": "polyline-edge",
+            "style": {
+                "shadowColor": "#1890FF",
+                "shadowBlur": 3,
+                "radius": 5,
+                "offset": 15,
+                "stroke": "#1890FF",
+                "lineWidth": 3,
+                "lineAppendWidth": 5,
+                "endArrow": true
+            },
+            "startPoint": {
+                "x": 509.5,
+                "y": 182,
+                "anchorIndex": 1,
+                "id": "509.5|||182"
+            },
+            "endPoint": {
+                "x": 587.5,
+                "y": 182,
+                "anchorIndex": 3,
+                "id": "587.5|||182"
+            }
+        },
+        {
+            "id": "16895629118323202",
+            "source": "node-0.67312177594402891689562824134",
+            "target": "node-0.12041836647675131689562835054",
+            "sourceAnchor": 1,
+            "targetAnchor": 3,
+            "type": "polyline-edge",
+            "style": {
+                "shadowColor": "#1890FF",
+                "shadowBlur": 3,
+                "radius": 5,
+                "offset": 15,
+                "stroke": "#1890FF",
+                "lineWidth": 3,
+                "lineAppendWidth": 5,
+                "endArrow": true
+            },
+            "startPoint": {
+                "x": 690.5,
+                "y": 182,
+                "anchorIndex": 1,
+                "id": "690.5|||182"
+            },
+            "endPoint": {
+                "x": 770.5988284109627,
+                "y": 182,
+                "anchorIndex": 3,
+                "id": "770.5988284109627|||182"
+            }
+        },
+        {
+            "id": "1689562915974296",
+            "source": "node-0.12041836647675131689562835054",
+            "target": "node-0.80886012202816551689562840401",
+            "sourceAnchor": 1,
+            "targetAnchor": 1,
+            "type": "polyline-edge",
+            "style": {
+                "shadowColor": "#1890FF",
+                "shadowBlur": 3,
+                "radius": 5,
+                "offset": 15,
+                "stroke": "#1890FF",
+                "lineWidth": 3,
+                "lineAppendWidth": 5,
+                "endArrow": true
+            },
+            "startPoint": {
+                "x": 875.4011715890373,
+                "y": 182,
+                "anchorIndex": 1,
+                "id": "875.4011715890373|||182"
+            },
+            "endPoint": {
+                "x": 810.5,
+                "y": 337,
+                "anchorIndex": 1,
+                "id": "810.5|||337"
+            }
+        },
+        {
+            "id": "16895629216818864",
+            "source": "node-0.80886012202816551689562840401",
+            "target": "node-0.43434744450222131689562632642",
+            "sourceAnchor": 3,
+            "targetAnchor": 1,
+            "type": "polyline-edge",
+            "style": {
+                "shadowColor": "#1890FF",
+                "shadowBlur": 3,
+                "radius": 5,
+                "offset": 15,
+                "stroke": "#1890FF",
+                "lineWidth": 3,
+                "lineAppendWidth": 5,
+                "endArrow": true
+            },
+            "startPoint": {
+                "x": 707.5,
+                "y": 337,
+                "anchorIndex": 3,
+                "id": "707.5|||337"
+            },
+            "endPoint": {
+                "x": 632.4011715890373,
+                "y": 337,
+                "anchorIndex": 1,
+                "id": "632.4011715890373|||337"
+            }
+        },
+        {
+            "id": "16895629290949491",
+            "source": "node-0.43434744450222131689562632642",
+            "target": "node-0.35363585281676381689562901667",
+            "sourceAnchor": 3,
+            "targetAnchor": 1,
+            "type": "polyline-edge",
+            "style": {
+                "shadowColor": "#1890FF",
+                "shadowBlur": 3,
+                "radius": 5,
+                "offset": 15,
+                "stroke": "#1890FF",
+                "lineWidth": 3,
+                "lineAppendWidth": 5,
+                "endArrow": true
+            },
+            "startPoint": {
+                "x": 527.5988284109627,
+                "y": 337,
+                "anchorIndex": 3,
+                "id": "527.5988284109627|||337"
+            },
+            "endPoint": {
+                "x": 459.5,
+                "y": 337,
+                "anchorIndex": 1,
+                "id": "459.5|||337"
+            }
+        }
+    ],
+    "combos": []
+}

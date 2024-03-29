@@ -1,0 +1,20 @@
+{
+  "ProcessingMethod": "Data/sequence/RYX/RYX-2023-2-16-test",
+  "InstrumentMethod": "Data/sequence/RYX/RYX-2023-2-16-test",
+  "Injection": [
+    [
+      "diol-ox",
+      "0.25",
+      "R:A1"
+    ]
+  ],
+  "SequenceName": "Data/sequence/RYX/RYX-diol-oxidation",
+  "Instrument": "ISQ-EC",
+  "TemplateName": "Data/sequence/RYX/RYX-report-test-1",
+  "User": "ryx",
+  "ProjectName": "diol_oxidation",
+  "Channels": [
+    "UV_VIS_1"
+  ],
+  "New": false
+}
