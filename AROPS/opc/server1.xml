@@ -1,0 +1,1 @@
+<Matrikon.OPC.Simulation><CSimRootDevLink name="" description="Sim Server Root"/><PSTAliasGroup><PSTAliasGroup name="AliasTest"><PSTAlias name="TAG1" itemPath="" type="3" dataType="8" registerInitValue=""><Scaling enabled="0" type="0"/><Events enabled="0" source="Alias" severity="1" trigger="0" timestamp="0"/></PSTAlias></PSTAliasGroup></PSTAliasGroup></Matrikon.OPC.Simulation>
