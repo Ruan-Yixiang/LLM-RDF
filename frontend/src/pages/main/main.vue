@@ -155,7 +155,7 @@
                                 </div>
                             </el-menu-item>
                             <div id="item" class="toggle">
-                                <el-menu-item @click="toOpenWebUI('method search')">
+                                <el-menu-item @click="toOpenWebUI('literature search')">
                                     <div class="disp">
                                         <div class="iconfont icon-sousuopaixu"></div>
                                         <div class="side-title">{{ sideTitle[2].sub[4].name }}&nbsp;
@@ -267,7 +267,7 @@
                                             <!--Method Search-->
                                             <div class="card">
                                                 <div class="img">
-                                                    <a @click="toOpenWebUI('method search')">
+                                                    <a @click="toOpenWebUI('literature search')">
                                                         <el-image src="./img/img/method search.png"></el-image>
                                                     </a>
                                                 </div>
@@ -381,17 +381,17 @@
 
                             <div id="project"
                                 :style="{ position: 'relative', backgroundColor: contentColor, marginTop: 20 + 'px', height: fixHeight * 0.955 + 'px', }">
+                                <div style="margin-left: 3%; position: relative;">
+                                    <el-autocomplete v-model="value_" :fetch-suggestions="querySearch" ref="autoRef" @focus="searchFocus"
+                                        style="margin-top: 20px; margin-bottom: 6px;width:40%;border-radius: 20px;" 
+                                        :placeholder="'Search by project name...'" prefix-icon="el-icon-search">
+                                    </el-autocomplete>
+                                    <el-button round icon="el-icon-plus" @click="dialogCreateVisible = true" v-bind:title="'Add'" style="position: absolute;margin-top: 20px; margin-left: 53%;"></el-button>
+                                </div>
                                 <div style=" position:relative;left: 0%;top: 2%;right: 0%;bottom: 0; margin: auto; "
                                     align='center'>
-                                    <div>
-                                        <!-- <el-autocomplete v-model="value_" :fetch-suggestions="querySearch" ref="autoRef" @focus="searchFocus"
-                                            style="margin-top: 0px; margin-left: -0%; margin-bottom: 20px;width:40%;border-radius: 20px;" 
-                                            :placeholder="searchPlaceholder" prefix-icon="el-icon-search">
-                                        </el-autocomplete> -->
-                                        <el-button  round icon="el-icon-plus" @click="dialogCreateVisible = true" style="margin-right:-90%; margin-bottom: 10px;"></el-button>
-                                    </div>
-                                    <el-dialog title="Create a new project" :visible.sync="dialogCreateVisible" v-draggable :modal-append-to-body="false" >
-                                        <div style="margin-top: 10px; width:600px; height: 130px;">
+                                    <el-dialog title="Create a new project" :visible.sync="dialogCreateVisible" v-draggable :modal-append-to-body="false"  >
+                                        <div style="margin-top: 10px;  height: 130px; ">
                                             <a @click="toScreener(), dialogCreateVisible=false">
                                                 <div class="iconfont  icon-plate" style=" font-size: 30px; margin-top: -10px; margin-left: 10px;  font-weight: 600; padding: 10px;padding-top: 20px; padding-bottom: 18px; border: 2px solid; border-radius: 10px;"></div>
                                             </a>
@@ -407,13 +407,16 @@
                                             <a @click="toCC(), dialogCreateVisible=false">
                                                 <div class="iconfont  icon-list" style="font-size: 40px; margin-top: -10px; margin-left: 370px; font-weight: 600; padding: 10px; border: 2px solid; border-radius: 10px;"></div>
                                             </a>
+                                            <a @click="toCommon(), dialogCreateVisible=false">
+                                                <div class="iconfont  icon-pcm" style="font-size: 40px; margin-top: -10px; margin-left: 460px; font-weight: 600; padding: 10px; border: 2px solid; border-radius: 10px;"></div>
+                                            </a>
                                         </div>
                                     </el-dialog>
                                   
                                     <div
-                                        :style="{ height: fixHeight * 0.62 + 'px', marginLeft: '3%', marginRight: '3%', backgroundColor: projectTableColor, borderRadius: '15px' }">
+                                        :style="{ height: fixHeight * 0.62 + 'px', marginTop:-10 + 'px', marginLeft: '3%', marginRight: '3%', backgroundColor: projectTableColor, borderRadius: '15px' }">
                                         <el-table ref="singleTable"
-                                            :data="tableData.slice((currentPage - 1) * pagesize, currentPage * pagesize)"
+                                            :data="filterTableData.slice((currentPage - 1) * pagesize, currentPage * pagesize)"
                                             highlight-current-row @current-change="handleCurrentChange">
                                             <template slot="empty">
                                                 <span>{{ tableEmptySpan }}</span>
@@ -465,12 +468,28 @@
                                     src="./cc">
                                 </iframe>
                             </div>
+                            <div id="common-control"
+                                :style="{ position: 'absolute', height: fixHeight * 0.955 + 'px', marginTop: 20 + 'px', overflow: 'hidden' }"
+                                align='center'>
+                                <iframe id="frames-common" ref="common-dom" frameborder="0" scrolling="no"
+                                    :style="{ width: moduleWidth + 300 + 'px', height: 100 + '%',  marginLeft: -13 + '%', visibility: '', }"
+                                    src="./common">
+                                </iframe>
+                            </div>
                             <div id="display-general"
                                 :style="{ position: 'absolute', height: fixHeight * 0.955 + 'px', marginTop: 20 + 'px', overflow: 'hidden' }"
                                 align='center'>
                                 <iframe id="gen-display" ref="gen-display-dom" frameborder="0" scrolling="no"
                                     :style="{ width: moduleWidth + 300 + 'px', height: 100 + '%', marginLeft: -13 + '%', visibility: '' }"
                                     src="./display-general">
+                                </iframe>
+                            </div>
+                            <div id="display-common"
+                                :style="{ position: 'absolute', height: fixHeight * 0.955 + 'px', marginTop: 20 + 'px', overflow: 'hidden' }"
+                                align='center'>
+                                <iframe id="common-display" ref="common-display-dom" frameborder="0" scrolling="no"
+                                    :style="{ width: moduleWidth + 300 + 'px', height: 100 + '%', marginLeft: -13 + '%', visibility: '' }"
+                                    src="./display-common">
                                 </iframe>
                             </div>
 
@@ -593,6 +612,7 @@
 
 <script>
 import draggable from '../../utils/draggable';
+import * as XLSX from 'xlsx';
 import axios from 'axios';
 import conf from '../../../vue.config'
 import DevicePixelRatio from '../../utils/devicePixelRatio'
@@ -639,7 +659,9 @@ export default {
             valueLights: true,
             activeName: 'first',
             loadingProject: false,
+            value_: '',
             tableData: [],
+            filterTableData: [],
             total: 0,
             pagesize: Math.ceil(window.screen.height / 90),
             currentPage: 1,
@@ -741,6 +763,22 @@ export default {
             };
         },
 
+        searchFocus(){
+            this.$refs.autoRef.activated = false
+        },
+        querySearch(queryString, cb) {
+            this.currentPage = 1
+            this.filterTableData = []
+            this.tableData.forEach(libEle => {
+                console.log(libEle.order_name.indexOf(queryString))
+                if (libEle.order_name.indexOf(queryString) != -1) {
+                    this.filterTableData.push(libEle)
+                }
+            });
+            this.total = this.filterTableData.length
+            // cb(this.filterTableData)
+        },
+
         funClick() {
             let root = document.querySelector(":root");
             if (document.getElementById("arrow").className == "el-icon-arrow-down") {
@@ -811,7 +849,8 @@ export default {
                 {
                     type: "project-sig",
                     message: {
-                        id: _val,
+                        id: _val.id,
+                        msg: _val,
                         running: _running
                     },
                 },
@@ -996,22 +1035,22 @@ export default {
             this.loadingProject = true
             console.log('***', localStorage.getItem('username'))
             // open ⬇
-            axios.post(this.url + "/main-page/get-projects").then((res) => {
-                if ('NO DATA' != res['data']['msg']) {
-                    this.tableData = res['data'];
-                    console.log(this.tableData)
-                    this.total = res['data'].length;
-                    console.log(this.total)
-                }
-                else {
-                    this.total = 0
-                }
-                this.hideDiv()
-                this.putBottom()
-                document.getElementById("project").style.display = ""
-                document.getElementById("project").style.zIndex = 991
-                this.loadingProject = false
-            });
+            // axios.post(this.url + "/main-page/get-projects").then((res) => {
+            //     if ('NO DATA' != res['data']['msg']) {
+            //         this.tableData = res['data'];
+            //         console.log(this.tableData)
+            //         this.total = res['data'].length;
+            //         console.log(this.total)
+            //     }
+            //     else {
+            //         this.total = 0
+            //     }
+            //     this.hideDiv()
+            //     this.putBottom()
+            //     document.getElementById("project").style.display = ""
+            //     document.getElementById("project").style.zIndex = 991
+            //     this.loadingProject = false
+            // });
 
             // simulation data
             // this.tableData = [{"id": 1,"order_name": "test","create_time": "2023-10-10","type": "opt","name": "test",}];
@@ -1025,16 +1064,18 @@ export default {
             // this.loadingProject = false
 
             // General project data
-            // axios.post("http://192.168.1.33:5000/api/get-projects").then((res) => {
-            //     console.log(res)
-            //     this.tableData = res['data']['data'];
-            //     this.total = this.tableData.length;
-            //     this.hideDiv()
-            //     this.putBottom()
-            //     document.getElementById("project").style.display = ""
-            //     document.getElementById("project").style.zIndex = 991
-            //     this.loadingProject = false
-            // })
+            axios.post(this.url + "/main-page/get-projects", {"owner": localStorage.getItem('username')})
+            .then((res) => {
+                console.log(res)
+                this.tableData = res['data']['data'];
+                this.filterTableData = res['data']['data'];
+                this.total = this.tableData.length;
+                this.hideDiv()
+                this.putBottom()
+                document.getElementById("project").style.display = ""
+                document.getElementById("project").style.zIndex = 991
+                this.loadingProject = false
+            })
 
         },
 
@@ -1057,6 +1098,14 @@ export default {
             this.putBottom()
             document.getElementById("frames-cc").style.visibility = ""
             document.getElementById("center-control").style.zIndex = 993
+        },
+
+        toCommon() {
+            this.routerJumper = './common'
+            this.hideDiv()
+            this.putBottom()
+            document.getElementById("frames-common").style.visibility = ""
+            document.getElementById("common-control").style.zIndex = 993
         },
 
         toOptimization() {
@@ -1118,8 +1167,12 @@ export default {
         putBottom() {
             document.getElementById("frames-cc").style.visibility = "hidden"
             document.getElementById("center-control").style.zIndex = 990
+            document.getElementById("frames-common").style.visibility = "hidden"
+            document.getElementById("common-control").style.zIndex = 990
             document.getElementById("gen-display").style.visibility = "hidden"
             document.getElementById("display-general").style.zIndex = 990
+            document.getElementById("common-display").style.visibility = "hidden"
+            document.getElementById("display-common").style.zIndex = 990
             document.getElementById("frames").style.visibility = "hidden"
             document.getElementById("frames").style.zIndex = 990
             document.getElementById("opt-display").style.visibility = "hidden"
@@ -1157,7 +1210,7 @@ export default {
                 document.getElementById("display").style.zIndex = 993
                 this.sendColorSig('display')
                 // load project api, transfer paramter
-                this.sendProjectSig("opt-display-dom", this.nowRow.id)
+                this.sendProjectSig("opt-display-dom", this.nowRow)
             }
             if (_type == "Screen") {
                 this.routerJumper = './display-screener'
@@ -1166,7 +1219,7 @@ export default {
                 document.getElementById("opt-display-s").style.visibility = ""
                 document.getElementById("display-s").style.zIndex = 992
                 this.sendColorSig('display-s')
-                this.sendProjectSig("opt-display-dom-s", this.nowRow.id)
+                this.sendProjectSig("opt-display-dom-s", this.nowRow)
             }
             if (_type == "General") {
                 this.routerJumper = './general-display'
@@ -1181,13 +1234,21 @@ export default {
                     var targetElement = { id: this.nowRow.id };
                     if (res.data.data.some(item => Object.keys(targetElement).every(key => item[key] === targetElement[key]))) {
 
-                        this.sendProjectSig("gen-display-dom", this.nowRow.id, 1)
+                        this.sendProjectSig("gen-display-dom", this.nowRow, 1)
                     }
                     else {
-                        this.sendProjectSig("gen-display-dom", this.nowRow.id, 0)
+                        this.sendProjectSig("gen-display-dom", this.nowRow, 0)
                     }
 
                 })
+            }
+            if (_type == "Common"){
+                this.routerJumper = './display-common'
+                this.hideDiv()
+                this.putBottom()
+                document.getElementById("common-display").style.visibility = ""
+                document.getElementById("display-common").style.zIndex = 992
+                this.sendProjectSig("common-display-dom", this.nowRow)
             }
         },
 
@@ -1201,7 +1262,7 @@ export default {
                 document.getElementById("display").style.zIndex = 993
                 this.sendColorSig('display')
                 // load project api, transfer paramter
-                this.sendProjectSig("opt-display-dom", this.nowRow.id)
+                this.sendProjectSig("opt-display-dom", this.nowRow)
             }
             if (_type == "Screen") {
                 this.routerJumper = './display-screener'
@@ -1210,7 +1271,7 @@ export default {
                 document.getElementById("opt-display-s").style.visibility = ""
                 document.getElementById("display-s").style.zIndex = 992
                 this.sendColorSig('display-s')
-                this.sendProjectSig("opt-display-dom-s", this.nowRow.id)
+                this.sendProjectSig("opt-display-dom-s", this.nowRow)
             }
         },
 
@@ -1228,7 +1289,8 @@ export default {
             this.headerTool[3].name = "Logout"
             let root = document.querySelector(":root");
             root.style.setProperty("--icon-title-weight", "200")
-            this.iconTitle = "IChemFoundry"
+            this.iconTitle = "LLM-RDF"
+            // this.iconTitle = "IChemFoundry"
             this.sideTitle[0].name = "Home"
             this.sideTitle[1].name = "Projects"
             this.sideTitle[2].name = "Functions"
@@ -1236,7 +1298,7 @@ export default {
             this.sideTitle[2].sub[1].name = "Screener"
             this.sideTitle[2].sub[2].name = "Scale-up"
             this.sideTitle[2].sub[3].name = "Kinetics"
-            this.sideTitle[2].sub[4].name = "Mtd Search"
+            this.sideTitle[2].sub[4].name = "Liter Search"
             this.sideTitle[2].sub[5].name = "Purification"
             this.sideTitle[3].name = "Library"
             this.sideTitle[4].name = "Layout"
@@ -1255,7 +1317,7 @@ export default {
             this.functionsList[3].title = "Kinetics"
             this.functionsList[3].description = "Realistic glass card hover effect, realistic glass card hover effect, realistic glass card hover effect."
             this.functionsList[3].btn = "Read More"
-            this.functionsList[4].title = "Method Search"
+            this.functionsList[4].title = "Literature Search"
             this.functionsList[4].description = "Realistic glass card hover effect, realistic glass card hover effect, realistic glass card hover effect."
             this.functionsList[4].btn = "Read More"
             this.functionsList[5].title = "Purification"
@@ -1281,7 +1343,8 @@ export default {
             let root = document.querySelector(":root");
             root.style.setProperty("--icon-title-size", "28px")
             root.style.setProperty("--icon-title-weight", "900")
-            this.iconTitle = "分子智造平台"
+            this.iconTitle = "智能化学系统"
+            // this.iconTitle = "分子智造平台"
             this.sideTitle[0].name = "主页"
             this.sideTitle[1].name = "项目"
             this.sideTitle[2].name = "功能包"
@@ -1563,6 +1626,10 @@ export default {
     transform: scale(0.875, 0.875)
 }
 
+.el-autocomplete .el-input .el-input__inner{
+  border-radius: 14px !important; 
+}
+
 :root {
     --ratio: 1;
     --sideColor: '#000000';
@@ -1717,7 +1784,7 @@ export default {
 
 .el-dialog {
     border-radius: 10px;
-    width: 500px;
+    width: 580px;
     background-color: var(--el-dialog-bg-clr);
 }
 

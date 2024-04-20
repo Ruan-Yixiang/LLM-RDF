@@ -18,7 +18,7 @@
                                                 <div class="el-icon-right"></div>
                                             </el-col>
                                         </div>
-                                        <div style="font-size: medium; margin-left: 2%;">Use customized large language model agents in ChatGPT GPTs.</div>
+                                        <div style="font-size: medium; margin-left: 2%;">ChatGPT  ChatGPT  ChatGPT...</div>
                                     </el-card>
                                 </a>
                             </el-col>
@@ -33,9 +33,7 @@
                                                 <div class="el-icon-right"></div>
                                             </el-col>
                                         </div>
-                                        <div style="font-size: medium; margin-left: 2%;">Get up and running with large language models in user-friendly self-hosted WebUI.
-
-</div>
+                                        <div style="font-size: medium; margin-left: 2%;">Ollama  Ollama  Ollama...</div>
                                     </el-card>
                                 </a>
                             </el-col>
@@ -50,51 +48,57 @@
                             <el-button circle @click="activeName='first'" class="el-icon-back"></el-button>
                         </div>
 
-                        <a href="https://chat.openai.com/g/g-bo0FiWLY7-consensus" id="Consensus" target="_blank" style="display: '' ;">
+                        <a href="https://chat.openai.com/g/g-bo0FiWLY7-consensus" id="Literature Scouter" target="_blank" style="display: '' ;">
                             <el-card  shadow="hover" class="card" >
                                 <div style="position: relative;">
-                                    <el-image :src="'./img/img/Consensus.png'" class="aiicon"></el-image>
-                                    <div style="position: absolute; margin-left: 44%; font-size: x-large;">Consensus&nbsp;</div>
+                                    <el-image :src="'./img/img/Literature Scouter.png'" class="aiicon"></el-image>
+                                    <div style="position: absolute; margin-left: 44%; font-size: x-large;">Literature Scouter&nbsp;</div>
                                 </div>
                             </el-card>
                         </a>
-                        <a href="https://chat.openai.com/g/g-ZMA8aCxc9-chemcode" id="ChemCode" target="_blank" style="display:'';" @click="choice()">
+                        <a href="https://chat.openai.com/g/g-OUHuCwRyT-experiment-designer" id="Experiment Designer" target="_blank" style="display:'';" @click="choice()">
                             <el-card shadow="hover" class="card" >
-                                <div style="position: relative;">
-                                    <el-image :src="'./img/img/ChemCode.png'" class="aiicon"></el-image>
-                                    <div style="position: absolute; margin-left: 44%; font-size: x-large;">ChemCode&nbsp;</div>
+                                <div v-if="!disp" style="position: relative;">
+                                    <el-image :src="'./img/img/Experiment Designer.png'" class="aiicon"></el-image>
+                                    <div style="position: absolute; margin-left: 44%; font-size: x-large;">Experiment Designer&nbsp;</div>
+                                </div>
+                                <div v-if="disp" style="position: relative;">
+                                    <el-image :src="'./img/img/Experiment Designer.png'" class="aiicon" style="margin-left: -40%"></el-image>
+                                    <div style="position: absolute; margin-left: 24%; font-size: x-large;">Experiment Designer&nbsp; </div>
+                                    <el-image :src="'./img/img/Hardware Executor.png'" class="aiicon" style="margin-left: 4%"></el-image>
+                                    <div style="position: absolute; margin-left: 68%; font-size: x-large;">Hardware Executor&nbsp;</div>
                                 </div>
                             </el-card>
                         </a>
-                        <a href="https://chat.openai.com/g/g-KvAfHWJnQ-spectra-analyst" id="Spectra Analyst" target="_blank" style="display:'';">
+                        <a href="https://chat.openai.com/g/g-OMRkTl59T-hardware-executor" id="Hardware Executor" target="_blank" style="display:'';">
                             <el-card shadow="hover" class="card" >
                                 <div style="position: relative;">
-                                    <el-image :src="'./img/img/Spectra Analyst.png'" class="aiicon"></el-image>
-                                    <div style="position: absolute; margin-left: 44%; font-size: x-large;">Spectra Analyst&nbsp;</div>
+                                    <el-image :src="'./img/img/Hardware Executor.png'" class="aiicon"></el-image>
+                                    <div style="position: absolute; margin-left: 44%; font-size: x-large;">Hardware Executor&nbsp;</div>
                                 </div>
                             </el-card>
                         </a>
-                        <a href="https://chat.openai.com/g/g-emfaUgUtN-chemres-analyst" id="ChemRes Analyst" target="_blank" style="display:'';">
+                        <a href="https://chat.openai.com/g/g-2csRbBPhx-spectrum-analyzer" id="Spectrum Analyzer" target="_blank" style="display:'';">
                             <el-card shadow="hover" class="card" >
                                 <div style="position: relative;">
-                                    <el-image :src="'./img/img/ChemRes Analyst.png'" class="aiicon"></el-image>
-                                    <div style="position: absolute; margin-left: 44%; font-size: x-large;">ChemRes Analyst&nbsp;</div>
+                                    <el-image :src="'./img/img/Spectrum Analyzer.png'" class="aiicon"></el-image>
+                                    <div style="position: absolute; margin-left: 44%; font-size: x-large;">Spectrum Analyzer&nbsp;</div>
                                 </div>
                             </el-card>
                         </a>
-                        <a href="https://chat.openai.com/g/g-Y1b3CZFJg-stoichiometry" id="Stoichiometry" target="_blank" style="display:'';">
+                        <a href="https://chat.openai.com/g/g-6CFis5e6M-separation-instructor" id="Separation Instructor" target="_blank" style="display:'';">
                             <el-card shadow="hover" class="card" >
                                 <div style="position: relative;">
-                                    <el-image :src="'./img/img/Stoichiometry.png'" class="aiicon"></el-image>
-                                    <div style="position: absolute; margin-left: 44%; font-size: x-large;">Stoichiometry&nbsp;</div>
+                                    <el-image :src="'./img/img/Separation Instructor.png'" class="aiicon"></el-image>
+                                    <div style="position: absolute; margin-left: 44%; font-size: x-large;">Separation Instructor&nbsp;</div>
                                 </div>
                             </el-card>
                         </a>
-                        <a href="https://chat.openai.com/g/g-C9nW1MzHz-tlc-guider" id="TLC Guider" target="_blank" style="display:'';">
+                        <a href="https://chat.openai.com/g/g-MZZcJU43f-result-interpreter" id="Result Interpreter" target="_blank" style="display:'';">
                             <el-card shadow="hover" class="card" >
                                 <div style="position: relative;">
-                                    <el-image :src="'./img/img/TLC Guider.png'" class="aiicon"></el-image>
-                                    <div style="position: absolute; margin-left: 44%; font-size: x-large;">TLC Guider&nbsp;</div>
+                                    <el-image :src="'./img/img/Result Interpreter.png'" class="aiicon"></el-image>
+                                    <div style="position: absolute; margin-left: 44%; font-size: x-large;">Result Interpreter&nbsp;</div>
                                 </div>
                             </el-card>
                         </a>
@@ -130,20 +134,21 @@ export default {
             fixWidth: window.screen.width,
             fixHeight: window.screen.height,
             activeName: 'first',
-            localMem: ""
+            localMem: "",
+            disp: null
         }
     },
     methods:{
         hide(){
-            document.getElementById("Consensus").style.display = "none"
-            document.getElementById("ChemCode").style.display = "none"
-            document.getElementById("Spectra Analyst").style.display = "none"
-            document.getElementById("ChemRes Analyst").style.display = "none"
-            document.getElementById("Stoichiometry").style.display = "none"
-            document.getElementById("TLC Guider").style.display = "none"
+            document.getElementById("Literature Scouter").style.display = "none"
+            document.getElementById("Experiment Designer").style.display = "none"
+            document.getElementById("Hardware Executor").style.display = "none"
+            document.getElementById("Spectrum Analyzer").style.display = "none"
+            document.getElementById("Separation Instructor").style.display = "none"
+            document.getElementById("Result Interpreter").style.display = "none"
 
-            document.getElementById("ChemCode").target= '_blank'
-            document.getElementById("ChemCode").href = 'https://chat.openai.com/g/g-ZMA8aCxc9-chemcode'
+            document.getElementById("Experiment Designer").target= '_blank'
+            document.getElementById("Experiment Designer").href = 'https://chat.openai.com/g/g-OUHuCwRyT-experiment-designer'
 
             this.localMem = ""
         },
@@ -155,7 +160,6 @@ export default {
             if (this.localMem == "screening") {
                 window.parent.postMessage({ signal: this.localMem }, location.origin);
             }
-            
         }
     },
     mounted(){
@@ -167,34 +171,43 @@ export default {
                 if(event.data.type == "type-sig"){
                     this.hide()
                     console.log(">>>>>>>>>", event.data.message.type)
-                    if (event.data.message.type == "method search") {
-                        document.getElementById("Consensus").style.display = ""
+                    if (event.data.message.type == "literature search") {
+                        document.getElementById("Literature Scouter").style.display = ""
+                        this.disp = false
                     }
                     if (event.data.message.type == "screening" ) {
-                        document.getElementById("ChemCode").style.display = ""
-                        document.getElementById("ChemCode").target= ''
-                        document.getElementById("ChemCode").href = ''
+                        document.getElementById("Experiment Designer").style.display = ""
+                        document.getElementById("Experiment Designer").target= ''
+                        document.getElementById("Experiment Designer").href = ''
                         this.localMem = "screening"
-                        document.getElementById("Spectra Analyst").style.display = ""
-                        document.getElementById("ChemRes Analyst").style.display = ""
+                        // document.getElementById("Hardware Executor").style.display = ""
+                        document.getElementById("Spectrum Analyzer").style.display = ""
+                        document.getElementById("Result Interpreter").style.display = ""
+                        this.disp = true
                     }
                     if (event.data.message.type == "kinetics") {
-                        document.getElementById("ChemCode").style.display = ""
-                        document.getElementById("Spectra Analyst").style.display = ""
-                        document.getElementById("ChemRes Analyst").style.display = ""
+                        document.getElementById("Experiment Designer").style.display = ""
+                        document.getElementById("Hardware Executor").style.display = ""
+                        document.getElementById("Spectrum Analyzer").style.display = ""
+                        document.getElementById("Result Interpreter").style.display = ""
+                        this.disp = false
                     }
                     if (event.data.message.type == "optimization") {
-                        document.getElementById("ChemCode").style.display = ""
-                        document.getElementById("ChemCode").target= ''
-                        document.getElementById("ChemCode").href = ''
+                        document.getElementById("Experiment Designer").style.display = ""
+                        document.getElementById("Experiment Designer").target= ''
+                        document.getElementById("Experiment Designer").href = ''
                         this.localMem = "optimization"
-                        document.getElementById("ChemRes Analyst").style.display = ""
+                        // document.getElementById("Hardware Executor").style.display = ""
+                        document.getElementById("Result Interpreter").style.display = ""
+                        this.disp = true
                     }
                     if (event.data.message.type == "scale-up") {
-                        document.getElementById("Stoichiometry").style.display = ""
+                        document.getElementById("Experiment Designer").style.display = ""
+                        this.disp = false
                     }
                     if (event.data.message.type == "purification") {
-                        document.getElementById("TLC Guider").style.display = ""
+                        document.getElementById("Separation Instructor").style.display = ""
+                        this.disp = false
                     }
                 }
             }
