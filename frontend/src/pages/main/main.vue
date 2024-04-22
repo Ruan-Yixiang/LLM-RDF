@@ -1035,22 +1035,22 @@ export default {
             this.loadingProject = true
             console.log('***', localStorage.getItem('username'))
             // open ⬇
-            // axios.post(this.url + "/main-page/get-projects").then((res) => {
-            //     if ('NO DATA' != res['data']['msg']) {
-            //         this.tableData = res['data'];
-            //         console.log(this.tableData)
-            //         this.total = res['data'].length;
-            //         console.log(this.total)
-            //     }
-            //     else {
-            //         this.total = 0
-            //     }
-            //     this.hideDiv()
-            //     this.putBottom()
-            //     document.getElementById("project").style.display = ""
-            //     document.getElementById("project").style.zIndex = 991
-            //     this.loadingProject = false
-            // });
+            axios.post(this.url + "/main-page/get-projects").then((res) => {
+                if ('NO DATA' != res['data']['msg']) {
+                    this.tableData = res['data'];
+                    console.log(this.tableData)
+                    this.total = res['data'].length;
+                    console.log(this.total)
+                }
+                else {
+                    this.total = 0
+                }
+                this.hideDiv()
+                this.putBottom()
+                document.getElementById("project").style.display = ""
+                document.getElementById("project").style.zIndex = 991
+                this.loadingProject = false
+            });
 
             // simulation data
             // this.tableData = [{"id": 1,"order_name": "test","create_time": "2023-10-10","type": "opt","name": "test",}];
@@ -1064,18 +1064,18 @@ export default {
             // this.loadingProject = false
 
             // General project data
-            axios.post(this.url + "/main-page/get-projects", {"owner": localStorage.getItem('username')})
-            .then((res) => {
-                console.log(res)
-                this.tableData = res['data']['data'];
-                this.filterTableData = res['data']['data'];
-                this.total = this.tableData.length;
-                this.hideDiv()
-                this.putBottom()
-                document.getElementById("project").style.display = ""
-                document.getElementById("project").style.zIndex = 991
-                this.loadingProject = false
-            })
+            // axios.post(this.url + "/main-page/get-projects", {"owner": localStorage.getItem('username')})
+            // .then((res) => {
+            //     console.log(res)
+            //     this.tableData = res['data']['data'];
+            //     this.filterTableData = res['data']['data'];
+            //     this.total = this.tableData.length;
+            //     this.hideDiv()
+            //     this.putBottom()
+            //     document.getElementById("project").style.display = ""
+            //     document.getElementById("project").style.zIndex = 991
+            //     this.loadingProject = false
+            // })
 
         },
 
