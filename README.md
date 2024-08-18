@@ -34,7 +34,8 @@ docker run --env=BACKEND_URL="http://127.0.0.1:81" -p 83:83 -d ruanyixiang/llm_r
 git clone https://github.com/Ruan-Yixiang/LLM-RDF.git
 cd LLM-RDF
 ```
-2. Install the backend environment
+2. Install the backend environment\
+Use conda to install the dependencies listed in [requirements.txt](https://github.com/Ruan-Yixiang/LLM-RDF/blob/main/CentralControl/requirements.txt):
 ```shell
 # Create a new conda environment named 'llm_rdf_back' with Python 3.8
 conda create -n llm_rdf_back python=3.8
