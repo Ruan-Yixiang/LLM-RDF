@@ -28,7 +28,7 @@ docker run --env=BACKEND_URL="http://127.0.0.1:81" -p 83:83 -d ruanyixiang/llm_r
 ```
 4. Access the Application\
 {FRONTEND_URL}/main
-### Manual Deployment (Not recommended)
+### Manual Deployment (Not recommended, It may only work successfully on Windows 10.)
 1. Clone the repository:
 ```shell
 git clone https://github.com/Ruan-Yixiang/LLM-RDF.git
@@ -52,13 +52,14 @@ You can modify the backend url in [backend/backend.py](https://github.com/Ruan-Y
 cd CentralControl
 python backend/backend.py
 ```
-4. Install the npm\
+4. Install Node.js (v16.16.0) on your device
+5. Install the npm\
 In a new terminal, navigate to the frontend directory and install npm:
 ```shell
 cd frontend
 npm install -g npm@6.14.14
 ```
-5. Run Front-End Service\
+6. Run Front-End Service\
 You can modify the backend_url and openwebui_url in [vue.config.js](https://github.com/Ruan-Yixiang/LLM-RDF/blob/main/frontend/vue.config.js#L7-L8)
 ```shell
 npm run dev
