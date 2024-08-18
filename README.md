@@ -52,9 +52,9 @@ You can modify the backend url in [backend/backend.py](https://github.com/Ruan-Y
 cd CentralControl
 python backend/backend.py
 ```
-4. Install the npm
+4. Install the npm\
+In a new terminal, navigate to the frontend directory and install npm:
 ```shell
-cd ..
 cd frontend
 npm install -g npm@6.14.14
 ```
