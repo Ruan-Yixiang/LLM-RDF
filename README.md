@@ -20,7 +20,7 @@ docker run -p {BACKEND_URL}:81 -d ruanyixiang/llm_rdf_back
 ```
 3. Run Front-End Service\
 Replace {BACKEND_URL} with the actual backend deployment URL.\
-Replace {OPENWEBUI_URL} with the actual OpenWebUI deployment URL (unnecessary).\
+Replace {OPENWEBUI_URL} with the actual OpenWebUI deployment URL (unnecessary).
 ```shell
 docker run --env=BACKEND_URL={BACKEND_URL} --env=VUE_APP_OPENWEBUI_URL={OPENWEBUI_URL} -p {FRONTEND_URL}:83 -d ruanyixiang/llm_rdf_front
 # Example
@@ -45,10 +45,10 @@ conda activate llm_rdf_back
 # Install the required Python packages from requirements.txt
 pip install -r CentralControl/requirements.txt
 ```
-3. Run Back-End Service
+3. Run Back-End Service\
+You can modify the backend url in [backend/backend.py](https://github.com/Ruan-Yixiang/LLM-RDF/blob/main/CentralControl/backend/backend.py#L31)
 ```shell
 cd CentralControl
-# You can modify the backend url in backend/backend.py
 python backend/backend.py
 ```
 4. Install the npm
@@ -58,7 +58,7 @@ cd frontend
 npm install -g npm@6.14.14
 ```
 5. Run Front-End Service\
-You can modify the backend_url and openwebui_url in [vue.config.js](https://github.com/Ruan-Yixiang/LLM-RDF/blob/main/frontend/vue.config.js)
+You can modify the backend_url and openwebui_url in [vue.config.js](https://github.com/Ruan-Yixiang/LLM-RDF/blob/main/frontend/vue.config.js#L7-L8)
 ```shell
 npm run dev
 ```
