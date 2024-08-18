@@ -52,7 +52,7 @@ You can modify the backend url in [backend/backend.py](https://github.com/Ruan-Y
 cd CentralControl
 python backend/backend.py
 ```
-4. Install Node.js (v16.16.0) on your device
+4. Install [Node.js (v16.16.0)](https://nodejs.org/dist/v16.16.0/) on your device
 5. Install the npm\
 In a new terminal, navigate to the frontend directory and install npm:
 ```shell
