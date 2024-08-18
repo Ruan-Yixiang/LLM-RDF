@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","names":[],"sources":["../src/index.ts"],"sourcesContent":["import { WebGLEngine } from './webgl';\n\nexport { WebGLEngine };\n"],"mappings":";;;;;;;;;;;AAAA"}

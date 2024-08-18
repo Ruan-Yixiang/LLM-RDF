@@ -1,0 +1,1 @@
+:root{--van-tabbar-height: 50px;--van-tabbar-z-index: 1;--van-tabbar-background: var(--van-background-2)}.van-tabbar{z-index:var(--van-tabbar-z-index);display:flex;box-sizing:content-box;width:100%;height:var(--van-tabbar-height);background:var(--van-tabbar-background)}.van-tabbar--fixed{position:fixed;bottom:0;left:0}

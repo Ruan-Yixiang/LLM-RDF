@@ -18,7 +18,7 @@
                                                 <div class="el-icon-right"></div>
                                             </el-col>
                                         </div>
-                                        <div style="font-size: medium; margin-left: 2%;">ChatGPT  ChatGPT  ChatGPT...</div>
+                                        <div style="font-size: medium; margin-left: 2%;">ChatGPT Agents</div>
                                     </el-card>
                                 </a>
                             </el-col>
@@ -33,7 +33,7 @@
                                                 <div class="el-icon-right"></div>
                                             </el-col>
                                         </div>
-                                        <div style="font-size: medium; margin-left: 2%;">Ollama  Ollama  Ollama...</div>
+                                        <div style="font-size: medium; margin-left: 2%;">Open-source Agents in Ollama</div>
                                     </el-card>
                                 </a>
                             </el-col>
@@ -113,7 +113,7 @@
                     </div>
                     <iframe id="kinetics-page" ref="kinetics-dom" frameborder="0" scrolling="no"
                         :style="{   width: fixWidth + 'px', height: fixHeight *0.95  + 'px', marginLeft: 0 + '%',marginTop: '-10px', marginRight: 10 + '%', visibility: '' }"
-                        src="http://10.97.22.36:8080/">
+                        :src="iframeUrl">
                     
                     </iframe>
                 </el-tab-pane>
@@ -125,10 +125,12 @@
 
 
 <script>
+import conf from "../../../vue.config";
 export default {
     name: "openwebui",
     data() {
         return {
+            iframeUrl: conf.openwebui_url,
             ratioHeight: window.screen.height,
             ratioWidth: window.screen.width,
             fixWidth: window.screen.width,
@@ -137,6 +139,7 @@ export default {
             localMem: "",
             disp: null
         }
+
     },
     methods:{
         hide(){
@@ -164,7 +167,6 @@ export default {
     },
     mounted(){
         this.$refs.tabs.$children[0].$el.style.display = "none";
-
         window.addEventListener(
             "message",
             (event) => {

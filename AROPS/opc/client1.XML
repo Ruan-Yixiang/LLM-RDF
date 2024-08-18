@@ -1,1 +1,0 @@
-<Session><Hostname Remote="0" RemoteHost="\\DESKTOP-IL0531A"><Server Name="Matrikon.OPC.Simulation.1" Connected="1" GroupCount="1"><Group Name="Group0" Active="-1" ReqUpdateRate="1000" TimeBias="0" PercentDeadband="0.00" Connected="2" ItemCount="1"><Item AccessPath="" Active="-1" ReqDataType="0">AliasTest.TAG1</Item></Group></Server></Hostname></Session>

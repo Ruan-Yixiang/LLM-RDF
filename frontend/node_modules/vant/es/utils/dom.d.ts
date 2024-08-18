@@ -1,0 +1,12 @@
+import { Ref } from 'vue';
+export type ScrollElement = Element | Window;
+export declare function getScrollTop(el: ScrollElement): number;
+export declare function setScrollTop(el: ScrollElement, value: number): void;
+export declare function getRootScrollTop(): number;
+export declare function setRootScrollTop(value: number): void;
+export declare function getElementTop(el: ScrollElement, scroller?: ScrollElement): number;
+export declare function resetScroll(): void;
+export declare const stopPropagation: (event: Event) => void;
+export declare function preventDefault(event: Event, isStopPropagation?: boolean): void;
+export declare function isHidden(elementRef: HTMLElement | Ref<HTMLElement | undefined>): boolean;
+export declare const windowWidth: Ref<number>, windowHeight: Ref<number>;

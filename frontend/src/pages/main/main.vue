@@ -579,32 +579,32 @@
                         </div>
                     </div>
                 </el-col>
-                <div>
-                    <div id="Drag" class="main">
-                        <div @mousedown="mousedown($event)" class=" by-menu" v-bind:title="'Toolkit'">
-                            <div class="iconfont icon-fenzi menu-icon"></div>
-                        </div>
-                        <div class="menu" >
-                            <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open">
-                            <label class="menu-open-button" for="menu-open">
-                                <span class="lines line-1"></span>
-                                <span class="lines line-2"></span>
-                                <span class="lines line-3"></span>
-                            </label>
-                            <a @click="dialogBaichuanVisible = true" href="#" class="menu-item blue"> <i
-                                    class="iconfont icon-biaoqianlan_quanyi icon1"></i> </a>
-                            <a href="#" class="menu-item green"> <i class="fa fa-coffee"></i> </a>
-                            <a href="#" class="menu-item red"> <i class="fa fa-heart"></i> </a>
-                            <a href="#" class="menu-item purple"> <i class="fa fa-microphone"></i> </a>
-                        </div>
-                    </div>
-                </div>
-                <el-dialog title="Baichuan" :visible.sync="dialogBaichuanVisible" v-draggable style="margin-top: -100px;"
-                    :custom-class="'baichuan'">
-                    <iframe src="http://10.99.150.211:8501/" style="width: 1000px; height: 700px;">
+<!--                <div>-->
+<!--                    <div id="Drag" class="main">-->
+<!--                        <div @mousedown="mousedown($event)" class=" by-menu" v-bind:title="'Toolkit'">-->
+<!--                            <div class="iconfont icon-fenzi menu-icon"></div>-->
+<!--                        </div>-->
+<!--                        <div class="menu" >-->
+<!--                            <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open">-->
+<!--                            <label class="menu-open-button" for="menu-open">-->
+<!--                                <span class="lines line-1"></span>-->
+<!--                                <span class="lines line-2"></span>-->
+<!--                                <span class="lines line-3"></span>-->
+<!--                            </label>-->
+<!--                            <a @click="dialogBaichuanVisible = true" href="#" class="menu-item blue"> <i-->
+<!--                                    class="iconfont icon-biaoqianlan_quanyi icon1"></i> </a>-->
+<!--                            <a href="#" class="menu-item green"> <i class="fa fa-coffee"></i> </a>-->
+<!--                            <a href="#" class="menu-item red"> <i class="fa fa-heart"></i> </a>-->
+<!--                            <a href="#" class="menu-item purple"> <i class="fa fa-microphone"></i> </a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <el-dialog title="Baichuan" :visible.sync="dialogBaichuanVisible" v-draggable style="margin-top: -100px;"-->
+<!--                    :custom-class="'baichuan'">-->
+<!--                    <iframe src="http://10.99.150.211:8501/" style="width: 1000px; height: 700px;">-->
 
-                    </iframe>
-                </el-dialog>
+<!--                    </iframe>-->
+<!--                </el-dialog>-->
             </el-row>
         </div>
     </div>
@@ -1037,7 +1037,7 @@ export default {
             // open ⬇
             axios.post(this.url + "/main-page/get-projects").then((res) => {
                 if ('NO DATA' != res['data']['msg']) {
-                    this.tableData = res['data'];
+                    this.filterTableData = res['data'];
                     console.log(this.tableData)
                     this.total = res['data'].length;
                     console.log(this.total)
@@ -1062,7 +1062,7 @@ export default {
             // document.getElementById("project").style.display = ""
             // document.getElementById("project").style.zIndex = 991
             // this.loadingProject = false
-
+            //
             // General project data
             // axios.post(this.url + "/main-page/get-projects", {"owner": localStorage.getItem('username')})
             // .then((res) => {
@@ -1229,18 +1229,18 @@ export default {
                 document.getElementById("display-general").style.zIndex = 992
 
                 // axios.post("http://192.168.1.33:5001/api/get-project-status",)
-                axios.post("http://192.168.1.33:83/srv/GET-PROJECT-STATUS",)
-                .then((res) => {
-                    var targetElement = { id: this.nowRow.id };
-                    if (res.data.data.some(item => Object.keys(targetElement).every(key => item[key] === targetElement[key]))) {
-
-                        this.sendProjectSig("gen-display-dom", this.nowRow, 1)
-                    }
-                    else {
-                        this.sendProjectSig("gen-display-dom", this.nowRow, 0)
-                    }
-
-                })
+                // axios.post("http://192.168.1.33:83/srv/GET-PROJECT-STATUS",)
+                // .then((res) => {
+                //     var targetElement = { id: this.nowRow.id };
+                //     if (res.data.data.some(item => Object.keys(targetElement).every(key => item[key] === targetElement[key]))) {
+                //
+                //         this.sendProjectSig("gen-display-dom", this.nowRow, 1)
+                //     }
+                //     else {
+                //         this.sendProjectSig("gen-display-dom", this.nowRow, 0)
+                //     }
+                //
+                // })
             }
             if (_type == "Common"){
                 this.routerJumper = './display-common'
@@ -1295,7 +1295,7 @@ export default {
             this.sideTitle[1].name = "Projects"
             this.sideTitle[2].name = "Functions"
             this.sideTitle[2].sub[0].name = "Optimization"
-            this.sideTitle[2].sub[1].name = "Screener"
+            this.sideTitle[2].sub[1].name = "Screening"
             this.sideTitle[2].sub[2].name = "Scale-up"
             this.sideTitle[2].sub[3].name = "Kinetics"
             this.sideTitle[2].sub[4].name = "Liter Search"
@@ -1309,19 +1309,19 @@ export default {
             this.functionsList[0].description = "Obtain optimal conditions of chemical reactions by utilizing AROPS optimization framework."
             this.functionsList[0].btn = "Read More"
             this.functionsList[1].title = "Screening"
-            this.functionsList[1].description = "Realistic glass card hover effect, realistic glass card hover effect, realistic glass card hover effect."
+            this.functionsList[1].description = "Methodology substrate scope and condition screening."
             this.functionsList[1].btn = "Read More"
             this.functionsList[2].title = "Scale-up"
-            this.functionsList[2].description = "Realistic glass card hover effect, realistic glass card hover effect, realistic glass card hover effect."
+            this.functionsList[2].description = "Reaction scale-up."
             this.functionsList[2].btn = "Read More"
             this.functionsList[3].title = "Kinetics"
-            this.functionsList[3].description = "Realistic glass card hover effect, realistic glass card hover effect, realistic glass card hover effect."
+            this.functionsList[3].description = "Reaction kinetic modeling."
             this.functionsList[3].btn = "Read More"
             this.functionsList[4].title = "Literature Search"
-            this.functionsList[4].description = "Realistic glass card hover effect, realistic glass card hover effect, realistic glass card hover effect."
+            this.functionsList[4].description = "Literature search and information extraction."
             this.functionsList[4].btn = "Read More"
             this.functionsList[5].title = "Purification"
-            this.functionsList[5].description = "Realistic glass card hover effect, realistic glass card hover effect, realistic glass card hover effect."
+            this.functionsList[5].description = "Product purification."
             this.functionsList[5].btn = "Read More"
             this.loadProjBtn = "OK"
             this.projectTableTitle[0] = 'ID'

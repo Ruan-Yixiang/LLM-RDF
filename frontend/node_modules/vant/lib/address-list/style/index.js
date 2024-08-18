@@ -1,0 +1,11 @@
+require("../../style/base.css");
+require("../../badge/index.css");
+require("../../icon/index.css");
+require("../../tag/index.css");
+require("../../cell/index.css");
+require("../../loading/index.css");
+require("../../button/index.css");
+require("../../radio-group/index.css");
+require("../../checkbox/index.css");
+require("../../radio/index.css");
+require("../index.css");

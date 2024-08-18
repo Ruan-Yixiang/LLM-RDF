@@ -1,0 +1,1 @@
+{"version":3,"file":"glsl.d.js","names":[],"sources":["../src/glsl.d.ts"],"sourcesContent":["declare module '*.glsl' {\n  const value: string;\n  // @ts-ignore\n  export default value;\n}"],"mappings":""}

@@ -595,7 +595,7 @@ export default {
                 }
                 if (event.data.type == "language-sig") {
                     if (event.data.message.language == 'En') {
-                        this.screenerTitle = "Screener"
+                        this.screenerTitle = "Screening"
                         this.stepList = ['GPT', 'Steps', 'Space',]
                         this.GPTTitle = ["Synthesis", "Screen variables & range"]
                         this.getGPTAlarm = ['Get Data from GPT!', 'SUCCESS', 'Cancel', 'OK']

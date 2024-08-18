@@ -1,0 +1,1 @@
+:root{--van-action-bar-background: var(--van-background-2);--van-action-bar-height: 50px}.van-action-bar{position:fixed;right:0;bottom:0;left:0;display:flex;align-items:center;box-sizing:content-box;height:var(--van-action-bar-height);background:var(--van-action-bar-background)}

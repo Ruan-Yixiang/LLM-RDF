@@ -4,7 +4,8 @@ module.exports = {
         proxy: 'http://localhost:5000'
     },
 
-    backend_url: 'http://10.99.150.180:81',
+    backend_url: 'http://127.0.0.1:81',
+    openwebui_url: 'http://10.72.234.91:3000',
 
     ip:{
         "test_instr": "192.168.3.16",

@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1650784470557" clover="3.2.0">
+  <project timestamp="1650784470557" name="All files">
+    <metrics statements="663" coveredstatements="663" conditionals="256" coveredconditionals="256" methods="158" coveredmethods="158" elements="1077" coveredelements="1077" complexity="0" loc="663" ncloc="663" packages="7" files="26" classes="26"/>
+    <package name="src">
+      <metrics statements="27" coveredstatements="27" conditionals="18" coveredconditionals="18" methods="6" coveredmethods="6"/>
+      <file name="index.ts" path="/Users/daboku/project/new-graphlib/src/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="util.ts" path="/Users/daboku/project/new-graphlib/src/util.ts">
+        <metrics statements="27" coveredstatements="27" conditionals="18" coveredconditionals="18" methods="6" coveredmethods="6"/>
+        <line num="11" count="722" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="722" type="stmt"/>
+        <line num="20" count="19" type="stmt"/>
+        <line num="21" count="19" type="cond" truecount="2" falsecount="0"/>
+        <line num="22" count="18" type="stmt"/>
+        <line num="23" count="18" type="cond" truecount="2" falsecount="0"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="26" count="16" type="stmt"/>
+        <line num="41" count="552" type="stmt"/>
+        <line num="42" count="552" type="stmt"/>
+        <line num="43" count="552" type="cond" truecount="4" falsecount="0"/>
+        <line num="44" count="3" type="stmt"/>
+        <line num="45" count="3" type="stmt"/>
+        <line num="46" count="3" type="stmt"/>
+        <line num="49" count="552" type="stmt"/>
+        <line num="68" count="382" type="stmt"/>
+        <line num="69" count="382" type="stmt"/>
+        <line num="70" count="382" type="stmt"/>
+        <line num="71" count="382" type="cond" truecount="4" falsecount="0"/>
+        <line num="72" count="4" type="stmt"/>
+        <line num="73" count="4" type="stmt"/>
+        <line num="74" count="4" type="stmt"/>
+        <line num="77" count="382" type="cond" truecount="2" falsecount="0"/>
+        <line num="78" count="32" type="stmt"/>
+        <line num="80" count="382" type="stmt"/>
+        <line num="88" count="542" type="stmt"/>
+        <line num="92" count="13" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.Graph">
+      <metrics statements="299" coveredstatements="299" conditionals="109" coveredconditionals="109" methods="81" coveredmethods="81"/>
+      <file name="enum.ts" path="/Users/daboku/project/new-graphlib/src/Graph/enum.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="event.ts" path="/Users/daboku/project/new-graphlib/src/Graph/event.ts">
+        <metrics statements="25" coveredstatements="25" conditionals="8" coveredconditionals="8" methods="8" coveredmethods="8"/>
+        <line num="15" count="8" type="stmt"/>
+        <line num="22" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="23" count="7" type="stmt"/>
+        <line num="25" count="8" type="stmt"/>
+        <line num="33" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="36" count="3" type="stmt"/>
+        <line num="37" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="38" count="2" type="stmt"/>
+        <line num="47" count="14" type="cond" truecount="2" falsecount="0"/>
+        <line num="48" count="7" type="stmt"/>
+        <line num="50" count="7" type="stmt"/>
+        <line num="51" count="6" type="stmt"/>
+        <line num="56" count="9" type="stmt"/>
+        <line num="57" count="9" type="stmt"/>
+        <line num="58" count="9" type="stmt"/>
+        <line num="62" count="1" type="stmt"/>
+        <line num="63" count="1" type="stmt"/>
+        <line num="64" count="1" type="stmt"/>
+        <line num="68" count="2" type="stmt"/>
+        <line num="69" count="2" type="stmt"/>
+        <line num="70" count="2" type="stmt"/>
+        <line num="74" count="1" type="stmt"/>
+        <line num="75" count="1" type="stmt"/>
+        <line num="76" count="1" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/daboku/project/new-graphlib/src/Graph/index.ts">
+        <metrics statements="239" coveredstatements="239" conditionals="87" coveredconditionals="87" methods="65" coveredmethods="65"/>
+        <line num="29" count="16" type="stmt"/>
+        <line num="67" count="394" type="stmt"/>
+        <line num="69" count="394" type="stmt"/>
+        <line num="71" count="394" type="stmt"/>
+        <line num="73" count="394" type="stmt"/>
+        <line num="87" count="394" type="stmt"/>
+        <line num="94" count="394" type="stmt"/>
+        <line num="100" count="640" type="stmt"/>
+        <line num="110" count="394" type="stmt"/>
+        <line num="113" count="394" type="stmt"/>
+        <line num="117" count="394" type="stmt"/>
+        <line num="118" count="394" type="stmt"/>
+        <line num="119" count="394" type="stmt"/>
+        <line num="121" count="394" type="cond" truecount="2" falsecount="0"/>
+        <line num="122" count="43" type="stmt"/>
+        <line num="123" count="43" type="stmt"/>
+        <line num="141" count="394" type="stmt"/>
+        <line num="147" count="394" type="stmt"/>
+        <line num="149" count="394" type="stmt"/>
+        <line num="155" count="394" type="stmt"/>
+        <line num="161" count="394" type="stmt"/>
+        <line num="167" count="394" type="stmt"/>
+        <line num="173" count="394" type="stmt"/>
+        <line num="180" count="1020" type="stmt"/>
+        <line num="187" count="394" type="stmt"/>
+        <line num="194" count="850" type="stmt"/>
+        <line num="202" count="394" type="stmt"/>
+        <line num="203" count="21" type="stmt"/>
+        <line num="204" count="21" type="stmt"/>
+        <line num="212" count="394" type="stmt"/>
+        <line num="220" count="394" type="stmt"/>
+        <line num="221" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="222" count="2" type="stmt"/>
+        <line num="224" count="4" type="stmt"/>
+        <line num="226" count="6" type="stmt"/>
+        <line num="234" count="394" type="stmt"/>
+        <line num="240" count="394" type="stmt"/>
+        <line num="247" count="394" type="stmt"/>
+        <line num="254" count="394" type="stmt"/>
+        <line num="261" count="394" type="stmt"/>
+        <line num="281" count="1024" type="stmt"/>
+        <line num="284" count="1024" type="cond" truecount="2" falsecount="0"/>
+        <line num="285" count="362" type="cond" truecount="2" falsecount="0"/>
+        <line num="286" count="1" type="stmt"/>
+        <line num="288" count="362" type="stmt"/>
+        <line num="291" count="662" type="cond" truecount="2" falsecount="0"/>
+        <line num="294" count="662" type="cond" truecount="2" falsecount="0"/>
+        <line num="295" count="56" type="stmt"/>
+        <line num="296" count="56" type="stmt"/>
+        <line num="297" count="56" type="cond" truecount="2" falsecount="0"/>
+        <line num="298" count="26" type="stmt"/>
+        <line num="300" count="56" type="stmt"/>
+        <line num="303" count="662" type="stmt"/>
+        <line num="304" count="2648" type="stmt"/>
+        <line num="307" count="662" type="stmt"/>
+        <line num="308" count="662" type="stmt"/>
+        <line num="318" count="394" type="stmt"/>
+        <line num="319" count="11" type="stmt"/>
+        <line num="320" count="4" type="stmt"/>
+        <line num="329" count="394" type="stmt"/>
+        <line num="335" count="394" type="stmt"/>
+        <line num="336" count="37" type="cond" truecount="2" falsecount="0"/>
+        <line num="337" count="1" type="stmt"/>
+        <line num="347" count="394" type="stmt"/>
+        <line num="348" count="88" type="cond" truecount="2" falsecount="0"/>
+        <line num="349" count="67" type="stmt"/>
+        <line num="350" count="67" type="cond" truecount="2" falsecount="0"/>
+        <line num="351" count="46" type="stmt"/>
+        <line num="361" count="394" type="stmt"/>
+        <line num="362" count="36" type="stmt"/>
+        <line num="363" count="36" type="stmt"/>
+        <line num="373" count="394" type="stmt"/>
+        <line num="374" count="37" type="stmt"/>
+        <line num="375" count="36" type="cond" truecount="2" falsecount="0"/>
+        <line num="376" count="36" type="stmt"/>
+        <line num="378" count="36" type="stmt"/>
+        <line num="379" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="380" count="1" type="stmt"/>
+        <line num="382" count="2" type="stmt"/>
+        <line num="385" count="35" type="cond" truecount="2" falsecount="0"/>
+        <line num="386" count="27" type="stmt"/>
+        <line num="389" count="35" type="stmt"/>
+        <line num="391" count="35" type="stmt"/>
+        <line num="392" count="35" type="stmt"/>
+        <line num="394" count="35" type="stmt"/>
+        <line num="396" count="35" type="stmt"/>
+        <line num="397" count="35" type="stmt"/>
+        <line num="399" count="35" type="stmt"/>
+        <line num="408" count="394" type="stmt"/>
+        <line num="409" count="16" type="cond" truecount="2" falsecount="0"/>
+        <line num="411" count="16" type="cond" truecount="2" falsecount="0"/>
+        <line num="412" count="13" type="stmt"/>
+        <line num="413" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="414" count="11" type="stmt"/>
+        <line num="416" count="2" type="stmt"/>
+        <line num="418" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="419" count="1" type="stmt"/>
+        <line num="421" count="2" type="cond" truecount="4" falsecount="0"/>
+        <line num="422" count="1" type="stmt"/>
+        <line num="432" count="394" type="stmt"/>
+        <line num="433" count="53" type="stmt"/>
+        <line num="434" count="53" type="cond" truecount="2" falsecount="0"/>
+        <line num="443" count="394" type="stmt"/>
+        <line num="444" count="111" type="stmt"/>
+        <line num="445" count="111" type="cond" truecount="2" falsecount="0"/>
+        <line num="454" count="394" type="stmt"/>
+        <line num="455" count="22" type="cond" truecount="2" falsecount="0"/>
+        <line num="456" count="1" type="stmt"/>
+        <line num="458" count="21" type="stmt"/>
+        <line num="467" count="394" type="stmt"/>
+        <line num="468" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="469" count="3" type="stmt"/>
+        <line num="471" count="2" type="stmt"/>
+        <line num="480" count="394" type="stmt"/>
+        <line num="481" count="13" type="stmt"/>
+        <line num="482" count="13" type="stmt"/>
+        <line num="488" count="13" type="stmt"/>
+        <line num="490" count="13" type="stmt"/>
+        <line num="491" count="18" type="cond" truecount="2" falsecount="0"/>
+        <line num="492" count="12" type="stmt"/>
+        <line num="496" count="13" type="stmt"/>
+        <line num="497" count="6" type="cond" truecount="4" falsecount="0"/>
+        <line num="498" count="3" type="stmt"/>
+        <line num="502" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="503" count="4" type="stmt"/>
+        <line num="504" count="7" type="stmt"/>
+        <line num="506" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="507" count="1" type="stmt"/>
+        <line num="510" count="7" type="stmt"/>
+        <line num="513" count="4" type="stmt"/>
+        <line num="514" count="7" type="stmt"/>
+        <line num="518" count="13" type="stmt"/>
+        <line num="528" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="529" count="5" type="stmt"/>
+        <line num="530" count="2" type="stmt"/>
+        <line num="533" count="5" type="stmt"/>
+        <line num="535" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="536" count="1" type="stmt"/>
+        <line num="537" count="1" type="stmt"/>
+        <line num="538" count="1" type="stmt"/>
+        <line num="539" count="1" type="stmt"/>
+        <line num="542" count="5" type="stmt"/>
+        <line num="543" count="5" type="stmt"/>
+        <line num="545" count="5" type="stmt"/>
+        <line num="547" count="5" type="stmt"/>
+        <line num="549" count="5" type="stmt"/>
+        <line num="550" count="5" type="stmt"/>
+        <line num="551" count="5" type="stmt"/>
+        <line num="552" count="5" type="stmt"/>
+        <line num="553" count="5" type="stmt"/>
+        <line num="554" count="5" type="stmt"/>
+        <line num="556" count="8" type="stmt"/>
+        <line num="565" count="394" type="stmt"/>
+        <line num="566" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="567" count="3" type="stmt"/>
+        <line num="569" count="4" type="stmt"/>
+        <line num="571" count="7" type="stmt"/>
+        <line num="579" count="394" type="stmt"/>
+        <line num="591" count="373" type="stmt"/>
+        <line num="592" count="373" type="stmt"/>
+        <line num="593" count="373" type="stmt"/>
+        <line num="595" count="373" type="cond" truecount="2" falsecount="0"/>
+        <line num="596" count="11" type="stmt"/>
+        <line num="597" count="11" type="stmt"/>
+        <line num="600" count="362" type="cond" truecount="4" falsecount="0"/>
+        <line num="601" count="1" type="stmt"/>
+        <line num="604" count="361" type="stmt"/>
+        <line num="605" count="361" type="stmt"/>
+        <line num="606" count="361" type="cond" truecount="2" falsecount="0"/>
+        <line num="608" count="361" type="stmt"/>
+        <line num="610" count="361" type="stmt"/>
+        <line num="611" count="361" type="stmt"/>
+        <line num="612" count="361" type="stmt"/>
+        <line num="613" count="361" type="stmt"/>
+        <line num="614" count="361" type="stmt"/>
+        <line num="616" count="361" type="stmt"/>
+        <line num="617" count="361" type="stmt"/>
+        <line num="618" count="361" type="stmt"/>
+        <line num="620" count="361" type="stmt"/>
+        <line num="623" count="394" type="stmt"/>
+        <line num="624" count="17" type="stmt"/>
+        <line num="634" count="394" type="stmt"/>
+        <line num="635" count="40" type="stmt"/>
+        <line num="636" count="93" type="stmt"/>
+        <line num="637" count="93" type="stmt"/>
+        <line num="639" count="40" type="stmt"/>
+        <line num="650" count="394" type="stmt"/>
+        <line num="651" count="31" type="stmt"/>
+        <line num="660" count="394" type="stmt"/>
+        <line num="661" count="108" type="stmt"/>
+        <line num="672" count="394" type="stmt"/>
+        <line num="673" count="61" type="stmt"/>
+        <line num="685" count="10" type="stmt"/>
+        <line num="686" count="10" type="stmt"/>
+        <line num="687" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="688" count="9" type="stmt"/>
+        <line num="689" count="9" type="stmt"/>
+        <line num="690" count="9" type="stmt"/>
+        <line num="691" count="9" type="stmt"/>
+        <line num="692" count="9" type="stmt"/>
+        <line num="693" count="9" type="stmt"/>
+        <line num="694" count="9" type="stmt"/>
+        <line num="696" count="9" type="stmt"/>
+        <line num="697" count="9" type="stmt"/>
+        <line num="699" count="9" type="stmt"/>
+        <line num="701" count="10" type="stmt"/>
+        <line num="708" count="394" type="stmt"/>
+        <line num="709" count="1" type="stmt"/>
+        <line num="716" count="394" type="stmt"/>
+        <line num="725" count="394" type="stmt"/>
+        <line num="726" count="55" type="stmt"/>
+        <line num="727" count="55" type="cond" truecount="2" falsecount="0"/>
+        <line num="728" count="54" type="cond" truecount="2" falsecount="0"/>
+        <line num="730" count="1" type="stmt"/>
+        <line num="740" count="394" type="stmt"/>
+        <line num="741" count="83" type="stmt"/>
+        <line num="742" count="83" type="cond" truecount="2" falsecount="0"/>
+        <line num="743" count="82" type="cond" truecount="2" falsecount="0"/>
+        <line num="745" count="1" type="stmt"/>
+        <line num="755" count="394" type="stmt"/>
+        <line num="756" count="35" type="cond" truecount="2" falsecount="0"/>
+        <line num="757" count="1" type="stmt"/>
+        <line num="759" count="34" type="stmt"/>
+        <line num="762" count="16" type="stmt"/>
+        <line num="764" count="394" type="stmt"/>
+        <line num="772" count="394" type="stmt"/>
+        <line num="773" count="12" type="stmt"/>
+        <line num="774" count="12" type="cond" truecount="2" falsecount="0"/>
+        <line num="775" count="10" type="stmt"/>
+        <line num="777" count="2" type="stmt"/>
+        <line num="784" count="394" type="stmt"/>
+        <line num="785" count="12" type="stmt"/>
+        <line num="786" count="12" type="cond" truecount="2" falsecount="0"/>
+        <line num="787" count="10" type="stmt"/>
+        <line num="789" count="2" type="stmt"/>
+        <line num="796" count="394" type="stmt"/>
+        <line num="797" count="6" type="stmt"/>
+        <line num="804" count="394" type="stmt"/>
+        <line num="810" count="394" type="stmt"/>
+      </file>
+      <file name="toJSON.ts" path="/Users/daboku/project/new-graphlib/src/Graph/toJSON.ts">
+        <metrics statements="35" coveredstatements="35" conditionals="14" coveredconditionals="14" methods="8" coveredmethods="8"/>
+        <line num="15" count="16" type="stmt"/>
+        <line num="18" count="23" type="stmt"/>
+        <line num="19" count="23" type="stmt"/>
+        <line num="20" count="23" type="stmt"/>
+        <line num="21" count="23" type="stmt"/>
+        <line num="26" count="23" type="cond" truecount="2" falsecount="0"/>
+        <line num="27" count="21" type="stmt"/>
+        <line num="29" count="23" type="cond" truecount="2" falsecount="0"/>
+        <line num="30" count="22" type="stmt"/>
+        <line num="32" count="23" type="stmt"/>
+        <line num="65" count="16" type="stmt"/>
+        <line num="68" count="23" type="stmt"/>
+        <line num="69" count="8" type="stmt"/>
+        <line num="70" count="8" type="stmt"/>
+        <line num="77" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="78" count="4" type="stmt"/>
+        <line num="81" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="82" count="4" type="stmt"/>
+        <line num="85" count="8" type="stmt"/>
+        <line num="102" count="16" type="stmt"/>
+        <line num="110" count="23" type="stmt"/>
+        <line num="120" count="23" type="cond" truecount="2" falsecount="0"/>
+        <line num="121" count="21" type="stmt"/>
+        <line num="124" count="23" type="stmt"/>
+        <line num="133" count="16" type="stmt"/>
+        <line num="141" count="23" type="stmt"/>
+        <line num="142" count="23" type="cond" truecount="2" falsecount="0"/>
+        <line num="143" count="2" type="stmt"/>
+        <line num="145" count="23" type="stmt"/>
+        <line num="146" count="23" type="stmt"/>
+        <line num="147" count="23" type="cond" truecount="2" falsecount="0"/>
+        <line num="148" count="1" type="stmt"/>
+        <line num="151" count="23" type="stmt"/>
+        <line num="152" count="8" type="stmt"/>
+        <line num="154" count="23" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.algorithm">
+      <metrics statements="193" coveredstatements="193" conditionals="73" coveredconditionals="73" methods="42" coveredmethods="42"/>
+      <file name="components.ts" path="/Users/daboku/project/new-graphlib/src/algorithm/components.ts">
+        <metrics statements="17" coveredstatements="17" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
+        <line num="3" count="16" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="9" count="11" type="stmt"/>
+        <line num="10" count="11" type="stmt"/>
+        <line num="12" count="11" type="stmt"/>
+        <line num="13" count="25" type="stmt"/>
+        <line num="14" count="25" type="cond" truecount="2" falsecount="0"/>
+        <line num="15" count="11" type="stmt"/>
+        <line num="16" count="11" type="stmt"/>
+        <line num="17" count="11" type="stmt"/>
+        <line num="18" count="11" type="stmt"/>
+        <line num="22" count="11" type="cond" truecount="2" falsecount="0"/>
+        <line num="23" count="5" type="stmt"/>
+        <line num="27" count="4" type="stmt"/>
+      </file>
+      <file name="dfs.ts" path="/Users/daboku/project/new-graphlib/src/algorithm/dfs.ts">
+        <metrics statements="20" coveredstatements="20" conditionals="12" coveredconditionals="12" methods="5" coveredmethods="5"/>
+        <line num="7" count="16" type="stmt"/>
+        <line num="15" count="51" type="cond" truecount="2" falsecount="0"/>
+        <line num="16" count="41" type="stmt"/>
+        <line num="17" count="41" type="cond" truecount="2" falsecount="0"/>
+        <line num="18" count="21" type="stmt"/>
+        <line num="20" count="41" type="stmt"/>
+        <line num="21" count="35" type="stmt"/>
+        <line num="23" count="41" type="cond" truecount="2" falsecount="0"/>
+        <line num="24" count="20" type="stmt"/>
+        <line num="33" count="16" type="stmt"/>
+        <line num="38" count="12" type="cond" truecount="2" falsecount="0"/>
+        <line num="39" count="12" type="stmt"/>
+        <line num="40" count="41" type="cond" truecount="2" falsecount="0"/>
+        <line num="41" count="12" type="stmt"/>
+        <line num="42" count="12" type="stmt"/>
+        <line num="43" count="12" type="stmt"/>
+        <line num="44" count="18" type="cond" truecount="2" falsecount="0"/>
+        <line num="45" count="2" type="stmt"/>
+        <line num="47" count="16" type="stmt"/>
+        <line num="51" count="10" type="stmt"/>
+      </file>
+      <file name="dijkstra-all.ts" path="/Users/daboku/project/new-graphlib/src/algorithm/dijkstra-all.ts">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="4" count="16" type="stmt"/>
+        <line num="9" count="6" type="stmt"/>
+        <line num="10" count="6" type="stmt"/>
+        <line num="11" count="15" type="stmt"/>
+        <line num="12" count="14" type="stmt"/>
+        <line num="14" count="5" type="stmt"/>
+      </file>
+      <file name="dijkstra.ts" path="/Users/daboku/project/new-graphlib/src/algorithm/dijkstra.ts">
+        <metrics statements="33" coveredstatements="33" conditionals="16" coveredconditionals="16" methods="7" coveredmethods="7"/>
+        <line num="4" count="16" type="stmt"/>
+        <line num="11" count="16" type="stmt"/>
+        <line num="17" count="22" type="stmt"/>
+        <line num="23" count="29" type="stmt"/>
+        <line num="38" count="16" type="stmt"/>
+        <line num="44" count="22" type="stmt"/>
+        <line num="45" count="22" type="stmt"/>
+        <line num="49" count="22" type="stmt"/>
+        <line num="50" count="58" type="cond" truecount="2" falsecount="0"/>
+        <line num="51" count="58" type="stmt"/>
+        <line num="52" count="58" type="stmt"/>
+        <line num="54" count="58" type="stmt"/>
+        <line num="56" count="58" type="cond" truecount="2" falsecount="0"/>
+        <line num="57" count="2" type="stmt"/>
+        <line num="67" count="56" type="cond" truecount="2" falsecount="0"/>
+        <line num="68" count="37" type="stmt"/>
+        <line num="69" count="37" type="stmt"/>
+        <line num="70" count="37" type="stmt"/>
+        <line num="74" count="22" type="stmt"/>
+        <line num="75" count="71" type="cond" truecount="2" falsecount="0"/>
+        <line num="76" count="71" type="stmt"/>
+        <line num="77" count="71" type="stmt"/>
+        <line num="80" count="22" type="stmt"/>
+        <line num="81" count="62" type="stmt"/>
+        <line num="82" count="62" type="stmt"/>
+        <line num="83" count="62" type="cond" truecount="4" falsecount="0"/>
+        <line num="84" count="7" type="stmt"/>
+        <line num="86" count="55" type="stmt"/>
+        <line num="89" count="20" type="stmt"/>
+        <line num="90" count="20" type="stmt"/>
+        <line num="91" count="63" type="stmt"/>
+        <line num="92" count="63" type="stmt"/>
+        <line num="94" count="20" type="stmt"/>
+      </file>
+      <file name="find-cycles.ts" path="/Users/daboku/project/new-graphlib/src/algorithm/find-cycles.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
+        <line num="4" count="16" type="stmt"/>
+        <line num="5" count="6" type="stmt"/>
+        <line num="6" count="11" type="cond" truecount="3" falsecount="0"/>
+      </file>
+      <file name="floyd-warshall.ts" path="/Users/daboku/project/new-graphlib/src/algorithm/floyd-warshall.ts">
+        <metrics statements="32" coveredstatements="32" conditionals="10" coveredconditionals="10" methods="10" coveredmethods="10"/>
+        <line num="3" count="16" type="stmt"/>
+        <line num="10" count="7" type="stmt"/>
+        <line num="15" count="12" type="stmt"/>
+        <line num="30" count="7" type="stmt"/>
+        <line num="31" count="7" type="stmt"/>
+        <line num="33" count="7" type="stmt"/>
+        <line num="34" count="19" type="stmt"/>
+        <line num="35" count="19" type="stmt"/>
+        <line num="36" count="19" type="stmt"/>
+        <line num="37" count="19" type="stmt"/>
+        <line num="38" count="61" type="cond" truecount="2" falsecount="0"/>
+        <line num="39" count="42" type="stmt"/>
+        <line num="42" count="19" type="stmt"/>
+        <line num="43" count="19" type="cond" truecount="2" falsecount="0"/>
+        <line num="44" count="19" type="stmt"/>
+        <line num="45" count="19" type="stmt"/>
+        <line num="49" count="7" type="stmt"/>
+        <line num="50" count="19" type="stmt"/>
+        <line num="51" count="19" type="stmt"/>
+        <line num="52" count="19" type="stmt"/>
+        <line num="53" count="61" type="stmt"/>
+        <line num="54" count="61" type="stmt"/>
+        <line num="55" count="61" type="stmt"/>
+        <line num="56" count="211" type="stmt"/>
+        <line num="57" count="211" type="stmt"/>
+        <line num="58" count="211" type="stmt"/>
+        <line num="59" count="211" type="stmt"/>
+        <line num="60" count="211" type="stmt"/>
+        <line num="61" count="211" type="cond" truecount="2" falsecount="0"/>
+        <line num="62" count="12" type="stmt"/>
+        <line num="63" count="12" type="stmt"/>
+        <line num="69" count="7" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/daboku/project/new-graphlib/src/algorithm/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="is-acyclic.ts" path="/Users/daboku/project/new-graphlib/src/algorithm/is-acyclic.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="4" count="16" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="8" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+      </file>
+      <file name="postorder.ts" path="/Users/daboku/project/new-graphlib/src/algorithm/postorder.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="16" type="stmt"/>
+        <line num="5" count="6" type="stmt"/>
+      </file>
+      <file name="preorder.ts" path="/Users/daboku/project/new-graphlib/src/algorithm/preorder.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="16" type="stmt"/>
+        <line num="5" count="6" type="stmt"/>
+      </file>
+      <file name="prim.ts" path="/Users/daboku/project/new-graphlib/src/algorithm/prim.ts">
+        <metrics statements="27" coveredstatements="27" conditionals="12" coveredconditionals="12" methods="3" coveredmethods="3"/>
+        <line num="4" count="16" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="14" count="12" type="cond" truecount="2" falsecount="0"/>
+        <line num="15" count="12" type="stmt"/>
+        <line num="16" count="12" type="cond" truecount="2" falsecount="0"/>
+        <line num="17" count="6" type="stmt"/>
+        <line num="18" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="19" count="5" type="stmt"/>
+        <line num="20" count="5" type="stmt"/>
+        <line num="25" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="29" count="3" type="stmt"/>
+        <line num="30" count="8" type="stmt"/>
+        <line num="31" count="8" type="stmt"/>
+        <line num="35" count="3" type="stmt"/>
+        <line num="37" count="3" type="stmt"/>
+        <line num="38" count="3" type="stmt"/>
+        <line num="39" count="8" type="stmt"/>
+        <line num="41" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="42" count="4" type="stmt"/>
+        <line num="43" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="46" count="3" type="stmt"/>
+        <line num="49" count="7" type="stmt"/>
+        <line num="52" count="2" type="stmt"/>
+      </file>
+      <file name="tarjan.ts" path="/Users/daboku/project/new-graphlib/src/algorithm/tarjan.ts">
+        <metrics statements="29" coveredstatements="29" conditionals="8" coveredconditionals="8" methods="4" coveredmethods="4"/>
+        <line num="16" count="16" type="stmt"/>
+        <line num="17" count="11" type="stmt"/>
+        <line num="18" count="11" type="stmt"/>
+        <line num="19" count="11" type="stmt"/>
+        <line num="20" count="11" type="stmt"/>
+        <line num="23" count="32" type="stmt"/>
+        <line num="28" count="32" type="stmt"/>
+        <line num="29" count="32" type="stmt"/>
+        <line num="30" count="32" type="stmt"/>
+        <line num="32" count="32" type="stmt"/>
+        <line num="34" count="28" type="cond" truecount="2" falsecount="0"/>
+        <line num="35" count="17" type="stmt"/>
+        <line num="36" count="17" type="stmt"/>
+        <line num="37" count="17" type="stmt"/>
+        <line num="39" count="11" type="cond" truecount="2" falsecount="0"/>
+        <line num="40" count="10" type="stmt"/>
+        <line num="42" count="10" type="stmt"/>
+        <line num="47" count="32" type="cond" truecount="2" falsecount="0"/>
+        <line num="48" count="20" type="stmt"/>
+        <line num="50" count="20" type="stmt"/>
+        <line num="52" count="32" type="stmt"/>
+        <line num="53" count="32" type="stmt"/>
+        <line num="54" count="32" type="stmt"/>
+        <line num="55" count="32" type="stmt"/>
+        <line num="57" count="20" type="stmt"/>
+        <line num="61" count="11" type="stmt"/>
+        <line num="62" count="32" type="cond" truecount="2" falsecount="0"/>
+        <line num="63" count="15" type="stmt"/>
+        <line num="67" count="11" type="stmt"/>
+      </file>
+      <file name="topsort.ts" path="/Users/daboku/project/new-graphlib/src/algorithm/topsort.ts">
+        <metrics statements="15" coveredstatements="15" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
+        <line num="6" count="10" type="stmt"/>
+        <line num="7" count="10" type="stmt"/>
+        <line num="8" count="10" type="stmt"/>
+        <line num="11" count="17" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="15" count="16" type="cond" truecount="2" falsecount="0"/>
+        <line num="16" count="15" type="stmt"/>
+        <line num="17" count="15" type="stmt"/>
+        <line num="18" count="15" type="stmt"/>
+        <line num="19" count="11" type="stmt"/>
+        <line num="20" count="11" type="stmt"/>
+        <line num="23" count="10" type="stmt"/>
+        <line num="25" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="26" count="4" type="stmt"/>
+        <line num="29" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.algorithm.PriorityQueue">
+      <metrics statements="65" coveredstatements="65" conditionals="22" coveredconditionals="22" methods="12" coveredmethods="12"/>
+      <file name="index.ts" path="/Users/daboku/project/new-graphlib/src/algorithm/PriorityQueue/index.ts">
+        <metrics statements="65" coveredstatements="65" conditionals="22" coveredconditionals="22" methods="12" coveredmethods="12"/>
+        <line num="7" count="44" type="stmt"/>
+        <line num="13" count="44" type="stmt"/>
+        <line num="19" count="92" type="stmt"/>
+        <line num="25" count="44" type="stmt"/>
+        <line num="33" count="50" type="stmt"/>
+        <line num="41" count="44" type="stmt"/>
+        <line num="42" count="16" type="stmt"/>
+        <line num="44" count="16" type="cond" truecount="2" falsecount="0"/>
+        <line num="45" count="9" type="stmt"/>
+        <line num="55" count="44" type="stmt"/>
+        <line num="56" count="175" type="stmt"/>
+        <line num="57" count="175" type="stmt"/>
+        <line num="58" count="175" type="stmt"/>
+        <line num="59" count="175" type="stmt"/>
+        <line num="60" count="175" type="stmt"/>
+        <line num="61" count="174" type="stmt"/>
+        <line num="69" count="44" type="stmt"/>
+        <line num="70" count="149" type="stmt"/>
+        <line num="71" count="149" type="stmt"/>
+        <line num="73" count="149" type="stmt"/>
+        <line num="75" count="149" type="stmt"/>
+        <line num="76" count="141" type="stmt"/>
+        <line num="77" count="141" type="cond" truecount="2" falsecount="0"/>
+        <line num="78" count="52" type="stmt"/>
+        <line num="80" count="89" type="stmt"/>
+        <line num="81" count="89" type="stmt"/>
+        <line num="90" count="44" type="stmt"/>
+        <line num="91" count="85" type="stmt"/>
+        <line num="92" count="85" type="stmt"/>
+        <line num="93" count="85" type="stmt"/>
+        <line num="94" count="85" type="stmt"/>
+        <line num="95" count="85" type="cond" truecount="2" falsecount="0"/>
+        <line num="96" count="56" type="cond" truecount="2" falsecount="0"/>
+        <line num="97" count="56" type="cond" truecount="2" falsecount="0"/>
+        <line num="98" count="34" type="cond" truecount="2" falsecount="0"/>
+        <line num="100" count="56" type="cond" truecount="2" falsecount="0"/>
+        <line num="101" count="10" type="stmt"/>
+        <line num="102" count="10" type="stmt"/>
+        <line num="112" count="44" type="stmt"/>
+        <line num="113" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="114" count="1" type="stmt"/>
+        <line num="116" count="2" type="stmt"/>
+        <line num="126" count="44" type="stmt"/>
+        <line num="127" count="104" type="stmt"/>
+        <line num="130" count="104" type="cond" truecount="2" falsecount="0"/>
+        <line num="131" count="103" type="stmt"/>
+        <line num="132" count="103" type="stmt"/>
+        <line num="133" count="103" type="stmt"/>
+        <line num="137" count="103" type="stmt"/>
+        <line num="138" count="103" type="stmt"/>
+        <line num="141" count="1" type="stmt"/>
+        <line num="149" count="44" type="stmt"/>
+        <line num="150" count="76" type="stmt"/>
+        <line num="151" count="75" type="stmt"/>
+        <line num="152" count="75" type="stmt"/>
+        <line num="153" count="75" type="stmt"/>
+        <line num="154" count="75" type="stmt"/>
+        <line num="163" count="44" type="stmt"/>
+        <line num="164" count="48" type="cond" truecount="2" falsecount="0"/>
+        <line num="165" count="1" type="stmt"/>
+        <line num="168" count="47" type="stmt"/>
+        <line num="169" count="47" type="cond" truecount="2" falsecount="0"/>
+        <line num="170" count="1" type="stmt"/>
+        <line num="174" count="46" type="stmt"/>
+        <line num="175" count="46" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.comparision">
+      <metrics statements="43" coveredstatements="43" conditionals="22" coveredconditionals="22" methods="12" coveredmethods="12"/>
+      <file name="complement.ts" path="/Users/daboku/project/new-graphlib/src/comparision/complement.ts">
+        <metrics statements="9" coveredstatements="9" conditionals="8" coveredconditionals="8" methods="1" coveredmethods="1"/>
+        <line num="9" count="16" type="stmt"/>
+        <line num="13" count="5" type="cond" truecount="4" falsecount="0"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="16" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="19" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+      </file>
+      <file name="contain.ts" path="/Users/daboku/project/new-graphlib/src/comparision/contain.ts">
+        <metrics statements="34" coveredstatements="34" conditionals="14" coveredconditionals="14" methods="11" coveredmethods="11"/>
+        <line num="13" count="16" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
+        <line num="18" count="3" type="stmt"/>
+        <line num="19" count="7" type="stmt"/>
+        <line num="20" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="31" count="16" type="stmt"/>
+        <line num="35" count="6" type="stmt"/>
+        <line num="36" count="6" type="stmt"/>
+        <line num="37" count="9" type="stmt"/>
+        <line num="38" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="39" count="4" type="stmt"/>
+        <line num="42" count="2" type="stmt"/>
+        <line num="49" count="16" type="stmt"/>
+        <line num="53" count="12" type="stmt"/>
+        <line num="54" count="39" type="stmt"/>
+        <line num="55" count="12" type="stmt"/>
+        <line num="62" count="16" type="stmt"/>
+        <line num="66" count="8" type="stmt"/>
+        <line num="67" count="24" type="stmt"/>
+        <line num="68" count="8" type="stmt"/>
+        <line num="75" count="16" type="stmt"/>
+        <line num="79" count="5" type="stmt"/>
+        <line num="90" count="16" type="stmt"/>
+        <line num="94" count="9" type="stmt"/>
+        <line num="95" count="9" type="stmt"/>
+        <line num="102" count="16" type="stmt"/>
+        <line num="106" count="5" type="stmt"/>
+        <line num="107" count="5" type="stmt"/>
+        <line num="114" count="16" type="stmt"/>
+        <line num="118" count="2" type="stmt"/>
+        <line num="131" count="16" type="stmt"/>
+        <line num="135" count="2" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/daboku/project/new-graphlib/src/comparision/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.essence">
+      <metrics statements="22" coveredstatements="22" conditionals="8" coveredconditionals="8" methods="4" coveredmethods="4"/>
+      <file name="index.ts" path="/Users/daboku/project/new-graphlib/src/essence/index.ts">
+        <metrics statements="22" coveredstatements="22" conditionals="8" coveredconditionals="8" methods="4" coveredmethods="4"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="22" count="14" type="cond" truecount="2" falsecount="0"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="26" count="13" type="stmt"/>
+        <line num="27" count="13" type="stmt"/>
+        <line num="29" count="13" type="stmt"/>
+        <line num="30" count="23" type="stmt"/>
+        <line num="31" count="23" type="cond" truecount="2" falsecount="0"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="34" count="22" type="stmt"/>
+        <line num="35" count="22" type="stmt"/>
+        <line num="37" count="22" type="cond" truecount="2" falsecount="0"/>
+        <line num="38" count="2" type="stmt"/>
+        <line num="40" count="20" type="stmt"/>
+        <line num="42" count="10" type="stmt"/>
+        <line num="50" count="2" type="stmt"/>
+        <line num="58" count="2" type="stmt"/>
+        <line num="59" count="2" type="stmt"/>
+        <line num="60" count="2" type="stmt"/>
+        <line num="61" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="62" count="1" type="stmt"/>
+        <line num="65" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.generate">
+      <metrics statements="14" coveredstatements="14" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <file name="compelement.ts" path="/Users/daboku/project/new-graphlib/src/generate/compelement.ts">
+        <metrics statements="14" coveredstatements="14" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="8" count="16" type="stmt"/>
+        <line num="11" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
+        <line num="24" count="3" type="stmt"/>
+        <line num="25" count="3" type="stmt"/>
+        <line num="26" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/daboku/project/new-graphlib/src/generate/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+  </project>
+</coverage>

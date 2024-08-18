@@ -168,7 +168,7 @@ export default {
         },
 
         handleData(_val) {
-            this.project_info = "No." + _val + " Project of Screener"
+            this.project_info = "No." + _val + " Project of Screening"
 
             axios
                 .post(this.url + "/display-screen/load", {

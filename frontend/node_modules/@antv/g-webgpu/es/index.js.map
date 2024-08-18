@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","names":["Kernel","World"],"sources":["../src/index.ts"],"sourcesContent":["import { Kernel } from './Kernel';\nimport { World } from './World';\n\nexport { World, Kernel };\n"],"mappings":"AAAA,SAASA,MAAM,QAAQ,UAAU;AACjC,SAASC,KAAK,QAAQ,SAAS;AAE/B,SAASA,KAAK,EAAED,MAAM"}

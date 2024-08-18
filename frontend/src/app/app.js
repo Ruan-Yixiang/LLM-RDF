@@ -57,16 +57,16 @@ const router = new VueRouter({
     //   name: 'display-general',
     //   component: () => import('../pages/display/display_general.vue'),
     // },
-    {
-      path: '/cc',
-      name: 'cc',
-      component: () => import('../pages/cc/cc.vue'),
-    },
-    {
-      path: '/layout',
-      name: 'layout',
-      component: () => import('../pages/layout/layout.vue'),
-    },
+    // {
+    //   path: '/cc',
+    //   name: 'cc',
+    //   component: () => import('../pages/cc/cc.vue'),
+    // },
+    // {
+    //   path: '/layout',
+    //   name: 'layout',
+    //   component: () => import('../pages/layout/layout.vue'),
+    // },
     {
       path: '/library',
       name: 'library',

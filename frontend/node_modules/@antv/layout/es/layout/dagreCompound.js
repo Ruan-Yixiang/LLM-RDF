@@ -1,0 +1,391 @@
+import { Base } from './base';
+import { buildGraph, flatGraph, getEdges, HierarchyNodeType, LAYOUT_CONFIG, mergeConfig, NodeType, ROOT_NAME } from 'dagre-compound';
+import { isArray, isObject } from '../util';
+export class DagreCompoundLayout extends Base {
+    constructor(options) {
+        super();
+        /** layout 方向, 可选 TB, BT, LR, RL */
+        this.rankdir = 'TB';
+        /** 节点水平间距(px) */
+        this.nodesep = 50;
+        /** 边水平间距(px) */
+        this.edgesep = 5;
+        /** 每一层节点之间间距 */
+        this.ranksep = 50;
+        /** 是否保留布局连线的控制点 */
+        this.controlPoints = true;
+        /** 是否保留使用布局计算的锚点 */
+        this.anchorPoint = true;
+        this.nodes = [];
+        this.edges = [];
+        this.combos = [];
+        /** 迭代结束的回调函数 */
+        this.onLayoutEnd = () => { };
+        this.updateCfg(options);
+    }
+    getDefaultCfg() {
+        return {
+            rankdir: 'TB',
+            align: undefined,
+            begin: undefined,
+            nodeSize: undefined,
+            nodesep: 50,
+            ranksep: 50,
+            controlPoints: true,
+            anchorPoint: true // 是否使用布局计算的锚点
+        };
+    }
+    init(data) {
+        const hiddenNodes = data.hiddenNodes || []; // 被隐藏的节点
+        const hiddenEdges = data.hiddenEdges || []; // 被隐藏的边
+        const hiddenCombos = data.hiddenCombos || []; // 赋值 hiddenCombos
+        // 确保此次排序按照用户输入顺序
+        this.nodes = this.getDataByOrder((data.nodes || []).concat(hiddenNodes));
+        this.edges = this.getDataByOrder((data.edges || []).concat(hiddenEdges));
+        this.combos = (data.combos || []).concat(hiddenCombos.map((hc) => (Object.assign(Object.assign({}, hc), { collapsed: true }))));
+    }
+    execute() {
+        const self = this;
+        const { nodes, edges } = self;
+        if (!nodes)
+            return;
+        const { graphDef, graphOption, graphSettings } = self.getLayoutConfig();
+        const renderInfo = buildGraph(graphDef, graphOption, graphSettings);
+        const flattenedRenderInfo = flatGraph(renderInfo, true); // 打平数据进行遍历
+        this.updatePosition(flattenedRenderInfo);
+        if (self.onLayoutEnd)
+            self.onLayoutEnd();
+        return {
+            nodes,
+            edges
+        };
+    }
+    /**
+     * combo 模式下查找节点完整路径
+     * @param nodeId
+     * @private
+     */
+    getNodePath(nodeId) {
+        const self = this;
+        const { nodes, combos } = self;
+        const targetNode = nodes.find((n) => n.id === nodeId);
+        const findPath = (comboId, fullPath = []) => {
+            const combo = combos.find((c) => c.id === comboId);
+            if (combo) {
+                fullPath.unshift(comboId);
+                if (combo.parentId) {
+                    return findPath(combo.parentId, fullPath);
+                }
+                return fullPath;
+            }
+            return fullPath;
+        };
+        if (targetNode && targetNode.comboId) {
+            return findPath(targetNode.comboId, [nodeId]);
+        }
+        return [nodeId];
+    }
+    /** 准备 dagre-compound 布局参数 */
+    getLayoutConfig() {
+        var _a, _b, _c;
+        const self = this;
+        const { nodes, edges, combos, nodeSize, rankdir, align, edgesep, nodesep, ranksep, settings } = self;
+        const compound = (combos || []).reduce((pre, cur) => {
+            const matchedNodes = nodes.filter((n) => n.comboId === cur.id).map((n) => n.id);
+            const matchedCombos = (combos || []).filter((n) => n.parentId === cur.id).map((n) => n.id);
+            if (matchedNodes.length || matchedCombos.length) {
+                pre[cur.id] = [...matchedNodes, ...matchedCombos];
+            }
+            return pre;
+        }, {});
+        /** 计算 nodeSize */
+        let nodeSizeFunc;
+        if (!nodeSize) {
+            nodeSizeFunc = (d) => {
+                if (d && d.size) {
+                    if (isArray(d.size)) {
+                        return d.size;
+                    }
+                    if (isObject(d.size)) {
+                        return [d.size.width || 40, d.size.height || 40];
+                    }
+                    return [d.size, d.size];
+                }
+                return [40, 40];
+            };
+        }
+        else if (isArray(nodeSize)) {
+            nodeSizeFunc = () => nodeSize;
+        }
+        else {
+            nodeSizeFunc = () => [nodeSize, nodeSize];
+        }
+        /** 计算 comboSize */
+        const comboSizeFunc = (d) => {
+            if (d && d.size) {
+                if (isArray(d.size)) {
+                    return d.size;
+                }
+                return [d.size, d.size];
+            }
+            return [80, 40];
+        };
+        // 接受 defaultCombo 设置的 size
+        const [metaWidth, metaHeight] = comboSizeFunc(combos === null || combos === void 0 ? void 0 : combos[0]);
+        // 初始化 padding
+        const subSceneMeta = (_b = (_a = self.graphSettings) === null || _a === void 0 ? void 0 : _a.subScene) === null || _b === void 0 ? void 0 : _b.meta;
+        const [paddingTop, paddingRight, paddingBottom, paddingLeft] = ((_c = combos.find((c) => !c.collapsed)) === null || _c === void 0 ? void 0 : _c.padding) || [20, 20, 20, 20];
+        const graphDef = {
+            compound,
+            nodes: [
+                ...(nodes || []).map((n) => {
+                    const size = nodeSizeFunc(n);
+                    const width = size[0];
+                    const height = size[1];
+                    return Object.assign(Object.assign({}, n), { width, height });
+                })
+            ],
+            edges: [...(edges || []).map((e) => (Object.assign(Object.assign({}, e), { v: e.source, w: e.target })))]
+        };
+        // 需要展开的节点
+        const graphOption = {
+            expanded: (combos || []).filter((c) => !c.collapsed).map((c) => c.id)
+        };
+        // dagre-compound 布局参数
+        const graphMetaConfig = {
+            graph: {
+                meta: {
+                    align,
+                    rankDir: rankdir,
+                    nodeSep: nodesep,
+                    edgeSep: edgesep,
+                    rankSep: ranksep
+                }
+            },
+            subScene: {
+                meta: {
+                    paddingTop: paddingTop || (subSceneMeta === null || subSceneMeta === void 0 ? void 0 : subSceneMeta.paddingTop) || 20,
+                    paddingRight: paddingRight || (subSceneMeta === null || subSceneMeta === void 0 ? void 0 : subSceneMeta.paddingRight) || 20,
+                    paddingBottom: paddingBottom || (subSceneMeta === null || subSceneMeta === void 0 ? void 0 : subSceneMeta.paddingBottom) || 20,
+                    paddingLeft: paddingLeft || (subSceneMeta === null || subSceneMeta === void 0 ? void 0 : subSceneMeta.paddingLeft) || 20,
+                    labelHeight: 0
+                }
+            },
+            nodeSize: {
+                meta: {
+                    width: metaWidth,
+                    height: metaHeight
+                }
+            }
+        };
+        // 合并用户输入的内容
+        const graphSettings = mergeConfig(settings, Object.assign({}, mergeConfig(graphMetaConfig, LAYOUT_CONFIG)));
+        self.graphSettings = graphSettings;
+        return {
+            graphDef,
+            graphOption,
+            graphSettings
+        };
+    }
+    /** 更新节点与边位置 */
+    updatePosition(flattenedGraph) {
+        const { nodes, edges } = flattenedGraph;
+        this.updateNodePosition(nodes, edges);
+        this.updateEdgePosition(nodes, edges);
+    }
+    getBegin(flattenedNodes, flattenedEdges) {
+        const self = this;
+        const { begin } = self;
+        const dBegin = [0, 0];
+        if (begin) {
+            let minX = Infinity;
+            let minY = Infinity;
+            flattenedNodes.forEach((node) => {
+                if (minX > node.x)
+                    minX = node.x;
+                if (minY > node.y)
+                    minY = node.y;
+            });
+            flattenedEdges.forEach((edge) => {
+                edge.points.forEach((point) => {
+                    if (minX > point.x)
+                        minX = point.x;
+                    if (minY > point.y)
+                        minY = point.y;
+                });
+            });
+            dBegin[0] = begin[0] - minX;
+            dBegin[1] = begin[1] - minY;
+        }
+        return dBegin;
+    }
+    updateNodePosition(flattenedNodes, flattenedEdges) {
+        const self = this;
+        const { combos, nodes, edges, anchorPoint, graphSettings } = self;
+        const dBegin = this.getBegin(flattenedNodes, flattenedEdges);
+        flattenedNodes.forEach((node) => {
+            var _a;
+            const { x, y, id, type, coreBox } = node;
+            if (type === HierarchyNodeType.META && id !== ROOT_NAME) {
+                const i = combos.findIndex((item) => item.id === id);
+                const subSceneMeta = (_a = graphSettings === null || graphSettings === void 0 ? void 0 : graphSettings.subScene) === null || _a === void 0 ? void 0 : _a.meta;
+                // 将布局生成的 combo 位置暂存至 offsetX offsetY
+                combos[i].offsetX = x + dBegin[0];
+                combos[i].offsetY = y + dBegin[1];
+                combos[i].fixSize = [coreBox.width, coreBox.height];
+                combos[i].fixCollapseSize = [coreBox.width, coreBox.height];
+                // 如果设置了收起时隐藏 padding，则手动优化 combo padding 信息，展开的话则恢复
+                if (!node.expanded) {
+                    combos[i].padding = [0, 0, 0, 0];
+                }
+                else {
+                    combos[i].padding = [
+                        subSceneMeta === null || subSceneMeta === void 0 ? void 0 : subSceneMeta.paddingTop,
+                        subSceneMeta === null || subSceneMeta === void 0 ? void 0 : subSceneMeta.paddingRight,
+                        subSceneMeta === null || subSceneMeta === void 0 ? void 0 : subSceneMeta.paddingBottom,
+                        subSceneMeta === null || subSceneMeta === void 0 ? void 0 : subSceneMeta.paddingLeft
+                    ];
+                }
+            }
+            else if (type === HierarchyNodeType.OP) {
+                const i = nodes.findIndex((item) => item.id === id);
+                nodes[i].x = x + dBegin[0];
+                nodes[i].y = y + dBegin[1];
+                if (anchorPoint) {
+                    const anchorPoints = [];
+                    const outEdges = flattenedEdges.filter((e) => e.v === id);
+                    const inEdges = flattenedEdges.filter((e) => e.w === id);
+                    // 指定出边锚点，锚点中心点为 [0.5, 0.5]
+                    if (outEdges.length > 0) {
+                        outEdges.forEach((outEdge) => {
+                            const firstPoint = outEdge.points[0];
+                            const anchorPointX = (firstPoint.x - x) / node.width + 0.5;
+                            const anchorPointY = (firstPoint.y - y) / node.height + 0.5;
+                            anchorPoints.push([anchorPointX, anchorPointY]);
+                            // 出边对应 source 边锚点
+                            outEdge.baseEdgeList.forEach((baseEdge) => {
+                                const edge = edges.find((e) => e.source === baseEdge.v && e.target === baseEdge.w);
+                                if (edge) {
+                                    edge.sourceAnchor = anchorPoints.length - 1;
+                                }
+                            });
+                        });
+                    }
+                    // 指定入边锚点
+                    if (inEdges.length > 0) {
+                        inEdges.forEach((inEdge) => {
+                            const lastPoint = inEdge.points[inEdge.points.length - 1];
+                            const anchorPointX = (lastPoint.x - x) / node.width + 0.5;
+                            const anchorPointY = (lastPoint.y - y) / node.height + 0.5;
+                            anchorPoints.push([anchorPointX, anchorPointY]);
+                            // 出边对应 source 锚点
+                            inEdge.baseEdgeList.forEach((baseEdge) => {
+                                const edge = edges.find((e) => e.source === baseEdge.v && e.target === baseEdge.w);
+                                if (edge) {
+                                    edge.targetAnchor = anchorPoints.length - 1;
+                                }
+                            });
+                        });
+                    }
+                    nodes[i].anchorPoints = anchorPoints.length > 0 ? anchorPoints : nodes[i].anchorPoints || [];
+                }
+            }
+        });
+    }
+    updateEdgePosition(flattenedNodes, flattenedEdges) {
+        const self = this;
+        const { combos, edges, controlPoints } = self;
+        const dBegin = this.getBegin(flattenedNodes, flattenedEdges);
+        if (controlPoints) {
+            combos.forEach((combo) => {
+                combo.inEdges = [];
+                combo.outEdges = [];
+            });
+            edges.forEach((sourceEdge) => {
+                var _a, _b, _c, _d;
+                let sourceNode = flattenedNodes.find((v) => v.id === sourceEdge.source);
+                let targetNode = flattenedNodes.find((v) => v.id === sourceEdge.target);
+                // Combo 收起状态，dagre-compound 不会渲染该节点，边需要使用到 group 的边作为补充
+                let points = [];
+                let sortedEdges = [];
+                if (sourceNode && targetNode) {
+                    sortedEdges = getEdges(sourceNode === null || sourceNode === void 0 ? void 0 : sourceNode.id, targetNode === null || targetNode === void 0 ? void 0 : targetNode.id, flattenedNodes);
+                }
+                else if (!sourceNode || !targetNode) {
+                    /** 存在收起节点时，需要重新计算边的 controlPoints，确保线正常 */
+                    // 情况1：目标节点被收起了，向上寻找该节点最近一个存在的父节点
+                    const sourceNodePath = self.getNodePath(sourceEdge.source);
+                    const targetNodePath = self.getNodePath(sourceEdge.target);
+                    const lastExistingSource = sourceNodePath
+                        .reverse()
+                        .slice(!sourceNode ? 1 : 0)
+                        .find((parentId) => flattenedNodes.find((fNode) => fNode.id === parentId));
+                    const lastExistingTarget = targetNodePath
+                        .reverse()
+                        .slice(!targetNode ? 1 : 0)
+                        .find((parentId) => flattenedNodes.find((fNode) => fNode.id === parentId));
+                    sourceNode = flattenedNodes.find((v) => v.id === lastExistingSource);
+                    targetNode = flattenedNodes.find((v) => v.id === lastExistingTarget);
+                    sortedEdges = getEdges(sourceNode === null || sourceNode === void 0 ? void 0 : sourceNode.id, targetNode === null || targetNode === void 0 ? void 0 : targetNode.id, flattenedNodes, { v: sourceEdge.source, w: sourceEdge.target });
+                }
+                points = sortedEdges.reduce((pre, cur) => {
+                    return [
+                        ...pre,
+                        ...cur.points.map((p) => {
+                            return Object.assign(Object.assign({}, p), { x: p.x + dBegin[0], y: p.y + dBegin[1] });
+                        })
+                    ];
+                }, []);
+                // 取消首尾节点
+                points = points.slice(1, -1);
+                sourceEdge.controlPoints = points;
+                if ((targetNode === null || targetNode === void 0 ? void 0 : targetNode.type) === NodeType.META) {
+                    // combo 节点控制点
+                    const i = combos.findIndex((item) => item.id === (targetNode === null || targetNode === void 0 ? void 0 : targetNode.id));
+                    if (!combos[i] || ((_a = combos[i].inEdges) === null || _a === void 0 ? void 0 : _a.some((inEdge) => inEdge.source === sourceNode.id && inEdge.target === targetNode.id))) {
+                        return;
+                    }
+                    (_b = combos[i].inEdges) === null || _b === void 0 ? void 0 : _b.push({
+                        source: sourceNode.id,
+                        target: targetNode.id,
+                        controlPoints: points
+                    });
+                }
+                if ((sourceNode === null || sourceNode === void 0 ? void 0 : sourceNode.type) === NodeType.META) {
+                    const i = combos.findIndex((item) => item.id === (sourceNode === null || sourceNode === void 0 ? void 0 : sourceNode.id));
+                    if (!combos[i] || ((_c = combos[i].outEdges) === null || _c === void 0 ? void 0 : _c.some((oedge) => oedge.source === sourceNode.id && oedge.target === targetNode.id))) {
+                        return;
+                    }
+                    (_d = combos[i].outEdges) === null || _d === void 0 ? void 0 : _d.push({
+                        source: sourceNode.id,
+                        target: targetNode.id,
+                        controlPoints: points
+                    });
+                }
+            });
+        }
+    }
+    getType() {
+        return 'dagreCompound';
+    }
+    /**
+     * 确保布局使用的数据与用户输入数据顺序一致
+     * 通过 layoutOrder 排序 节点 与 边
+     * @param list
+     * @private
+     */
+    getDataByOrder(list) {
+        if (list.every((n) => n.layoutOrder !== undefined)) {
+            // 所有数据均设置过索引，表示仅布局，数据未变化，无需处理
+        }
+        else {
+            // 首次布局或动态添加删减节点时重新赋值
+            list.forEach((n, i) => {
+                n.layoutOrder = i;
+            });
+        }
+        // 按照 layoutOrder 排序
+        return list.sort((pre, cur) => pre.layoutOrder - cur.layoutOrder);
+    }
+}
+//# sourceMappingURL=dagreCompound.js.map

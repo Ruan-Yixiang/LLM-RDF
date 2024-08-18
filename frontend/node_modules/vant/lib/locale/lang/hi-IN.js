@@ -1,0 +1,92 @@
+var __defProp = Object.defineProperty;
+var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+var __getOwnPropNames = Object.getOwnPropertyNames;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __export = (target, all) => {
+  for (var name in all)
+    __defProp(target, name, { get: all[name], enumerable: true });
+};
+var __copyProps = (to, from, except, desc) => {
+  if (from && typeof from === "object" || typeof from === "function") {
+    for (let key of __getOwnPropNames(from))
+      if (!__hasOwnProp.call(to, key) && key !== except)
+        __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
+  }
+  return to;
+};
+var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
+var stdin_exports = {};
+__export(stdin_exports, {
+  default: () => stdin_default
+});
+module.exports = __toCommonJS(stdin_exports);
+var stdin_default = {
+  name: "\u0928\u093E\u092E",
+  tel: "\u092B\u093C\u094B\u0928",
+  save: "\u0938\u0939\u0947\u091C\u0947\u0902",
+  clear: "\u0938\u093E\u092B\u093C",
+  cancel: "\u0930\u0926\u094D\u0926 \u0915\u0930\u0947\u0902",
+  confirm: "\u092A\u0941\u0937\u094D\u091F\u093F \u0915\u0930\u0928\u093E",
+  delete: "\u0939\u091F\u093E\u090F\u0902",
+  loading: "\u0932\u094B\u0921 \u0939\u094B \u0930\u0939\u093E \u0939\u0948...",
+  noCoupon: "\u0915\u094B\u0908 \u0915\u0942\u092A\u0928 \u0928\u0939\u0940\u0902",
+  nameEmpty: "\u0915\u0943\u092A\u092F\u093E \u0928\u093E\u092E \u092D\u0930\u0947\u0902",
+  addContact: "\u0938\u0902\u092A\u0930\u094D\u0915 \u091C\u094B\u0921\u093C\u0947\u0902",
+  telInvalid: "\u0935\u093F\u0915\u0943\u0924 \u092B\u093C\u094B\u0928 \u0928\u0902\u092C\u0930",
+  vanCalendar: {
+    end: "\u0938\u092E\u093E\u092A\u094D\u0924",
+    start: "\u0936\u0941\u0930\u0942",
+    title: "\u092A\u0902\u091A\u093E\u0902\u0917",
+    weekdays: [
+      "\u0930\u0935\u093F\u0935\u093E\u0930",
+      "\u0938\u094B\u092E\u0935\u093E\u0930",
+      "\u092E\u0902\u0917\u0932\u0935\u093E\u0930",
+      "\u092C\u0941\u0927\u0935\u093E\u0930",
+      "\u0917\u0941\u0930\u0942\u0935\u093E\u0930",
+      "\u0936\u0941\u0915\u094D\u0930\u0935\u093E\u0930",
+      "\u0936\u0928\u093F\u0935\u093E\u0930"
+    ],
+    monthTitle: (year, month) => `${year}/${month}`,
+    rangePrompt: (maxRange) => `${maxRange} \u0926\u093F\u0928 \u0938\u0947 \u0905\u0927\u093F\u0915 \u0928\u0939\u0940\u0902 \u091A\u0941\u0928\u0947\u0902`
+  },
+  vanCascader: {
+    select: "\u091A\u0941\u0928\u0924\u0947 \u0939\u0948\u0902"
+  },
+  vanPagination: {
+    prev: "\u092A\u0939\u0932\u0947 \u0915\u093E",
+    next: "\u0905\u0917\u0932\u093E"
+  },
+  vanPullRefresh: {
+    pulling: "\u0930\u0940\u092B\u093C\u094D\u0930\u0947\u0936 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093F\u090F \u0916\u0940\u0902\u091A\u0947\u0902...",
+    loosing: "\u0924\u093E\u091C\u093C\u093E \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093F\u090F \u0922\u0940\u0932\u093E..."
+  },
+  vanSubmitBar: {
+    label: "\u0915\u0941\u0932:"
+  },
+  vanCoupon: {
+    unlimited: "\u0905\u0938\u0940\u092E\u093F\u0924",
+    discount: (discount) => `${discount * 10}% \u091B\u0942\u091F`,
+    condition: (condition) => `\u0915\u092E \u0938\u0947 \u0915\u092E ${condition}`
+  },
+  vanCouponCell: {
+    title: "\u0915\u0942\u092A\u0928",
+    count: (count) => `\u0906\u092A\u0915\u0947 \u092A\u093E\u0938 ${count} \u0915\u0942\u092A\u0928 \u0939\u0948\u0902`
+  },
+  vanCouponList: {
+    exchange: "\u0905\u0926\u0932\u093E \u092C\u0926\u0932\u0940",
+    close: "\u092C\u0902\u0926 \u0915\u0930\u0947",
+    enable: "\u0909\u092A\u0932\u092C\u094D\u0927",
+    disabled: "\u0905\u0928\u0941\u092A\u0932\u092C\u094D\u0927",
+    placeholder: "\u0915\u0942\u092A\u0928 \u0915\u094B\u0921"
+  },
+  vanAddressEdit: {
+    area: "\u0915\u094D\u0937\u0947\u0924\u094D\u0930",
+    areaEmpty: "\u0915\u0943\u092A\u092F\u093E \u090F\u0915 \u0915\u094D\u0937\u0947\u0924\u094D\u0930 \u091A\u0941\u0928\u0947\u0902",
+    addressEmpty: "\u092A\u0924\u093E \u0916\u093E\u0932\u0940 \u0928\u0939\u0940\u0902 \u0939\u094B \u0938\u0915\u0924\u093E",
+    addressDetail: "\u092A\u0924\u093E",
+    defaultAddress: "\u0921\u093F\u092B\u093C\u0949\u0932\u094D\u091F \u092A\u0924\u0947 \u0915\u0947 \u0930\u0942\u092A \u092E\u0947\u0902 \u0938\u0947\u091F \u0915\u0930\u0947\u0902"
+  },
+  vanAddressList: {
+    add: "\u0928\u092F\u093E \u092A\u0924\u093E \u091C\u094B\u0921\u093C\u0947\u0902"
+  }
+};

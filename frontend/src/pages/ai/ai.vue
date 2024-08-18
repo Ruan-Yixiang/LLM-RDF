@@ -128,7 +128,7 @@
                             </a>
                           </el-col>
                           <el-col :span="10" align="center">
-                            <div clas="text-part">{{ gptTextTitle[0] }}</div>
+                            <div class="text-part">{{ gptTextTitle[0]}}</div>
                             <el-input
                               type="textarea"
                               :rows="10"
@@ -918,7 +918,7 @@ export default {
       projectName: '',
       //algorithm to backend
       reactionAlgorithm: {
-        reactor_num: 3,
+        reactor_num: 2,
         schedule: "SRIA",
         init_num: 6,
         init_method: "Random",
@@ -1650,10 +1650,9 @@ export default {
       //     this.active = 1;
       //     document.getElementById("frames").style.height = "0";
       //   });
-      this.textarea1Synthesis ="";
-        // "To a solution of alcohol (0.25 mmol) in CH3CN (0.25 mL) in a 13 mm culture tube was added sequentially a solution of (1) CuOTf /bpy(0.25 mL,0.05M), (2) TEMPO (0.25 mL, 0.05M), and (3) NMI (0.25 mL,0.10M).";
-      this.textarea1Workup = "";//"Add 0.75 mL HEDP";
-      this.variableAndRange = "";//"I want to optimize four variables: 1. Reaction time: 60-80 minutes, 2. Base volume: 0.125-0.25 ml, 3. Cu catalyst: CuBr2, CuBr, Cu(OTf), Cu(OTf)2 4. Base type: NMI, DBU."
+      this.textarea1Synthesis = "To a reaction was added sequentially a solution of (1) Substrate (0.25 mL,0.05M), (2) Cu catalyst (0.25 mL,0.05M), (3) TEMPO (0.25 mL, 0.05M), and (4) Base (0.25 mL,0.10M).";
+      this.textarea1Workup = "Add 0.75 mL HEDP";
+      this.variableAndRange = "I want to optimize four variables: 1. Reaction time: 45-90 minutes, 2. Base volume: 0.125-0.25 ml, 3. Cu catalyst: CuCl2, CuBr2, Cu(OTf)2, Cu(BF4)2 4. Base type: NMI, DBU."
       this.fullscreenLoading = false;
       this.activeName = "second";
       this.active = 1;
@@ -2078,7 +2077,7 @@ export default {
             listUnchainedParaMod: this.listUnchainedParaMod,
             // flowchart with AROP to graph:
             // flowchart: this.getFlowchartData,
-            flowchart: require("../../jsonFomatter/flowchart_arops.json")
+            flowchart: require("../../jsonFomatter/flowchart_demo.json")
           },
         },
         "*"

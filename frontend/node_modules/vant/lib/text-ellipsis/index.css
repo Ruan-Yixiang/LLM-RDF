@@ -1,0 +1,1 @@
+:root{--van-text-ellipsis-line-height: 1.6;--van-text-ellipsis-action-color: var(--van-blue)}.van-text-ellipsis{line-height:var(--van-text-ellipsis-line-height);white-space:pre-wrap;word-break:break-word}.van-text-ellipsis__action{cursor:pointer;color:var(--van-text-ellipsis-action-color)}.van-text-ellipsis__action:active{opacity:var(--van-active-opacity)}

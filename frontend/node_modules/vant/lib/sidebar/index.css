@@ -1,0 +1,1 @@
+:root{--van-sidebar-width: 80px}.van-sidebar{width:var(--van-sidebar-width);overflow-y:auto;-webkit-overflow-scrolling:touch}

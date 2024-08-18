@@ -1,0 +1,10 @@
+require("../../style/base.css");
+require("../../badge/index.css");
+require("../../loading/index.css");
+require("../../sticky/index.css");
+require("../../swipe/index.css");
+require("../../swipe-item/index.css");
+require("../../tabs/index.css");
+require("../../tab/index.css");
+require("../../picker/index.css");
+require("../../picker-group/index.css");
