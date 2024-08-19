@@ -16,13 +16,13 @@ docker pull ruanyixiang/llm_rdf_front:latest
 ```
 2. Run Back-End Service
 ```shell
-docker run -p {BACKEND_URL}:81 -d ruanyixiang/llm_rdf_back
+docker run -p {BACKEND_PORT}:81 -d ruanyixiang/llm_rdf_back
 ```
 3. Run Front-End Service\
 Replace {BACKEND_URL} with the actual backend deployment URL.\
 Replace {OPENWEBUI_URL} with the actual OpenWebUI deployment URL (unnecessary).
 ```shell
-docker run --env=BACKEND_URL={BACKEND_URL} --env=VUE_APP_OPENWEBUI_URL={OPENWEBUI_URL} -p {FRONTEND_URL}:83 -d ruanyixiang/llm_rdf_front
+docker run --env=BACKEND_URL={BACKEND_URL} --env=VUE_APP_OPENWEBUI_URL={OPENWEBUI_URL} -p {FRONTEND_PORT}:83 -d ruanyixiang/llm_rdf_front
 # Example
 docker run --env=BACKEND_URL="http://127.0.0.1:81" -p 83:83 -d ruanyixiang/llm_rdf_front
 ```
