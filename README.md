@@ -27,7 +27,9 @@ docker run --env=BACKEND_URL={BACKEND_URL} --env=VUE_APP_OPENWEBUI_URL={OPENWEBU
 docker run --env=BACKEND_URL="http://127.0.0.1:81" -p 83:83 -d ruanyixiang/llm_rdf_front
 ```
 4. Access the Application\
-{FRONTEND_URL}/main
+{FRONTEND_URL}/main\
+Example: http://127.0.0.1:83/main
+![main](https://github.com/user-attachments/assets/b6daca4c-6625-47fe-bc8d-7492731b104f)
 ### Manual Deployment (Not recommended, It may only work successfully on Windows 10.)
 1. Clone the repository:
 ```shell
