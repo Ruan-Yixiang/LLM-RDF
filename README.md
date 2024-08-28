@@ -8,7 +8,8 @@ The code and data repository of "Accelerated end-to-end chemical synthesis devel
 + The source data of figures in the paper can be found in [Source Data](https://github.com/Ruan-Yixiang/LLM-RDF/tree/main/Source%20Data).
 + The files used to build llm-based agents and interact with llm-based agents can be found in [files](https://github.com/Ruan-Yixiang/LLM-RDF/tree/main/files).
 ## Deployment
-### Docker (Recommended)
+Please refer to the demo.mp4 file provided to use the web application.
+### Docker (Recommended, may take a few minutes)
 1. Pull Docker Images
 ```shell
 docker pull ruanyixiang/llm_rdf_back:latest
