@@ -1,0 +1,15 @@
+{
+    "ProjectName": "202303011625",
+    "ChooseDesignID": "558",
+    "LsrFilePath": "C://Users//Unchained Labs//Desktop//Optimization_test//sample.lsr",
+    "UseLsrFile": false,
+    "LastLibraryID": "100400",
+    "SetPrompts": "D://Optimization_ryx//prepare_prompts_1.xml",
+    "SetChemicalManager": "D://Optimization_ryx//prepare_manager_1.xml",
+    "SetTipManagement": "",
+    "UseAI": false,
+    "NewDesign":false,
+    "ParaChanger": [
+        
+    ]
+}

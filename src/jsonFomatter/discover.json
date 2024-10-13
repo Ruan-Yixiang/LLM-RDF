@@ -1,0 +1,15 @@
+{
+	"Method": "Dynamic",
+	"Power": 30,
+	"Temperature": 100,
+	"Time": 900,
+	"Pressure": 100,
+	"Stirring": 500,
+	"Power Interval": 40,
+	"Cooling Interval": 20,
+	"Maximum Temperature": 60,
+	"Minimum Temperature": 55,
+	"Number of Cycles": 2
+}
+
+

@@ -1,0 +1,58 @@
+{
+	"space": [{
+		"name": "Time",
+		"type": "continuous",
+		"range": [60, 80]
+	}, {
+		"name": "volume of Base",
+		"type": "continuous",
+		"range": [0.125, 0.25]
+	}, {
+		"name": "Cu catalyst",
+		"type": "categorical",
+		"range": ["CuBr", "CuBr2", "Cu(OTf)", "Cu(OTf)2"]
+	}, {
+		"name": "Base",
+		"type": "categorical",
+		"range": ["NMI", "DBU"]
+	}],
+	"action": {
+		"1": {
+			"action": "dispense",
+			"num": 0.25,
+			"unit": "ml",
+			"name": "Substrate",
+			"tag": "SyringePump,ExtSingleTip",
+			"checkParameter": false,
+			"checkReagent": false
+		},
+		"2": {
+			"action": "dispense",
+			"num": 0.25,
+			"unit": "ml",
+			"name": "Cu catalyst",
+			"tag": "SyringePump,ExtSingleTip",
+			"checkParameter": false,
+			"checkReagent": true
+		},
+		"3": {
+			"action": "dispense",
+			"num": 0.25,
+			"unit": "ml",
+			"name": "TEMPO",
+			"tag": "SyringePump,ExtSingleTip",
+			"checkParameter": false,
+			"checkReagent": false
+		},
+		"4": {
+			"action": "dispense",
+			"num": "parameter",
+			"unit": "ml",
+			"name": "Base",
+			"tag": "SyringePump,ExtSingleTip",
+			"checkParameter": true,
+			"checkReagent": true
+		}
+	},
+	"time": true
+}

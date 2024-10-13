@@ -1,9 +1,0 @@
-import "../../style/base.css";
-import "../../badge/index.css";
-import "../../icon/index.css";
-import "../../cell/index.css";
-import "../../field/index.css";
-import "../../loading/index.css";
-import "../../switch/index.css";
-import "../../button/index.css";
-import "../index.css";

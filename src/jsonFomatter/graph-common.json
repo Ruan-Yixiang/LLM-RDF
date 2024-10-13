@@ -1,0 +1,302 @@
+{
+  "nodes": [
+    {
+      "label": "Input",
+      "type": "circle-node",
+      "style": {
+        "nodeState:default": {
+          "opacity": 1
+        },
+        "nodeState:hover": {
+          "opacity": 0.8
+        },
+        "nodeState:selected": {
+          "opacity": 0.9
+        },
+        "radius": 10,
+        "width": 100,
+        "height": 50,
+        "cursor": "move",
+        "fill": "#ecf3ff"
+      },
+      "x": 318,
+      "y": 137,
+      "labelCfg": {
+        "fontSize": 20,
+        "style": {
+          "cursor": "move"
+        }
+      },
+      "id": "node-0.56935108300491981712564198700"
+    },
+    {
+      "label": "Script",
+      "type": "rect-node",
+      "style": {
+        "nodeState:default": {
+          "opacity": 1
+        },
+        "nodeState:hover": {
+          "opacity": 0.8
+        },
+        "nodeState:selected": {
+          "opacity": 0.9
+        },
+        "radius": 10,
+        "width": 100,
+        "height": 50,
+        "cursor": "move",
+        "fill": "#ecf3ff"
+      },
+      "x": 503,
+      "y": 137,
+      "labelCfg": {
+        "fontSize": 20,
+        "style": {
+          "cursor": "move"
+        }
+      },
+      "id": "node-0.68458163648603621712564201329"
+    },
+    {
+      "label": "Run",
+      "type": "rect-node",
+      "style": {
+        "nodeState:default": {
+          "opacity": 1
+        },
+        "nodeState:hover": {
+          "opacity": 0.8
+        },
+        "nodeState:selected": {
+          "opacity": 0.9
+        },
+        "radius": 10,
+        "width": 100,
+        "height": 50,
+        "cursor": "move",
+        "fill": "#ecf3ff"
+      },
+      "x": 716,
+      "y": 137,
+      "labelCfg": {
+        "fontSize": 20,
+        "style": {
+          "cursor": "move"
+        }
+      },
+      "id": "node-0.132105007451163831712564202704"
+    },
+    {
+      "label": "Report",
+      "type": "rect-node",
+      "style": {
+        "nodeState:default": {
+          "opacity": 1
+        },
+        "nodeState:hover": {
+          "opacity": 0.8
+        },
+        "nodeState:selected": {
+          "opacity": 0.9
+        },
+        "radius": 10,
+        "width": 100,
+        "height": 50,
+        "cursor": "move",
+        "fill": "#ecf3ff"
+      },
+      "x": 1093,
+      "y": 137,
+      "labelCfg": {
+        "fontSize": 20,
+        "style": {
+          "cursor": "move"
+        }
+      },
+      "id": "node-0.53945696565007871712564204525"
+    },
+    {
+      "label": "Condition",
+      "type": "diamond-node",
+      "style": {
+        "nodeState:default": {
+          "opacity": 1
+        },
+        "nodeState:hover": {
+          "opacity": 0.8
+        },
+        "nodeState:selected": {
+          "opacity": 0.9
+        },
+        "radius": 10,
+        "width": 100,
+        "height": 50,
+        "cursor": "move",
+        "fill": "#ecf3ff"
+      },
+      "x": 913,
+      "y": 137,
+      "labelCfg": {
+        "fontSize": 20,
+        "style": {
+          "cursor": "move"
+        }
+      },
+      "id": "node-0.7896131733072821712564208183"
+    }
+  ],
+  "edges": [
+    {
+      "id": "17125642171663330",
+      "source": "node-0.56935108300491981712564198700",
+      "target": "node-0.68458163648603621712564201329",
+      "sourceAnchor": 2,
+      "targetAnchor": 3,
+      "type": "polyline-edge",
+      "style": {
+        "shadowColor": "#1890FF",
+        "shadowBlur": 3,
+        "radius": 5,
+        "offset": 15,
+        "stroke": "#1890FF",
+        "lineWidth": 3,
+        "lineAppendWidth": 5,
+        "endArrow": true
+      },
+      "startPoint": {
+        "x": 354.5,
+        "y": 137,
+        "anchorIndex": 2,
+        "id": "354.5|||137"
+      },
+      "endPoint": {
+        "x": 451.5,
+        "y": 137,
+        "anchorIndex": 3,
+        "id": "451.5|||137"
+      }
+    },
+    {
+      "id": "17125642310928935",
+      "source": "node-0.68458163648603621712564201329",
+      "target": "node-0.132105007451163831712564202704",
+      "sourceAnchor": 1,
+      "targetAnchor": 3,
+      "type": "polyline-edge",
+      "style": {
+        "shadowColor": "#1890FF",
+        "shadowBlur": 3,
+        "radius": 5,
+        "offset": 15,
+        "stroke": "#1890FF",
+        "lineWidth": 3,
+        "lineAppendWidth": 5,
+        "endArrow": true
+      },
+      "startPoint": {
+        "x": 554.5,
+        "y": 137,
+        "anchorIndex": 1,
+        "id": "554.5|||137"
+      },
+      "endPoint": {
+        "x": 664.5,
+        "y": 137,
+        "anchorIndex": 3,
+        "id": "664.5|||137"
+      }
+    },
+    {
+      "id": "17125642431467427",
+      "source": "node-0.132105007451163831712564202704",
+      "target": "node-0.7896131733072821712564208183",
+      "sourceAnchor": 1,
+      "targetAnchor": 3,
+      "type": "polyline-edge",
+      "style": {
+        "shadowColor": "#1890FF",
+        "shadowBlur": 3,
+        "radius": 5,
+        "offset": 15,
+        "stroke": "#1890FF",
+        "lineWidth": 3,
+        "lineAppendWidth": 5,
+        "endArrow": true
+      },
+      "startPoint": {
+        "x": 767.5,
+        "y": 137,
+        "anchorIndex": 1,
+        "id": "767.5|||137"
+      },
+      "endPoint": {
+        "x": 860.5988284109627,
+        "y": 137,
+        "anchorIndex": 3,
+        "id": "860.5988284109627|||137"
+      }
+    },
+    {
+      "id": "17125642513289889",
+      "source": "node-0.7896131733072821712564208183",
+      "target": "node-0.53945696565007871712564204525",
+      "sourceAnchor": 1,
+      "targetAnchor": 3,
+      "type": "polyline-edge",
+      "style": {
+        "shadowColor": "#1890FF",
+        "shadowBlur": 3,
+        "radius": 5,
+        "offset": 15,
+        "stroke": "#1890FF",
+        "lineWidth": 3,
+        "lineAppendWidth": 5,
+        "endArrow": true
+      },
+      "startPoint": {
+        "x": 965.4011715890373,
+        "y": 137,
+        "anchorIndex": 1,
+        "id": "965.4011715890373|||137"
+      },
+      "endPoint": {
+        "x": 1041.5,
+        "y": 137,
+        "anchorIndex": 3,
+        "id": "1041.5|||137"
+      }
+    },
+    {
+      "id": "17125642579319665",
+      "source": "node-0.7896131733072821712564208183",
+      "target": "node-0.68458163648603621712564201329",
+      "sourceAnchor": 2,
+      "targetAnchor": 2,
+      "type": "polyline-edge",
+      "style": {
+        "shadowColor": "#1890FF",
+        "shadowBlur": 3,
+        "radius": 5,
+        "offset": 15,
+        "stroke": "#1890FF",
+        "lineWidth": 3,
+        "lineAppendWidth": 5,
+        "endArrow": true
+      },
+      "startPoint": {
+        "x": 913,
+        "y": 178.92093727122986,
+        "anchorIndex": 2,
+        "id": "913|||178.92093727122986"
+      },
+      "endPoint": {
+        "x": 503,
+        "y": 163.5,
+        "anchorIndex": 2,
+        "id": "503|||163.5"
+      }
+    }
+  ],
+  "combos": []
+}

@@ -1,0 +1,20 @@
+{
+	"UserCode": "admin",
+	"UserPWD": "!QAZ2wsx",
+	"Ticket": "",
+	"Type": 1,
+	"InstrumentId": "16",
+	"ProjectId": "15",
+	"SequenceInjections": [{
+		"AcquisitionMethodPath": "/DEMO/Methods/AcqMethod_2min.amx",
+		"SampleLocation": "2",
+		"InjectionVolume": 1,
+		"SampleType": 0,
+		"SampleName": "sample 2",
+		"SampleAmount": 1,
+		"SampleDescription": "descri 2",
+		"DataFilename": "datafilename2",
+		"SelectedInjection": "Als"
+		}
+	]
+}
