@@ -1,0 +1,21 @@
+on: push
+
+permissions:
+  contents: write
+
+jobs:
+  run-build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16.16.0'
+    - uses: actions/checkout@v4
+    - run: npm install -g npm@6.14.14 && npm install
+    - run: npm run build
+    - name: deploy
+      uses: JamesIves/github-pages-deploy-action@v4.6.0
+      with:
+        branch: gh-pages
+        folder: dist
