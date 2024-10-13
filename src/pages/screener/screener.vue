@@ -384,45 +384,45 @@ export default {
             })
         },
         transfer() {
-            // this.stepData = require("../../jsonFomatter/screen_step.json")
-            // let tmpSpace = require("../../jsonFomatter/screen_space.json")
-            // const _ = require("lodash");
-            // this.spaceData = _.cloneDeep(tmpSpace);
+            this.stepData = require("../../jsonFomatter/screen_step.json")
+            let tmpSpace = require("../../jsonFomatter/screen_space.json")
+            const _ = require("lodash");
+            this.spaceData = _.cloneDeep(tmpSpace);
 
-            // let numberOfElements = 5;
-            // this.spaceClickedList = (this.spaceClickedList.length != 0) ? this.spaceClickedList : Array(numberOfElements).fill(false)
-            axios
-                .post(this.url + "/input-screen/nlp2action", {
-                    nlp: this.textSynthesis
-                })
-                .then((res) => {
-                    this.actionData = res['data']['action'];
-
-                    axios
-                        .post(this.url + "/input-screen/nlp2space", {
-                            nlp: this.textVariableRange,
-                            action: this.actionData
-                        })
-                        .then((res_space) => {
-                            this.stepData = res_space['data']['action'];
-                            let tmpSpace = res_space['data']['space'];
-                            const _ = require("lodash");
-                            this.spaceData = _.cloneDeep(tmpSpace);
-                            let numberOfElements = this.stepData.length;
-                            this.spaceClickedList = (this.spaceClickedList.length != 0) ? this.spaceClickedList : Array(numberOfElements).fill(false)
-                            axios
-                                .post(this.url + "/input-screen/nlp2code", {
-                                    nlp: this.textSynthesis + " " + this.textVariableRange,
-                                })
-                                .then((res_code) => {
-                                    this.code = res_code['data'];
-                                    this.$message({
-                                        message: this.getGPTAlarm[0],
-                                        type: 'success'
-                                    });
-                                });
-                        });
-                });
+            let numberOfElements = 5;
+            this.spaceClickedList = (this.spaceClickedList.length != 0) ? this.spaceClickedList : Array(numberOfElements).fill(false)
+            // axios
+            //     .post(this.url + "/input-screen/nlp2action", {
+            //         nlp: this.textSynthesis
+            //     })
+            //     .then((res) => {
+            //         this.actionData = res['data']['action'];
+            //
+            //         axios
+            //             .post(this.url + "/input-screen/nlp2space", {
+            //                 nlp: this.textVariableRange,
+            //                 action: this.actionData
+            //             })
+            //             .then((res_space) => {
+            //                 this.stepData = res_space['data']['action'];
+            //                 let tmpSpace = res_space['data']['space'];
+            //                 const _ = require("lodash");
+            //                 this.spaceData = _.cloneDeep(tmpSpace);
+            //                 let numberOfElements = this.stepData.length;
+            //                 this.spaceClickedList = (this.spaceClickedList.length != 0) ? this.spaceClickedList : Array(numberOfElements).fill(false)
+            //                 axios
+            //                     .post(this.url + "/input-screen/nlp2code", {
+            //                         nlp: this.textSynthesis + " " + this.textVariableRange,
+            //                     })
+            //                     .then((res_code) => {
+            //                         this.code = res_code['data'];
+            //                         this.$message({
+            //                             message: this.getGPTAlarm[0],
+            //                             type: 'success'
+            //                         });
+            //                     });
+            //             });
+            //     });
             this.active = 0
         },
 

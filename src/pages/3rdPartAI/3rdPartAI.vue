@@ -18,7 +18,7 @@
                                                 <div class="el-icon-right"></div>
                                             </el-col>
                                         </div>
-                                        <div style="font-size: medium; margin-left: 2%;">ChatGPT  ChatGPT  ChatGPT...</div>
+                                        <div style="font-size: medium; margin-left: 2%;">ChatGPT Agents</div>
                                     </el-card>
                                 </a>
                             </el-col>
@@ -33,7 +33,7 @@
                                                 <div class="el-icon-right"></div>
                                             </el-col>
                                         </div>
-                                        <div style="font-size: medium; margin-left: 2%;">Ollama  Ollama  Ollama...</div>
+                                        <div style="font-size: medium; margin-left: 2%;">Open-source Agents in Ollama</div>
                                     </el-card>
                                 </a>
                             </el-col>
