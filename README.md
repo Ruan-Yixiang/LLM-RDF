@@ -7,13 +7,18 @@ The code and data repository of "Accelerated end-to-end chemical synthesis devel
 + The frontend of the web application can be found in [frontend](https://github.com/Ruan-Yixiang/LLM-RDF/tree/main/frontend).
 + The source data of figures in the paper can be found in [Source Data](https://github.com/Ruan-Yixiang/LLM-RDF/tree/main/Source%20Data).
 + The files used to build llm-based agents and interact with llm-based agents can be found in [files](https://github.com/Ruan-Yixiang/LLM-RDF/tree/main/files).
++ An online deployment of the application: https://ruan-yixiang.github.io/LLM-RDF/#/main
 ## Deployment
 Please refer to the demo.mp4 file provided to use the web application.
 ### Docker (Recommended, may take a few minutes)
 1. Pull Docker Images
 ```shell
+# AMD64
 docker pull ruanyixiang/llm_rdf_back:latest
 docker pull ruanyixiang/llm_rdf_front:latest
+# ARM64
+docker pull ruanyixiang/llm_rdf_back:arm
+docker pull ruanyixiang/llm_rdf_front:arm
 ```
 2. Run Back-End Service
 ```shell
@@ -31,7 +36,7 @@ docker run --env=BACKEND_URL="http://127.0.0.1:81" -p 83:83 -d ruanyixiang/llm_r
 {FRONTEND_URL}/main\
 Example: http://127.0.0.1:83/main
 ![main](https://github.com/user-attachments/assets/b6daca4c-6625-47fe-bc8d-7492731b104f)
-### Manual Deployment (Not recommended, It may only work successfully on Windows 10.)
+### Manual Deployment (Not recommended, It may only work successfully on Intel CPU Windows 10.)
 1. Clone the repository:
 ```shell
 git clone https://github.com/Ruan-Yixiang/LLM-RDF.git
