@@ -3,10 +3,10 @@
 LLM-RDF: Large language model (LLM)-based reaction development framework.
 
 The code and data repository of "Accelerated end-to-end chemical synthesis development with large language models".
-+ The backend of the web application can be found in [backend](https://github.com/Ruan-Yixiang/LLM-RDF/tree/main/CentralControl/backend).
++ The backend of the web application can be found in [backend](https://github.com/Ruan-Yixiang/LLM-RDF/tree/main/Backend%20Files/backend).
 + The frontend of the web application can be found in [frontend](https://github.com/Ruan-Yixiang/LLM-RDF/tree/main/frontend).
 + The source data of figures in the paper can be found in [Source Data](https://github.com/Ruan-Yixiang/LLM-RDF/tree/main/Source%20Data).
-+ The files used to build llm-based agents and interact with llm-based agents can be found in [files](https://github.com/Ruan-Yixiang/LLM-RDF/tree/main/files).
++ The files used to build llm-based agents and interact with llm-based agents can be found in [Files for LLM-based agents](https://github.com/Ruan-Yixiang/LLM-RDF/tree/main/Files%20for%20LLM-based%20agents).
 + An online deployment of the application: https://ruan-yixiang.github.io/LLM-RDF/#/main
 ## Deployment
 Please refer to the demo.mp4 file provided to use the web application.
@@ -57,7 +57,7 @@ pip install -r CentralControl/requirements.txt
 3. Run Back-End Service\
 You can modify the backend url in [backend/backend.py](https://github.com/Ruan-Yixiang/LLM-RDF/blob/main/CentralControl/backend/backend.py#L31)
 ```shell
-cd CentralControl
+cd Backend Files
 python backend/backend.py
 ```
 4. Install [Node.js (v16.16.0)](https://nodejs.org/dist/v16.16.0/) on your device
