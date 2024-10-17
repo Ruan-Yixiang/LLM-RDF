@@ -57,7 +57,7 @@ pip install -r CentralControl/requirements.txt
 3. Run Back-End Service\
 You can modify the backend url in [backend/backend.py](https://github.com/Ruan-Yixiang/LLM-RDF/blob/main/CentralControl/backend/backend.py#L31)
 ```shell
-cd Backend Files
+cd Source\ Data/
 python backend/backend.py
 ```
 4. Install [Node.js (v16.16.0)](https://nodejs.org/dist/v16.16.0/) on your device
