@@ -52,7 +52,7 @@ conda create -n llm_rdf_back python=3.8
 conda activate llm_rdf_back
 
 # Install the required Python packages from requirements.txt
-pip install -r CentralControl/requirements.txt
+pip install -r Backend\ Files/requirements.txt
 ```
 3. Run Back-End Service\
 You can modify the backend url in [backend/backend.py](https://github.com/Ruan-Yixiang/LLM-RDF/blob/main/CentralControl/backend/backend.py#L31)
